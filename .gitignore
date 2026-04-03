@@ -1,0 +1,28 @@
+# Sphinx build output
+_build/
+.doctrees/
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+*.egg-info/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# RTD environment file (auto-generated)
+.readthedocs/
