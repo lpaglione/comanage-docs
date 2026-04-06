@@ -8,6 +8,8 @@ Understanding
    :hidden:
 
    concepts-overview
+   roles
+   planning
 
 .. grid:: 2
    :gutter: 3
@@ -17,6 +19,18 @@ Understanding
       :link-type: doc
 
       Developing your mental model of how Registry thinks about people and organizations.
+
+   .. grid-item-card:: Roles and Permissions
+      :link: roles
+      :link-type: doc
+
+      The administrator role hierarchy and what each role can do.
+
+   .. grid-item-card:: Planning Your Implementation
+      :link: planning
+      :link-type: doc
+
+      Key decisions to think through before you start configuring Registry.
 
 .. note::
 
