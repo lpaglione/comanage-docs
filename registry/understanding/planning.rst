@@ -1,10 +1,12 @@
 .. DRAFT — April 2026
-.. Terminology status:
-..   "Person record"     ✓ confirmed v5 term
-..   "External identity" ✓ confirmed v5 term
-..   "Enrollment flow"   ✓ confirmed v5 term
-..   CO / organization container ⚠ OPEN QUESTION — using "your organization in Registry"
-..   COU / sub-unit      ⚠ using "sub-unit" as working term
+.. Terminology status (confirmed from PE Technical Manual, Mar 2026):
+..   "Person record"     ✓ v5 term
+..   "External identity" ✓ v5 term
+..   "Enrollment flow"   ✓ unchanged
+..   CO                  ✓ still used in v5
+..   COU                 ✓ still used in v5
+.. TODO: Replace "sub-unit" with "COU" and "your organization in Registry"
+..       with "CO" throughout this page
 
 .. _planning:
 

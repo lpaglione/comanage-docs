@@ -8,6 +8,7 @@ Understanding
    :hidden:
 
    concepts-overview
+   data-model
    roles
    planning
 
@@ -19,6 +20,13 @@ Understanding
       :link-type: doc
 
       Developing your mental model of how Registry thinks about people and organizations.
+
+   .. grid-item-card:: The Registry Data Model
+      :link: data-model
+      :link-type: doc
+
+      How Registry's objects relate to each other — People, External Identities,
+      Person Roles, COUs, Groups, and more.
 
    .. grid-item-card:: Roles and Permissions
       :link: roles
