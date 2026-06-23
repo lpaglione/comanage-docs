@@ -26,20 +26,14 @@ concepts, configuration recipes, and case studies to complement the
       :link: understanding/index
       :link-type: doc
 
-      Concepts, the data model, roles, and planning your implementation.
+      Concepts, Registry's structure, roles, and planning your implementation.
 
-   .. grid-item-card:: Registry Features
-      :link: features/index
-      :link-type: doc
-
-      Plain-language descriptions of what Registry can do and why.
-
-   .. grid-item-card:: Using Registry
+   .. grid-item-card:: Registry Features and Use
       :link: using/index
       :link-type: doc
 
-      Context and guidance for each major area of Registry — a complement
-      to the Technical Manual.
+      What Registry can do and how to use it — organized by feature area,
+      with context, configuration guidance, and links to the Technical Manual.
 
    .. grid-item-card:: Configuration Recipes
       :link: recipes/index
@@ -72,7 +66,6 @@ concepts, configuration recipes, and case studies to complement the
 
    about/index
    understanding/index
-   features/index
    using/index
    recipes/index
    case-studies/index

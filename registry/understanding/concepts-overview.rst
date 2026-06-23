@@ -15,7 +15,7 @@ Registry Concepts Overview
 ==========================
 
 Before you configure Registry, it helps to have a mental model of how it thinks
-about people and organizations. Registry's data model is designed around a
+about people and organizations. Registry is structured around a
 deceptively simple idea: every person who has a relationship with your
 organization should have exactly one record in your registry, no matter how many
 systems they appear in or how many roles they hold. Everything else in Registry
@@ -133,7 +133,7 @@ it).
 **Inbound connections** bring person data into Registry from your systems of
 record. These connections are managed through pipelines, which define how
 incoming data is matched to existing person records, how conflicts are resolved,
-and how attributes are mapped into Registry's data model.
+and how attributes are mapped into Registry's object structure.
 
 **Outbound connections** push data from Registry to the systems that depend on
 it: LDAP directories, collaboration platforms, mailing lists, access management

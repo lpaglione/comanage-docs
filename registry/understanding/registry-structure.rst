@@ -11,19 +11,19 @@
 ..           "CO Authenticator" → "Authenticator"
 ..           "CO Group" → "Group"
 
-.. _data-model:
+.. _registry-structure:
 
-The Registry Data Model
-========================
+How Registry Is Structured
+===========================
 
 Everything in Registry is organized around a single idea: **one Person record
-per person, per CO**. Every other object in the data model exists to support,
+per person, per CO**. Every other object in Registry exists to support,
 describe, or connect to that Person record. Understanding how the pieces fit
 together gives you a clear mental model for making configuration decisions and
 for diagnosing problems when something isn't working as expected.
 
-This page describes the data model at a conceptual level. For the full technical
-reference, see the
+This page describes how Registry is structured at a conceptual level. For the
+underlying database-level reference, see the
 `Registry PE Data Model <https://spaces.at.internet2.edu/display/COmanage/Registry+PE+Data+Model>`_
 in the Technical Manual.
 
@@ -66,11 +66,11 @@ from the objects connected to it — external identities, person roles, group
 memberships, and attributes.
 
 .. figure:: _images/ModelingPersonOrgRelationships.png
-   :alt: Full Registry data model showing CMP, COs, Person records, External
+   :alt: How Registry is structured, showing CMP, COs, Person records, External
          Identities, Person Roles, COUs, Groups, Authenticators, and Email Lists
    :width: 100%
 
-   The full Registry data model. *Note: this diagram uses v4 terminology.
+   How Registry is structured. *Note: this diagram uses v4 terminology.
    "Org Identity" = External Identity; "CO Person" = Person; "CO Person Role"
    = Person Role; "CO Authenticator" = Authenticator.*
 
@@ -105,7 +105,7 @@ The flow from an external source into Registry works in layers:
 
 **External Identity** (attached to the Person record)
    Registry's own representation of the person from that source — the
-   attributes mapped into Registry's data model, linked to the Person record.
+   attributes mapped into Registry's object structure, linked to the Person record.
    A single Person record can have multiple External Identities, one for each
    source that knows about them.
 
@@ -212,7 +212,7 @@ in the Technical Manual.
 
 Registry provides two tools for organizing your population within a CO: COUs
 and Groups. They serve different purposes and work at different levels of
-the data model.
+Registry's structure.
 
 .. figure:: _images/ModelingOrgs.png
    :alt: Table comparing CO, COU, CO Group, and CO Department along dimensions
@@ -309,7 +309,7 @@ such as a pending approval or an expiring role.
 Putting It Together
 --------------------
 
-The full data model, from outermost to innermost:
+How Registry is structured, from outermost to innermost:
 
 - The **CMP** (Registry installation) hosts one or more **COs**.
 - Each **CO** has its own **People**, **Groups**, **COUs**, and configuration.
@@ -330,7 +330,7 @@ Where to go for more information
 - :doc:`Registry Concepts Overview </understanding/concepts-overview>` — a
   plain-language introduction to the same ideas
 - :doc:`Roles and Permissions </understanding/roles>` — how administrative
-  access is structured within the data model
+  access is structured within Registry
 - :doc:`Planning Your Implementation </understanding/planning>` — working
   through your organization's needs before configuring Registry
 - `Registry PE Data Model <https://spaces.at.internet2.edu/display/COmanage/Registry+PE+Data+Model>`_

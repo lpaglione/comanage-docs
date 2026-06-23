@@ -8,7 +8,7 @@ Understanding
    :hidden:
 
    concepts-overview
-   data-model
+   registry-structure
    roles
    planning
 
@@ -21,8 +21,8 @@ Understanding
 
       Developing your mental model of how Registry thinks about people and organizations.
 
-   .. grid-item-card:: The Registry Data Model
-      :link: data-model
+   .. grid-item-card:: How Registry Is Structured
+      :link: registry-structure
       :link-type: doc
 
       How Registry's objects relate to each other — People, External Identities,
