@@ -280,15 +280,8 @@ In This Section
    :maxdepth: 1
 
    external-connections/external-identity-sources
-
-The following pages are under development:
-
-- **Pipelines** — matching, attribute mapping, and processing rules for inbound
-  data
-- **Provisioning** — configuring provisioning targets, modes, and groups;
-  monitoring provisioning status
-- **Authenticators** — setting up collaboration-issued credential types and
-  self-service options
-- **Identifier Assignment** — configuring assignment rules and running bulk
-  assignment
-- **Servers** — maintaining the registry of external server endpoints
+   external-connections/pipelines
+   external-connections/provisioning
+   external-connections/authenticators
+   external-connections/identifier-assignment
+   external-connections/servers
