@@ -249,17 +249,40 @@ in the Technical Manual.
 
 ----
 
+.. _ec-v4-transition:
+
+If You Are Migrating from v4
+------------------------------
+
+The v4 External Connections area included two outbound features — **Services**
+and **Email Lists** — that do not appear as distinct feature areas in v5.
+
+In v5, outbound connections of all types are handled through the Provisioning
+feature, using the appropriate Provisioner Plugin for each target system. If you
+were using Email Lists in v4, look at the available Provisioner Plugins to find
+one that targets your mailing list system, or check with the Registry community
+for guidance.
+
+**Services** is still under review. It may be covered in a different area of
+this guide — potentially Personalization — once that content has been developed.
+This note will be updated when that determination is made.
+
+See also: :ref:`ec-external-identity-sources` for changes to Organizational
+Identity Sources (renamed to External Identity Sources in v5, with several
+significant behavioral changes).
+
+----
+
 In This Section
 ----------------
 
-.. note::
+.. toctree::
+   :maxdepth: 1
 
-   Detailed configuration pages for each area below are under development.
+   external-connections/external-identity-sources
 
-Detailed pages within this section will cover:
+The following pages are under development:
 
-- **External Identity Sources** — connecting to systems of record, sync modes,
-  managing synced records
 - **Pipelines** — matching, attribute mapping, and processing rules for inbound
   data
 - **Provisioning** — configuring provisioning targets, modes, and groups;
