@@ -234,12 +234,17 @@ If you are migrating from Registry v4, the following Provisioning changes apply:
 - **Automatic Mode is now Immediate Mode.** The v4 "Automatic" provisioning
   mode corresponds to v5 "Immediate."
 
-- **Queue and Queue on Error modes are new in v5.2.0**, along with Retry
-  Interval and Max Retries.
+- **Queue and Queue on Error modes** existed in v4 since v4.0.0 and are
+  available in v5 as of v5.2.0. Retry Interval and Max Retries carry over
+  from v4 as well.
 
-- **Provisioning Groups are new in v5.2.0.**
+- **Provisioning Groups** have been part of Registry since v2.0.0 and are
+  available in v5 as of v5.2.0.
 
-- **Provisioning Keys are new in v5.2.0.**
+- **Provisioning Keys** are available in v5 as of v5.2.0. This generalized
+  mechanism for storing provisioner-assigned identifiers (such as LDAP DNs or
+  database row IDs) back on Registry records did not exist as a formal feature
+  in v4.
 
 - **Authenticators are included in provisioning data** as of v5.2.0.
 

@@ -174,11 +174,24 @@ Plugin documentation.
 Changes from v4
 ----------------
 
-If you are migrating from Registry v4:
+Message Templates have been part of Registry since v2.0.0. The concept,
+structure, and substitution mechanism are unchanged. If you are migrating from
+v4, the main things to be aware of are how Context names have evolved:
 
-- **The core Message Template feature is unchanged** from v4 in terms of
-  concept and structure. Templates, Contexts, substitutions, and CC/BCC
-  addresses work the same way.
+- **Enrollment context names have been restructured** to align with the
+  redesigned v5 Enrollment Flow model. The v4 contexts "Enrollment Flow Approval
+  Notification" and "Enrollment Flow Finalization" map roughly to v5's
+  "Enrollment Denial" and "Enrollment Finalization." The v4 "Enrollment Flow
+  Approver Notification" context maps to aspects of the v5 "Enrollment Handoff"
+  and "Enrollment Step Completed" contexts, which reflect v5's plugin-based step
+  and Actor handoff model. Existing v4 Message Templates will need to be reviewed
+  and remapped to the appropriate v5 Contexts.
 
-- **The Authenticator Context is new in v5.2.0**, supporting notifications
-  when a Person's password, SSH key, or other Authenticator is updated.
+- **"Enrollment Flow Verification" is now simply "Verification"** in v5.
+
+- **The Authenticator Context** has existed since Registry v4.0.0 and continues
+  in v5, available as of v5.2.0 when Authenticators became available in v5.
+
+- **The Expiration Notification context** from v4 is not yet listed among v5
+  Message Template Contexts. This context is expected to return alongside full
+  v5 Expiration Policy support.

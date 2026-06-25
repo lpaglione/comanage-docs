@@ -187,10 +187,16 @@ If you are migrating from Registry v4, the following changes apply:
   means the Server Registry is extensible — new server types can be added by
   installing additional Server Plugins.
 
-- **HTTP Servers** are new in v5.1.0.
-- **Match Servers** are new in v5.1.0 (Match Server Attributes added in v5.2.0).
-- **OAuth2 Servers** are new in v5.2.0.
+- **HTTP, Match, and OAuth2 Servers** all existed in v4. They are available
+  in v5 via the CoreServer Plugin — HTTP and Match as of v5.1.0, OAuth2 as of
+  v5.2.0. Match Server Attributes configuration was added in v5.2.0.
 
-The SQL and SMTP server types existed in v4 under different configuration
-paths. In v5, all server types are managed centrally through the Server
-Registry at ALL > Servers.
+- **SQL and SMTP Servers** also existed in v4 and are available in v5. In v5,
+  all server types are managed centrally through the Server Registry at
+  ALL > Servers.
+
+- **KDC (Kerberos) Servers** existed in v4 as of v4.4.0. In v5, Kerberos
+  server configuration is handled via the Kerberos Provisioner Plugin rather
+  than as a CoreServer type.
+
+- **Kafka Servers** existed in v4 but are not currently included in v5.

@@ -18,8 +18,8 @@ credential data they need. This means Authenticators and Provisioning work
 together: you configure an Authenticator type, and a Provisioner Plugin writes
 it to the appropriate target.
 
-Authenticators were introduced in Registry v5.2.0. For the full technical
-reference, see
+Authenticators have been part of Registry since v3.1.0. They are available in
+Registry v5 as of v5.2.0. For the full technical reference, see
 `Registry Authenticators <https://spaces.at.internet2.edu/spaces/COmanage/pages/350160332/Registry+Authenticators>`_
 in the Technical Manual.
 
@@ -188,10 +188,23 @@ in the Technical Manual for the technical specification.
 Changes from v4
 ----------------
 
-Authenticators are a new feature in Registry v5. They do not have a direct
-equivalent in Registry v4.
+Authenticators have been part of Registry since v3.1.0 and are available in
+v5 as of v5.2.0. The core concept — collaboration-managed credentials stored
+in Registry and provisioned to downstream systems — is unchanged.
 
-The use cases they address — provisioning passwords and SSH keys to downstream
-systems — were previously handled by other mechanisms outside Registry, or
-required custom integrations. In v5, these credential types can be managed
-and provisioned directly within Registry's standard configuration model.
+- **Available in v5 as of v5.2.0.** Authenticators were not included in
+  v5.0.x or v5.1.x.
+
+- **Plugin availability has changed.** The v4 Authenticator plugin library
+  included Password, SSH Key, Certificate, and Privacy IDEA plugins. The v5
+  Technical Manual documents the currently available plugins; check
+  `Available Authenticator Plugins <https://spaces.at.internet2.edu/spaces/COmanage/pages/350160334/Available+Authenticator+Plugins>`_
+  for the current list.
+
+- **Notification on update** (which existed in v4 as of v4.0.0) continues in
+  v5, now using the v5 :ref:`personalization-message-templates` system rather
+  than the v4 Email Message Templates system.
+
+- **The Authenticator Message Template context** in v5 Message Templates
+  corresponds to the v4 Change Message Template / Authenticator notification
+  mechanism.
