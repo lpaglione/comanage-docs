@@ -3,6 +3,12 @@
 Personalization
 ================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
 Registry is built around a generic model that works for many organizations. But
 your organization isn't generic — you have your own visual identity, your own
 communication style, your own terminology for the relationships you manage, and
@@ -29,12 +35,6 @@ addresses, affiliations, and addresses your organization recognizes.
 Additional Personalization features — including CSS theming, dashboards,
 navigation links, and localization — are being completed for v5. See
 `Coming to v5`_ below.
-
-.. sidebar:: On this page
-
-   .. contents::
-      :local:
-      :depth: 1
 
 Visual Identity and Content
 -----------------------------
