@@ -94,12 +94,12 @@ A well-configured set of Message Templates means every automated email from
 Registry sounds like it came from your organization, not from a generic
 identity management platform.
 
-.. card:: Message Templates
-   :link: personalization-message-templates
-   :link-type: ref
+.. button-ref:: personalization-message-templates
+   :ref-type: ref
+   :color: primary
+   :outline:
 
-   Configuring templates by context, using substitution tokens, and managing
-   plain text and HTML bodies.
+   Learn more about Message Templates →
 
 Data Model Customization
 --------------------------
@@ -121,12 +121,11 @@ Affiliations (a type of Person Role attribute) have an additional option: they
 can be mapped to standard eduPersonAffiliation values, which certain Provisioner
 Plugins use when exporting data to downstream systems.
 
-.. card:: Types
+.. card:: Learn more about Types →
    :link: personalization-types
    :link-type: ref
-
-   Configuring the category labels used across names, identifiers, email
-   addresses, affiliations, and other multi-valued attributes.
+   :class-title: sd-text-primary
+   :class-card: sd-shadow-sm
 
 .. note::
 
