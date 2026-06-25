@@ -13,6 +13,13 @@
 Planning Your Implementation
 =============================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 The best time to think carefully about your Registry configuration is before you
 start building it. The decisions you make early — about your population, your
 organizational structure, your connections to other systems, and who manages what
@@ -23,14 +30,6 @@ This page walks you through the key planning questions in roughly the order you
 should think about them. You do not need to have every answer before you begin,
 but you should at least have thought about each area. If you are still new to
 Registry's concepts, read :doc:`concepts-overview` first.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 1. Describe Your Population
 ----------------------------

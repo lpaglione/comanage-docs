@@ -3,6 +3,13 @@
 Enrollment Flows
 =================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Every organization has one or more ways of bringing new people into that
 organization — applications, invitations, intakes, signups. These processes
 vary significantly: some require approval, some require email verification, some
@@ -28,14 +35,6 @@ in the Technical Manual.
 
    Enrollment Flows were completely redesigned for v5 and are **available as of
    v5.1.0**. They are not available in Registry v5.0.x.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 Enrollment Flow Actors
 -----------------------

@@ -3,6 +3,13 @@
 Status and Validity
 ====================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Status is how Registry expresses where a person stands in their lifecycle
 relationship with the CO. It drives what data gets provisioned to downstream
 systems, what access is granted, and what operations are available for that
@@ -13,14 +20,6 @@ to expiring to archived states.
 For the full technical reference, see
 `Person and External Identity Status <https://spaces.at.internet2.edu/spaces/COmanage/pages/281018939/Person+and+External+Identity+Status>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 Person and Person Role Status
 -------------------------------

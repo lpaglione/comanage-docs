@@ -3,6 +3,13 @@
 Person Roles
 ============
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 A **Person Role** represents a Person's relationship to the collaborative
 organization — their affiliation, their position in the organizational
 structure, and their validity within that context. One Person can hold
@@ -16,14 +23,6 @@ in a separate COU. Both roles co-exist on the same Person record.
 For the full technical reference, see
 `Registry Person Roles <https://spaces.at.internet2.edu/spaces/COmanage/pages/219918164/Registry+Person+Roles>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 Role Attributes
 ----------------

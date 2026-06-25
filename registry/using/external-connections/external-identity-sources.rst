@@ -3,6 +3,13 @@
 External Identity Sources
 ==========================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Most organizations already have authoritative records about their people in one
 or more external systems — an HR database, a student information system, an LDAP
 directory, an ORCID registry, or a flat file export. Rather than asking
@@ -31,14 +38,6 @@ it.
 For the full technical reference, see
 `Registry PE External Identity Sources <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743514/Registry+PE+External+Identity+Sources>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 Configuring an External Identity Source
 -----------------------------------------

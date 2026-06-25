@@ -14,6 +14,13 @@
 What is COmanage Registry?
 ==========================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 COmanage Registry is an identity registry with flexible enrollment and lifecycle
 management capabilities that help you meet your identity management objectives
 using standardized tools and approaches. It can be used as a central person
@@ -24,14 +31,6 @@ come together to work toward shared research or educational goals.
 Registry is part of the `InCommon Trusted Access Platform
 <https://incommon.org/software/comanage/>`_, an open-source project used and
 shaped by the research and education community.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 1. Why a Registry?
 ------------------

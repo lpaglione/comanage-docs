@@ -3,6 +3,13 @@
 Provisioning
 =============
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Provisioning is how Registry pushes identity data out to the applications and
 services that depend on it. When a person's status changes, when they join or
 leave a group, when their name or email address is updated — provisioning
@@ -18,14 +25,6 @@ downstream systems to feed.
 For the full technical reference, see
 `Registry PE Provisioning <https://spaces.at.internet2.edu/spaces/COmanage/pages/256939260/Registry+PE+Provisioning>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 What Gets Provisioned
 ----------------------

@@ -3,6 +3,13 @@
 Message Templates
 ==================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Every automated email that Registry sends — an enrollment notification, a
 petition approval, an email address verification, an Authenticator update — has
 to come from somewhere. By default, Registry uses built-in message text. But
@@ -20,14 +27,6 @@ context-specific values.
 For the full technical reference, see
 `Registry Message Templates <https://spaces.at.internet2.edu/spaces/COmanage/pages/297862258/Registry+Message+Templates>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 How Message Templates Work
 ---------------------------

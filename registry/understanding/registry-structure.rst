@@ -16,6 +16,13 @@
 How Registry Is Structured
 ===========================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Everything in Registry is organized around a single idea: **one Person record
 per person, per CO**. Every other object in Registry exists to support,
 describe, or connect to that Person record. Understanding how the pieces fit
@@ -26,14 +33,6 @@ This page describes how Registry is structured at a conceptual level. For the
 underlying database-level reference, see the
 `Registry PE Data Model <https://spaces.at.internet2.edu/display/COmanage/Registry+PE+Data+Model>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 1. The Platform and COs
 ------------------------

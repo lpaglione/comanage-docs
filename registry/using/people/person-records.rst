@@ -3,6 +3,13 @@
 Person Records
 ==============
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 A **Person record** (also called a Registry Person, or simply a Person)
 represents one physical human being within your CO. It is the central object
 in Registry — enrollment flows create it, pipelines populate it, provisioning
@@ -11,14 +18,6 @@ targets consume it, and status calculations are derived from it.
 For the full technical reference, see
 `Registry People <https://spaces.at.internet2.edu/spaces/COmanage/pages/219918161/Registry+People>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 What a Person Record Contains
 -------------------------------

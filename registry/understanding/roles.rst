@@ -16,20 +16,19 @@
 Roles and Permissions
 =====================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Registry uses a layered permission model built primarily on group membership.
 Different people in your organization will interact with Registry in different
 ways — some configure and maintain it, some manage a specific population, some
 participate in enrollment flows, and some simply appear in it as people with a
 record. Understanding who has what access matters both for planning your
 deployment and for day-to-day operation.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 1. Two Kinds of Access
 -----------------------

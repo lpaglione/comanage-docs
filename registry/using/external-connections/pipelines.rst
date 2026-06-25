@@ -3,6 +3,13 @@
 Pipelines
 ==========
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 When data arrives from an External Identity Source, it doesn't flow directly
 into a Person record. Instead, it passes through a **Pipeline** — a set of
 rules that determine what happens to that data: who it belongs to, how it maps
@@ -22,14 +29,6 @@ point both External Identity Sources at the same Pipeline.
 For the full technical reference, see
 `Registry PE Pipelines <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743515/Registry+PE+Pipelines>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 How Data Flows Through a Pipeline
 ------------------------------------

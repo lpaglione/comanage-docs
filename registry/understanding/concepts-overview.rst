@@ -14,6 +14,13 @@
 Registry Concepts Overview
 ==========================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Before you configure Registry, it helps to have a mental model of how it thinks
 about people and organizations. Registry is structured around a
 deceptively simple idea: every person who has a relationship with your
@@ -25,14 +32,6 @@ This page introduces the core concepts and how they relate to each other. None
 of it requires deep technical knowledge — the goal is to give you the vocabulary
 and mental model you need to make good decisions when you start configuring
 Registry for your organization.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 1. Your Organization in Registry
 ---------------------------------

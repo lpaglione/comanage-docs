@@ -3,6 +3,13 @@
 Terms and Conditions
 =====================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 When people enroll in your organization, they often need to agree to a policy —
 acceptable use, data handling, research participation, membership terms.
 **Terms and Conditions** let you present one or more policy documents to people
@@ -22,14 +29,6 @@ in the Technical Manual.
 
    Terms and Conditions are available as of Registry v5.2.0. The feature existed
    in Registry v4 but was not included in v5.0.x or v5.1.x.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 Configuring Terms and Conditions
 ----------------------------------

@@ -3,6 +3,13 @@
 Servers
 ========
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Many Registry features need to communicate with external server endpoints —
 an LDAP directory for provisioning, a database for identity source data, an
 OAuth2 provider for API authentication, an SMTP relay for sending notifications.
@@ -17,14 +24,6 @@ it picks up the change automatically.
 For the full technical reference, see
 `Registry Servers <https://spaces.at.internet2.edu/spaces/COmanage/pages/256938867/Registry+Servers>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 Adding a Server
 ----------------

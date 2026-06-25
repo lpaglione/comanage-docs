@@ -7,6 +7,13 @@
 How and Why to Use Registry
 ============================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Every organization that manages people has the same underlying challenge:
 your people don't fit neatly into one system, one role, or one moment in time.
 Registry exists for exactly this situation — to give you a single, reliable place
@@ -15,14 +22,6 @@ and keep your connected systems in sync, without requiring your team to build
 something from scratch or maintain a tangle of custom scripts.
 
 If any of the situations below sound familiar, Registry is worth a closer look.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 "We have people in multiple systems, and they don't match up."
 --------------------------------------------------------------

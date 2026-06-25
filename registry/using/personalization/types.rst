@@ -3,6 +3,13 @@
 Types
 ======
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Many of Registry's data objects support multiple values, and those values need
 to be distinguished from each other. A Person can have multiple email addresses
 — but is a given address their official contact, their personal address, or
@@ -19,14 +26,6 @@ what they're called.
 For the full technical reference, see
 `Registry Types <https://spaces.at.internet2.edu/spaces/COmanage/pages/207650961/Registry+Types>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 Which Attributes Use Types
 ---------------------------

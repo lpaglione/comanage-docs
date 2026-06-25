@@ -5,6 +5,13 @@
 About COmanage Match
 ====================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 COmanage Match is a companion tool to Registry that addresses a specific and
 surprisingly difficult problem in identity management: when a new record arrives
 from an authoritative system, is that person already in your registry?
@@ -13,14 +20,6 @@ This page introduces Match, explains why identity matching is harder than it
 sounds, and describes how Match and Registry work together. For full Match
 documentation, see the
 `COmanage Match User Guide <https://spaces.at.internet2.edu/display/COmanage/COmanage+Match+User+Guide>`_.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 1. The Identity Matching Problem
 ----------------------------------

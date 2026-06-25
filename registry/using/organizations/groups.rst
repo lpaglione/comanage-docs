@@ -3,6 +3,13 @@
 Groups
 ======
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Registry Groups are a way to organize People within your CO — for controlling
 who has access to what, for driving enrollment approvals, for scoping
 provisioning, and for enabling self-organized membership. Groups are defined
@@ -18,14 +25,6 @@ For the full technical reference, see
 in the Technical Manual. For v4-era background, see also
 `CO Groups and Group Memberships <https://spaces.at.internet2.edu/spaces/COmanage/pages/102304360/CO+Groups+and+Group+Memberships>`_
 in the v4 Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 Standard Groups vs System Groups
 ----------------------------------

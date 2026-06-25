@@ -3,6 +3,13 @@
 Identifier Assignment
 ======================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 External data rarely arrives with the identifiers your systems need. Your HR
 database may know an employee by their employee number, and your collaboration
 platform may need an ePPN and an email address — but neither of those identifiers
@@ -18,14 +25,6 @@ of a Pipeline sync, or in bulk across all entities in a CO.
 For the full technical reference, see
 `Registry PE Identifier Assignment <https://spaces.at.internet2.edu/spaces/COmanage/pages/269746372/Registry+PE+Identifier+Assignment>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 What Identifier Assignment Can Do
 -----------------------------------

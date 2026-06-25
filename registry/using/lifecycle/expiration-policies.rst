@@ -3,6 +3,13 @@
 Expiration Policies
 ====================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Over time, people's relationships with your organization end or change. Some
 departures are managed manually — an administrator updates a Role's status when
 notified. But for organizations managing large populations, automating these
@@ -25,14 +32,6 @@ population-scale lifecycle management.
    in the v4 Technical Manual, and check the
    `Registry community resources <https://spaces.at.internet2.edu/spaces/COmanage>`_
    for v5 updates.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 What Expiration Policies Do
 ----------------------------

@@ -3,6 +3,13 @@
 Mostly Static Pages and Resources
 ===================================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Registry is an identity management platform, not a general-purpose web
 publishing system. But every deployment has some content that needs to live
 alongside the Registry interface — a policy your members must acknowledge before
@@ -24,14 +31,6 @@ For the full technical reference, see
 and
 `Mostly Static Resources <https://spaces.at.internet2.edu/spaces/COmanage/pages/409763999/Mostly+Static+Resources>`_
 in the Technical Manual.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 Mostly Static Pages
 ---------------------

@@ -11,6 +11,13 @@
 What's New in Registry v5
 ==========================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
+
 Registry v5 is a ground-up rebuild of the COmanage Registry you know — the same
 capabilities and concepts, re-engineered to be more flexible, easier to use, and
 better positioned for the next decade of identity management in research and
@@ -22,14 +29,6 @@ v5 is currently an **Early Adopter Release**. Core functionality is in place and
 working well, and feature parity with v4 is progressing release by release. See
 :ref:`feature-status` below for the current picture, and
 :doc:`../transitioning/index` if you are planning a migration from v4.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 1. A Redesigned Interface
 --------------------------
