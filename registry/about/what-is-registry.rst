@@ -17,8 +17,9 @@ What is COmanage Registry?
 COmanage Registry is an identity registry with flexible enrollment and lifecycle
 management capabilities that help you meet your identity management objectives
 using standardized tools and approaches. It can be used as a central person
-registry, a guest management system, or a collaboration hub for scholarly
-collaborations.
+registry, a guest management system, or a membership management platform for
+virtual organizations — groups of colleagues from different institutions who
+come together to work toward shared research or educational goals.
 
 Registry is part of the `InCommon Trusted Access Platform
 <https://incommon.org/software/comanage/>`_, an open-source project used and
@@ -64,8 +65,8 @@ into a single **Person record**. Registry connects to HR systems, student
 information systems, LDAP directories, and more, giving you a composite view
 that stays accurate even as roles and personal data change.
 
-**Assign a stable identifier** that can be relied upon across all your systems,
-even when names or email addresses change over time.
+**Identify them across all of your systems** using a stable identifier that
+remains reliable even when names or email addresses change over time.
 
 **Organize them into groups** that drive roles and access. Distribute population
 management to the people who know the population best — department
@@ -98,11 +99,12 @@ common patterns:
    conference attendees. Registry gives them a home — a record you control, with
    access you can grant and revoke on your own timeline.
 
-**Research collaboration hub**
+**Virtual organization management**
    A research group or virtual organization spanning multiple institutions uses
-   Registry to manage its own membership, group structure, and access
-   provisioning — independent of any single institution's central IT, and without
-   burdening central IT with every change.
+   Registry to manage its own membership, group structure, and resource access —
+   giving members from different home institutions a shared identity and
+   centrally managed access to the tools they need, independent of any single
+   institution's central IT.
 
 4. Registry and the COmanage Project
 -------------------------------------
@@ -119,19 +121,29 @@ team actively invites participation — through the monthly newsletter, Open Off
 Hours, Slack, and community contributions. See
 :doc:`The COmanage Community </community/about>` for ways to get involved.
 
-----
+The COmanage Project is stewarded by **SCG Collaboration Group** (also known
+as Spherical Cow Group) and has been made possible through the sustained support
+of **Internet2** via the TIER Initiative and the InCommon Trusted Access Platform
+Program, as well as funding from the **National Science Foundation**. The project
+also reflects significant contributions — in funding, development, and community
+engagement — from universities, national labs, and research organizations across
+the US and internationally. The full acknowledgements list is available on the
+`COmanage wiki <https://spaces.at.internet2.edu/spaces/COmanage/pages/10732/Home>`_.
 
-Where to go for more information
----------------------------------
+.. seealso::
 
-- :doc:`How and Why to Use Registry </about/how-and-why>` — user stories and
-  use cases in more depth
-- :doc:`Registry Concepts Overview </understanding/concepts-overview>` — the
-  core mental model: Person records, external identities, and how Registry
-  structures your data
-- :doc:`What's New in v5 </about/whats-new>` — what has changed and improved
-  in this version
-- :doc:`About COmanage Match </about/about-match>` — a brief orientation to
-  the companion tool
-- `COmanage Registry Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_
-  — detailed reference documentation for Registry administrators and developers
+   :doc:`How and Why to Use Registry </about/how-and-why>`
+      User stories and use cases in more depth.
+
+   :doc:`Registry Concepts Overview </understanding/concepts-overview>`
+      The core mental model: Person records, external identities, and how
+      Registry structures your data.
+
+   :doc:`What's New in v5 </about/whats-new>`
+      What has changed and improved in this version.
+
+   :doc:`About COmanage Match </about/about-match>`
+      A brief orientation to the companion tool.
+
+   `COmanage Registry Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_
+      Detailed reference documentation for Registry administrators and developers.
