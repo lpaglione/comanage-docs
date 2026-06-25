@@ -45,6 +45,8 @@ change.
 Enrollment Flows
 -----------------
 
+:bdg-warning:`Redesigned in v5.1.0`
+
 **Enrollment Flows** are Registry's mechanism for bringing new people into a CO
 through interactive, human-driven processes. Every organization has its own
 terminology for this — applications, invitations, intakes, signups — and its own
@@ -74,8 +76,10 @@ partial records from accumulating when Petitions are rejected or abandoned.
 
    Learn more about Enrollment Flows →
 
-Terms and Conditions *(available as of v5.2.0)*
--------------------------------------------------
+Terms and Conditions
+---------------------
+
+:bdg-secondary:`Available as of v5.2.0`
 
 **Terms and Conditions** let you present policy documents to people and track
 their agreement. Each T&C can be configured with an agreement duration (requiring
