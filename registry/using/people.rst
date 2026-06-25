@@ -3,6 +3,12 @@
 People
 ======
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
 At its core, Registry is a registry for people. Every identity, every
 affiliation, every group membership, every provisioned account ultimately
 traces back to a Person record — a representation of one human being within
@@ -11,14 +17,6 @@ your collaborative organization.
 Understanding how Registry models people is the foundation for everything else:
 how enrollment works, how provisioning is scoped, how status is calculated, and
 how your organizational structure maps onto your membership.
-
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
 
 How Registry Represents People
 --------------------------------
@@ -72,6 +70,14 @@ The Person Canvas is the primary point of interaction for administrators working
 with individual People. From it, you can edit attributes, manage identifiers,
 view status, and trigger provisioning operations.
 
+.. button-ref:: people-person-records
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about Person Records →
+
 How People Get Into Registry
 ------------------------------
 
@@ -94,6 +100,14 @@ People can enter Registry through any of three paths:
 Multiple paths can be active simultaneously. A person might first appear via
 enrollment and later have their record updated via an identity source pipeline.
 
+.. button-ref:: people-person-roles
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about Person Roles →
+
 Notifications
 --------------
 
@@ -109,11 +123,12 @@ in the Technical Manual.
 
 ----
 
-In This Section
-----------------
+Pages in This Section
+----------------------
 
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
 
    people/person-records
    people/person-roles

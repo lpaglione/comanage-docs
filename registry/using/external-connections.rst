@@ -3,6 +3,12 @@
 External Connections
 ====================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
 Registry is a hub, not a silo. It connects to the systems around it — pulling
 authoritative identity data in from your sources of record, issuing and managing
 credentials, assigning identifiers, and pushing the resulting data out to the
@@ -44,14 +50,6 @@ repeating connection details.
    Pipelines) → Registry Person record → outbound (Provisioning) flow, with
    Authenticators and Identifier Assignment shown alongside.
 
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
-
 Inbound: External Identity Sources
 ------------------------------------
 
@@ -84,6 +82,14 @@ For the full reference, see
 `Registry PE External Identity Sources <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743514/Registry+PE+External+Identity+Sources>`_
 in the Technical Manual.
 
+.. button-ref:: ec-external-identity-sources
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about External Identity Sources →
+
 Inbound: Pipelines
 -------------------
 
@@ -103,6 +109,14 @@ External Identity Sources that follow the same processing rules.
 For the full reference, see
 `Registry PE Pipelines <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743515/Registry+PE+Pipelines>`_
 in the Technical Manual.
+
+.. button-ref:: ec-pipelines
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about Pipelines →
 
 Outbound: Provisioning
 ------------------------
@@ -154,6 +168,14 @@ For the full reference, see
 `Registry PE Provisioning <https://spaces.at.internet2.edu/spaces/COmanage/pages/256939260/Registry+PE+Provisioning>`_
 in the Technical Manual.
 
+.. button-ref:: ec-provisioning
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about Provisioning →
+
 Authenticators
 ---------------
 
@@ -179,12 +201,20 @@ and sent to a downstream system (such as a Kerberos KDC) without being stored in
 the Registry database.
 
 Available Authenticator types in v5 include Password and SSH Key. Each type is
-implemented as an Authenticator Plugin. Authenticators were introduced in
-Registry v5.2.0.
+implemented as an Authenticator Plugin. Authenticators have been part of Registry
+since v3.1.0 and are available in v5 as of v5.2.0.
 
 For the full reference, see
 `Registry Authenticators <https://spaces.at.internet2.edu/spaces/COmanage/pages/350160332/Registry+Authenticators>`_
 in the Technical Manual.
+
+.. button-ref:: ec-authenticators
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about Authenticators →
 
 Identifier Assignment
 ----------------------
@@ -218,6 +248,14 @@ For the full reference, see
 `Registry PE Identifier Assignment <https://spaces.at.internet2.edu/spaces/COmanage/pages/269746372/Registry+PE+Identifier+Assignment>`_
 in the Technical Manual.
 
+.. button-ref:: ec-identifier-assignment
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about Identifier Assignment →
+
 Configuration: Servers
 -----------------------
 
@@ -247,6 +285,14 @@ For the full reference, see
 `Registry Servers <https://spaces.at.internet2.edu/spaces/COmanage/pages/256938867/Registry+Servers>`_
 in the Technical Manual.
 
+.. button-ref:: ec-servers
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about Servers →
+
 ----
 
 .. _ec-v4-transition:
@@ -273,11 +319,12 @@ significant behavioral changes).
 
 ----
 
-In This Section
-----------------
+Pages in This Section
+----------------------
 
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
 
    external-connections/external-identity-sources
    external-connections/pipelines

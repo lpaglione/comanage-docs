@@ -3,6 +3,12 @@
 Lifecycle Management
 ====================
 
+.. sidebar:: On this page
+
+   .. contents::
+      :local:
+      :depth: 1
+
 Enrolling a new person is just the beginning. Over time, their relationship
 with your organization will evolve — roles will change, affiliations will shift,
 new responsibilities will be added, and eventually, at some point, their
@@ -36,14 +42,6 @@ Together, these mechanisms mean Registry doesn't just store identity data at a
 point in time — it actively manages the lifecycle of that data as relationships
 change.
 
-----
-
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
-
 Enrollment Flows
 -----------------
 
@@ -68,10 +66,16 @@ partial records from accumulating when Petitions are rejected or abandoned.
    Enrollment Flows were completely redesigned in v5.1.0 and are **not available
    in Registry v5.0.x**.
 
-See :ref:`lifecycle-enrollment-flows` for configuration details.
+.. button-ref:: lifecycle-enrollment-flows
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
 
-Terms and Conditions *(v5.2.0)*
----------------------------------
+   Learn more about Enrollment Flows →
+
+Terms and Conditions *(available as of v5.2.0)*
+-------------------------------------------------
 
 **Terms and Conditions** let you present policy documents to people and track
 their agreement. Each T&C can be configured with an agreement duration (requiring
@@ -82,7 +86,13 @@ Agreement at enrollment is collected through the Agreement Collector Enroller
 Plugin as a Step within an Enrollment Flow. Administrators can also record
 agreement on behalf of a person, or revoke an existing agreement.
 
-See :ref:`lifecycle-terms-and-conditions` for configuration details.
+.. button-ref:: lifecycle-terms-and-conditions
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about Terms and Conditions →
 
 Status and Validity
 --------------------
@@ -99,8 +109,13 @@ from date enters Pending Activation; a Role that passes its valid through date
 becomes Expired. When needed, an entire Person record can be Locked to
 immediately disable access regardless of Role statuses.
 
-See :ref:`lifecycle-status-and-validity` for details on the status model,
-validity dates, and locking.
+.. button-ref:: lifecycle-status-and-validity
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about Status and Validity →
 
 Expiration Policies
 --------------------
@@ -121,7 +136,13 @@ events, making them suitable for managing large populations.
    page in the v4 Technical Manual, and check the Registry community for v5
    updates.
 
-See :ref:`lifecycle-expiration-policies` for what is available about v5.
+.. button-ref:: lifecycle-expiration-policies
+   :ref-type: ref
+   :color: primary
+   :outline:
+   :align: right
+
+   Learn more about Expiration Policies →
 
 ----
 
@@ -143,7 +164,8 @@ Several significant changes affect lifecycle management when migrating from v4:
   later rejected. In v5.1.0+, records are only committed when a Petition
   successfully finalizes.
 
-- **Terms and Conditions are available as of v5.2.0.** The feature existed in v4 but was not yet included in v5.0.x or v5.1.x.
+- **Terms and Conditions are available as of v5.2.0.** The feature existed in v4
+  but was not yet included in v5.0.x or v5.1.x.
 
 - **Status terminology has changed.** The v4 status "Deleted" is now "Archived"
   in v5. A new "Pending Activation" status exists in v5 for Roles whose valid
@@ -153,11 +175,12 @@ Several significant changes affect lifecycle management when migrating from v4:
 
 ----
 
-In This Section
-----------------
+Pages in This Section
+----------------------
 
 .. toctree::
    :maxdepth: 1
+   :titlesonly:
 
    lifecycle/enrollment-flows
    lifecycle/terms-and-conditions
