@@ -45,9 +45,7 @@ change.
 Enrollment Flows
 -----------------
 
-:bdg-warning:`Redesigned in v5.1.0`
-
-**Enrollment Flows** are Registry's mechanism for bringing new people into a CO
+**Enrollment Flows** :bdg-warning:`Redesigned in v5` :bdg-secondary:`Available: v5.1.0` are Registry's mechanism for bringing new people into a CO
 through interactive, human-driven processes. Every organization has its own
 terminology for this — applications, invitations, intakes, signups — and its own
 steps: collecting attributes, verifying email, obtaining approvals, requiring
@@ -79,9 +77,7 @@ partial records from accumulating when Petitions are rejected or abandoned.
 Terms and Conditions
 ---------------------
 
-:bdg-secondary:`Available as of v5.2.0`
-
-**Terms and Conditions** let you present policy documents to people and track
+**Terms and Conditions** :bdg-secondary:`Available: v5.2.0` let you present policy documents to people and track
 their agreement. Each T&C can be configured with an agreement duration (requiring
 periodic re-agreement), scoped to a specific COU, and tied to content hosted
 either in a Mostly Static Page within Registry or at an external URL.
