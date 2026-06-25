@@ -65,15 +65,18 @@ Several Mostly Static Pages are created automatically with each CO for default
 error and enrollment handoff behavior. You can edit their content to match your
 organization's language and policies.
 
-See :ref:`personalization-mostly-static-pages` for configuration details.
-
 **Mostly Static Resources** *(new in v5.3.0)*
 
 Mostly Static Resources provide a media library for uploading images and other
 files that can be referenced from Mostly Static Pages and Themes. Resources are
 served at a stable URL within your CO.
 
-Resources are covered in the same detail page as Mostly Static Pages.
+.. card:: Mostly Static Pages and Resources
+   :link: personalization-mostly-static-pages
+   :link-type: ref
+
+   Creating and editing content pages, working with auto-created defaults, and
+   managing the Mostly Static Resources media library.
 
 Communication
 --------------
@@ -91,7 +94,12 @@ A well-configured set of Message Templates means every automated email from
 Registry sounds like it came from your organization, not from a generic
 identity management platform.
 
-See :ref:`personalization-message-templates` for configuration details.
+.. card:: Message Templates
+   :link: personalization-message-templates
+   :link-type: ref
+
+   Configuring templates by context, using substitution tokens, and managing
+   plain text and HTML bodies.
 
 Data Model Customization
 --------------------------
@@ -113,7 +121,12 @@ Affiliations (a type of Person Role attribute) have an additional option: they
 can be mapped to standard eduPersonAffiliation values, which certain Provisioner
 Plugins use when exporting data to downstream systems.
 
-See :ref:`personalization-types` for configuration details.
+.. card:: Types
+   :link: personalization-types
+   :link-type: ref
+
+   Configuring the category labels used across names, identifiers, email
+   addresses, affiliations, and other multi-valued attributes.
 
 .. note::
 
@@ -204,13 +217,8 @@ Several v4 Personalization features have changed significantly in v5:
 - **Mostly Static Pages** — Now a standard data model element (as of v5.1.0),
   no longer requiring filesystem access.
 
-----
-
-In This Section
-----------------
-
 .. toctree::
-   :maxdepth: 1
+   :hidden:
 
    personalization/message-templates
    personalization/types
