@@ -159,16 +159,17 @@ For the full feature-by-feature status, see
    tracked publicly. See :doc:`../community/about` for how to follow along and
    participate.
 
-----
+.. seealso::
 
-Where to go for more information
-----------------------------------
+   :doc:`What is COmanage Registry? </about/what-is-registry>`
+      A concise overview of Registry and what it does.
 
-- :doc:`What is COmanage Registry? </about/what-is-registry>` — a concise
-  overview of Registry and what it does
-- :doc:`Registry Concepts Overview </understanding/concepts-overview>` — the
-  core mental model for understanding how Registry works
-- :doc:`../transitioning/index` — resources for organizations moving from v4
-  to v5, including the full feature status table
-- `COmanage Registry Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_
-  — detailed technical reference for the v5 release
+   :doc:`Registry Concepts Overview </understanding/concepts-overview>`
+      The core mental model for understanding how Registry works.
+
+   :doc:`../transitioning/index`
+      Resources for organizations moving from v4 to v5, including the full
+      feature status table.
+
+   `COmanage Registry Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_
+      Detailed technical reference for the v5 release.

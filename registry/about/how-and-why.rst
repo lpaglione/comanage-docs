@@ -126,18 +126,19 @@ organizations whose primary need is identity de-duplication rather than a full
 lifecycle registry. See :doc:`About COmanage Match </about/about-match>` for a
 brief overview.
 
-----
+.. seealso::
 
-Where to go for more information
----------------------------------
+   :doc:`What is COmanage Registry? </about/what-is-registry>`
+      A concise overview of Registry and what it does.
 
-- :doc:`What is COmanage Registry? </about/what-is-registry>` — a concise
-  overview of Registry and what it does
-- :doc:`Registry Concepts Overview </understanding/concepts-overview>` — the
-  core mental model before you start configuring
-- :doc:`Case Studies </case-studies/index>` — real deployments with enough
-  detail to recognize your own situation
-- :doc:`The COmanage Community </community/index>` — Open Office Hours, Slack,
-  and the newsletter
-- `COmanage Registry Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_
-  — detailed reference for administrators and developers
+   :doc:`Registry Concepts Overview </understanding/concepts-overview>`
+      The core mental model before you start configuring.
+
+   :doc:`Case Studies </case-studies/index>`
+      Real deployments with enough detail to recognize your own situation.
+
+   :doc:`The COmanage Community </community/index>`
+      Open Office Hours, Slack, and the newsletter.
+
+   `COmanage Registry Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_
+      Detailed reference for administrators and developers.

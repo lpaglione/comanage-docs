@@ -219,18 +219,21 @@ assigned automatically as part of an enrollment flow — for example, a flow
 that gives a department coordinator COU Administrator access as part of their
 onboarding.
 
-----
+.. seealso::
 
-Where to go for more information
-----------------------------------
+   :doc:`Registry Concepts Overview </understanding/concepts-overview>`
+      The mental model for people, groups, and organizational structure in
+      Registry.
 
-- :doc:`Registry Concepts Overview </understanding/concepts-overview>` — the
-  mental model for people, groups, and organizational structure in Registry
-- :doc:`Planning Your Implementation </understanding/planning>` — working through
-  your organization's needs and admin model before you start configuring
-- `Registry PE Permissions <https://spaces.at.internet2.edu/display/COmanage/Registry+PE+Permissions>`_
-  — the Technical Manual reference for permissions (currently a draft)
-- `Registry User Roles <https://spaces.at.internet2.edu/display/COmanage/Registry+User+Roles>`_
-  — concise summary of roles and their scope in the Technical Manual
-- `Registry Groups <https://spaces.at.internet2.edu/display/COmanage/Registry+Groups>`_
-  — how the groups that underpin role assignment work
+   :doc:`Planning Your Implementation </understanding/planning>`
+      Working through your organization's needs and admin model before you
+      start configuring.
+
+   `Registry PE Permissions <https://spaces.at.internet2.edu/display/COmanage/Registry+PE+Permissions>`_
+      The Technical Manual reference for permissions (currently a draft).
+
+   `Registry User Roles <https://spaces.at.internet2.edu/display/COmanage/Registry+User+Roles>`_
+      Concise summary of roles and their scope in the Technical Manual.
+
+   `Registry Groups <https://spaces.at.internet2.edu/display/COmanage/Registry+Groups>`_
+      How the groups that underpin role assignment work.

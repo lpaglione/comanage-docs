@@ -322,20 +322,22 @@ How Registry is structured, from outermost to innermost:
 - **Artifacts** (history records, petitions, notifications) track what
   Registry has done over time.
 
-----
+.. seealso::
 
-Where to go for more information
-----------------------------------
+   :doc:`Registry Concepts Overview </understanding/concepts-overview>`
+      A plain-language introduction to the same ideas.
 
-- :doc:`Registry Concepts Overview </understanding/concepts-overview>` — a
-  plain-language introduction to the same ideas
-- :doc:`Roles and Permissions </understanding/roles>` — how administrative
-  access is structured within Registry
-- :doc:`Planning Your Implementation </understanding/planning>` — working
-  through your organization's needs before configuring Registry
-- `Registry PE Data Model <https://spaces.at.internet2.edu/display/COmanage/Registry+PE+Data+Model>`_
-  — the full technical reference with table-level detail
-- `Registry Objects <https://spaces.at.internet2.edu/display/COmanage/Registry+Objects>`_
-  — Primary and Secondary Registry Objects in the Technical Manual
-- `Person and External Identity Status <https://spaces.at.internet2.edu/display/COmanage/Person+and+External+Identity+Status>`_
-  — Full status reference with provisioning behavior for each status value
+   :doc:`Roles and Permissions </understanding/roles>`
+      How administrative access is structured within Registry.
+
+   :doc:`Planning Your Implementation </understanding/planning>`
+      Working through your organization's needs before configuring Registry.
+
+   `Registry PE Data Model <https://spaces.at.internet2.edu/display/COmanage/Registry+PE+Data+Model>`_
+      The full technical reference with table-level detail.
+
+   `Registry Objects <https://spaces.at.internet2.edu/display/COmanage/Registry+Objects>`_
+      Primary and Secondary Registry Objects in the Technical Manual.
+
+   `Person and External Identity Status <https://spaces.at.internet2.edu/display/COmanage/Person+and+External+Identity+Status>`_
+      Full status reference with provisioning behavior for each status value.

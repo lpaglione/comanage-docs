@@ -242,18 +242,20 @@ thinking them through before you start will save significant rework.
    for migration-specific planning considerations. Many v4 concepts map directly
    to v5, though some configuration will need to be recreated.
 
-----
+.. seealso::
 
-Where to go for more information
-----------------------------------
+   :doc:`Registry Concepts Overview </understanding/concepts-overview>`
+      The mental model for how Registry structures people and organizations.
 
-- :doc:`Registry Concepts Overview </understanding/concepts-overview>` — the
-  mental model for how Registry structures people and organizations
-- :doc:`Roles and Permissions </understanding/roles>` — the administrator role
-  hierarchy in detail
-- :doc:`How and Why to Use Registry </about/how-and-why>` — use cases that
-  illustrate how different types of organizations deploy Registry
-- :doc:`../transitioning/index` — planning resources for organizations moving
-  from v4 to v5
-- `COmanage Registry Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_
-  — detailed configuration reference once you are ready to build
+   :doc:`Roles and Permissions </understanding/roles>`
+      The administrator role hierarchy in detail.
+
+   :doc:`How and Why to Use Registry </about/how-and-why>`
+      Use cases that illustrate how different types of organizations deploy
+      Registry.
+
+   :doc:`../transitioning/index`
+      Planning resources for organizations moving from v4 to v5.
+
+   `COmanage Registry Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_
+      Detailed configuration reference once you are ready to build.

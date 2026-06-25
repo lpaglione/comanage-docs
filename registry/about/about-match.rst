@@ -136,17 +136,19 @@ If you are unsure, it is reasonable to start with Registry's built-in matching
 and add Match later if duplicate management becomes a recurring operational
 problem.
 
-----
+.. seealso::
 
-Where to go for more information
-----------------------------------
+   `COmanage Match User Guide <https://spaces.at.internet2.edu/display/COmanage/COmanage+Match+User+Guide>`_
+      Full documentation for Match, including installation, configuration, and
+      the Match API.
 
-- `COmanage Match User Guide <https://spaces.at.internet2.edu/display/COmanage/COmanage+Match+User+Guide>`_
-  — full documentation for Match, including installation, configuration, and
-  the Match API
-- :doc:`Registry Concepts Overview </understanding/concepts-overview>` — how
-  Registry handles external identities and the matching step within enrollment
-- :doc:`Planning Your Implementation </understanding/planning>` — considerations
-  for whether and how to incorporate Match into your deployment
-- :doc:`What is COmanage Registry? </about/what-is-registry>` — overview of
-  Registry and the COmanage Project
+   :doc:`Registry Concepts Overview </understanding/concepts-overview>`
+      How Registry handles external identities and the matching step within
+      enrollment.
+
+   :doc:`Planning Your Implementation </understanding/planning>`
+      Considerations for whether and how to incorporate Match into your
+      deployment.
+
+   :doc:`What is COmanage Registry? </about/what-is-registry>`
+      Overview of Registry and the COmanage Project.

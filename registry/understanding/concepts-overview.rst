@@ -191,18 +191,19 @@ With this model in mind, the configuration decisions you'll make in Registry —
 what sources to connect, how to structure your population, what enrollment
 workflows to build — start to have a clear logic.
 
-----
+.. seealso::
 
-Where to go for more information
-----------------------------------
+   :doc:`What is COmanage Registry? </about/what-is-registry>`
+      If you haven't read the overview yet.
 
-- :doc:`What is COmanage Registry? </about/what-is-registry>` — if you haven't
-  read the overview yet
-- :doc:`Roles and Permissions </understanding/roles>` — who can do what in
-  Registry
-- :doc:`Planning Your Implementation </understanding/planning>` — working through
-  your organization's needs before you start configuring
-- :doc:`Managing People in Registry </using/people/managing-people>` — how
-  person records and external identities work in practice
-- `COmanage Registry Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_
-  — detailed reference documentation
+   :doc:`Roles and Permissions </understanding/roles>`
+      Who can do what in Registry.
+
+   :doc:`Planning Your Implementation </understanding/planning>`
+      Working through your organization's needs before you start configuring.
+
+   :doc:`Managing People in Registry </using/people/managing-people>`
+      How person records and external identities work in practice.
+
+   `COmanage Registry Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_
+      Detailed reference documentation.
