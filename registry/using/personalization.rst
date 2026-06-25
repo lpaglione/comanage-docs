@@ -30,13 +30,11 @@ Additional Personalization features — including CSS theming, dashboards,
 navigation links, and localization — are being completed for v5. See
 `Coming to v5`_ below.
 
-----
+.. sidebar:: On this page
 
-.. contents:: On this page
-   :local:
-   :depth: 1
-
-----
+   .. contents::
+      :local:
+      :depth: 1
 
 Visual Identity and Content
 -----------------------------
