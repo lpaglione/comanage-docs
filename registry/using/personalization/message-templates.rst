@@ -53,7 +53,7 @@ Each Message Template belongs to a **Context** — a label that groups templates
 by the situations in which they are used. Registry uses Contexts to match the
 right template to the right event. The available Contexts are:
 
-**Authenticator** *(available as of v5.2.0)*
+**Authenticator** :bdg-secondary:`Available: v5.2.0`
    Used when an Authenticator (password, SSH key, etc.) has been updated for a
    Person. Allows you to notify members when their credentials change.
 

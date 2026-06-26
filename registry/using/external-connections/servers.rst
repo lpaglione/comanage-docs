@@ -42,7 +42,7 @@ The sections below describe the configuration for each server type.
 HTTP Servers
 -------------
 
-HTTP Servers define connections to resources accessed via HTTP or HTTPS. They
+:bdg-success:`New in v5` :bdg-secondary:`Available: v5.1.0` HTTP Servers define connections to resources accessed via HTTP or HTTPS. They
 are used by any plugin or feature that needs to make web requests to a
 configured endpoint — including the API Source External Identity Source Plugin
 and, as a foundation, Match Servers (see below).
@@ -57,12 +57,10 @@ and, as a foundation, Match Servers (see below).
 - **Disable SSL Certificate Verification** — useful for test environments where
   valid certificates are not in place; not recommended for production
 
-*Available as of Registry v5.1.0.*
-
 Match Servers
 --------------
 
-Match Servers configure connections to servers implementing the
+:bdg-success:`New in v5` :bdg-secondary:`Available: v5.1.0` Match Servers configure connections to servers implementing the
 `TAP Identity Match Protocol <https://github.internet2.edu/api-schema/id-match-api/blob/draft/id-match-api.adoc>`_.
 They are used when the Pipeline External Match Strategy is configured to call
 out to an external identity matching service (such as Internet2 Match) to
@@ -77,12 +75,14 @@ in the Technical Manual for details on attribute configuration.
 
 **Plugin:** ``CoreServer.MatchServers``
 
-*Match Servers available as of v5.1.0. Match Server Attributes available as of v5.2.0.*
+.. note::
+
+   Match Server Attributes configuration (mapping attributes for matching queries) is available as of v5.2.0.
 
 OAuth2 Servers
 ---------------
 
-OAuth2 Servers configure connections to OAuth 2.0 authorization servers. They
+:bdg-success:`New in v5` :bdg-secondary:`Available: v5.2.0` OAuth2 Servers configure connections to OAuth 2.0 authorization servers. They
 are used by plugins that authenticate to external APIs via OAuth2 — for example,
 the ORCID Source Plugin uses OAuth2 to authenticate to the ORCID Member API.
 
@@ -108,8 +108,6 @@ attempting to obtain a token.
    authentication errors.
 
 **Plugin:** ``CoreServer.Oauth2Servers``
-
-*Available as of Registry v5.2.0.*
 
 SMTP Servers
 -------------

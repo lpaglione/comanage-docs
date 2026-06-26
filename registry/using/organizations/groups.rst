@@ -95,7 +95,7 @@ System Groups with specific purposes.
    Administrator sets the initial CO Administrator by adding them to
    ``CO:admins``.
 
-**Approvers Groups** *(available as of Registry v5.2.0)*
+**Approvers Groups** :bdg-success:`New in v5` :bdg-secondary:`Available: v5.2.0`
    Approvers Groups are used during Enrollment Flows to determine who may
    approve a petition. The CO-level Approvers Group (``CO:approvers``) is
    created automatically with the CO, and COU-level approvers groups are
@@ -107,7 +107,7 @@ System Groups with specific purposes.
    ``CO:members:all``, and their COU-specific equivalents. They cannot be
    manually manipulated.
 
-**MFA Exemption Groups** *(available as of Registry v5.2.0)*
+**MFA Exemption Groups** :bdg-success:`New in v5` :bdg-secondary:`Available: v5.2.0`
    MFA Exemption Groups (``CO:mfaexempt``) control access to the Registry
    application itself, specifically to exempt certain People from multi-factor
    authentication requirements when accessing Registry. These Groups exist only
@@ -115,7 +115,7 @@ System Groups with specific purposes.
    automatically created, you can create them as Standard Groups and nest them
    into the CO-level Group.
 
-**Owners Groups**
+**Owners Groups** :bdg-success:`New in v5` :bdg-secondary:`Available: v5.0.0`
    Every Standard Group has a corresponding Owners Group, created automatically
    when the Standard Group is created. Group Owners (the people who can manage
    group membership) are managed by adding them to the Owners Group.
@@ -211,9 +211,7 @@ nested member, the nesting itself must be removed.
 Group Hierarchy
 ----------------
 
-*(Available as of Registry v5.2.0)*
-
-Standard Groups can be organized into a parent/child hierarchy by assigning a
+:bdg-success:`New in v5` :bdg-secondary:`Available: v5.2.0` Standard Groups can be organized into a parent/child hierarchy by assigning a
 **Parent Group** to a Standard Group. Hierarchy can be used to reflect
 organizational structure within your Groups namespace, but it operates
 independently of Group Nestings — being a child of a Group does not

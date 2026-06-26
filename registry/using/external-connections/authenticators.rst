@@ -10,7 +10,7 @@ Authenticators
       :depth: 1
 
 
-An **Authenticator** is a credential that your collaboration manages directly —
+:bdg-secondary:`Available: v5.2.0` An **Authenticator** is a credential that your collaboration manages directly —
 a password, an SSH key, or another credential type — that Registry stores and
 provisions to downstream systems. Unlike identity attributes that flow in from
 external sources, Authenticators belong to the collaboration itself: they are
@@ -25,8 +25,7 @@ credential data they need. This means Authenticators and Provisioning work
 together: you configure an Authenticator type, and a Provisioner Plugin writes
 it to the appropriate target.
 
-Authenticators have been part of Registry since v3.1.0. They are available in
-Registry v5 as of v5.2.0. For the full technical reference, see
+Authenticators have been part of Registry since v3.1.0. For the full technical reference, see
 `Registry Authenticators <https://spaces.at.internet2.edu/spaces/COmanage/pages/350160332/Registry+Authenticators>`_
 in the Technical Manual.
 

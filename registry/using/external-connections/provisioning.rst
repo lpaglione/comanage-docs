@@ -92,7 +92,7 @@ The Provisioning Mode controls when and how Registry sends data to a target.
    Use for targets where near-real-time updates are important and you can tolerate
    occasional missed updates on failure.
 
-**Queue** *(available as of v5.2.0)*
+**Queue** :bdg-secondary:`Available: v5.2.0`
    Changes are queued, and the Provisioner Job processes the queue on the next
    scheduled run. Supports retry with configurable Retry Interval and Max
    Retries.
@@ -100,7 +100,7 @@ The Provisioning Mode controls when and how Registry sends data to a target.
    Use for targets where eventual consistency is acceptable and resilience to
    transient failures matters.
 
-**Queue on Error** *(available as of v5.2.0)*
+**Queue on Error** :bdg-secondary:`Available: v5.2.0`
    Registry tries immediately, like Immediate mode. If provisioning fails, the
    failed attempt is queued for retry by the Provisioner Job.
 
@@ -159,14 +159,14 @@ lower order numbers run first (e.g., Order 1 runs before Order 2).
 Provisioning Keys
 ------------------
 
-When a Provisioner Plugin assigns or generates an identifier for a Person or
+:bdg-secondary:`Available: v5.2.0` When a Provisioner Plugin assigns or generates an identifier for a Person or
 Group in the target system (such as a unique row ID in a database or a
 distinguished name in LDAP), the plugin can return that value to Registry as
 a **Provisioning Key**. Registry stores it as an Identifier on the entity,
 flagged as a Provisioning Key and linked to the Provisioning Target that
 created it.
 
-Provisioning Keys are available as of v5.2.0. While they can technically be
+While Provisioning Keys can technically be
 edited via the entity's Identifiers, doing so is not recommended — editing a
 Provisioning Key may interfere with the plugin's ability to find the record on
 subsequent provisioning runs.

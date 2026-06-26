@@ -145,7 +145,7 @@ COU Administrators of a parent COU also have admin access to any child COUs.
 6. Support Desk and Helpdesk Roles
 ------------------------------------
 
-Registry v5 introduces dedicated roles for staff who need to look up person
+:bdg-success:`New in v5` Registry introduces dedicated roles for staff who need to look up person
 information without having full administrative authority.
 
 **Support Desk** personnel have full view access into all People records across

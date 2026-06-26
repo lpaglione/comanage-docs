@@ -51,9 +51,7 @@ Several Mostly Static Pages are created automatically with each CO for default
 error and enrollment handoff behavior. You can edit their content to match your
 organization's language and policies.
 
-**Mostly Static Resources** *(available as of v5.3.0)*
-
-Mostly Static Resources provide a media library for uploading images and other
+:bdg-success:`New in v5` :bdg-secondary:`Available: v5.3.0` **Mostly Static Resources** provide a media library for uploading images and other
 files that can be referenced from Mostly Static Pages and Themes. Resources are
 served at a stable URL within your CO.
 
@@ -71,8 +69,7 @@ Communication
 **Message Templates**
 
 Message Templates are reusable email content structures that Registry uses for
-notifications, enrollment events, email address verification, and (as of v5.2.0)
-Authenticator updates. Each template belongs to a Context that determines where
+notifications, enrollment events, email address verification, and Authenticator updates. Each template belongs to a Context that determines where
 it will be used, supports both plain text and HTML bodies, and can include
 substitution tokens that are replaced with relevant values when the email is
 sent.

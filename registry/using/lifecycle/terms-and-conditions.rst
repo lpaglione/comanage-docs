@@ -10,7 +10,7 @@ Terms and Conditions
       :depth: 1
 
 
-When people enroll in your organization, they often need to agree to a policy —
+:bdg-secondary:`Available: v5.2.0` When people enroll in your organization, they often need to agree to a policy —
 acceptable use, data handling, research participation, membership terms.
 **Terms and Conditions** let you present one or more policy documents to people
 at appropriate points in their relationship with the CO, and track that they have
@@ -24,11 +24,6 @@ automatically invalidated when the document content changes.
 For the full technical reference, see
 `Registry PE Terms and Conditions <https://spaces.at.internet2.edu/spaces/COmanage/pages/377389135/Registry+PE+Terms+and+Conditions>`_
 in the Technical Manual.
-
-.. note::
-
-   Terms and Conditions are available as of Registry v5.2.0. The feature existed
-   in Registry v4 but was not included in v5.0.x or v5.1.x.
 
 Configuring Terms and Conditions
 ----------------------------------

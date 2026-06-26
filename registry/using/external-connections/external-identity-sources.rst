@@ -158,7 +158,7 @@ available from the External Identity's gear menu on the Person record.
    record. Whether it reattaches to the same Person depends on the Pipeline's
    Match Strategy.
 
-**Adopt** *(available as of v5.1.0)*
+**Adopt** :bdg-success:`New in v5` :bdg-secondary:`Available: v5.1.0`
    Converts an External Identity to a Registry-native record. Adoption unlinks
    the Person's attributes from the source — they become read/write rather than
    read-only, and Registry becomes the authoritative system for those records.

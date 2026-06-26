@@ -82,7 +82,7 @@ by the **Match Strategy**.
    number or student ID) that you expect to be already attached to Person records
    from previous enrollments or imports.
 
-**External** *(available as of v5.2.0)*
+**External** :bdg-secondary:`Available: v5.2.0`
    Registry calls an external matching service (such as Internet2 Match) to
    determine if the incoming record corresponds to an existing Person. See
    `Identity Match Integration <https://spaces.at.internet2.edu/spaces/COmanage/pages/338788374/Identity+Match+Integration>`_
@@ -114,7 +114,7 @@ Sync Configuration
 Once a match is found (or a new Person created), the Pipeline applies the
 following sync settings to control how data is written to Registry.
 
-**Person Status on Create** *(configurable as of v5.2.0)*
+**Person Status on Create** :bdg-secondary:`Available: v5.2.0`
    When the Pipeline creates a new Person record, this is its initial status.
    Status will typically be recalculated quickly once Person Roles are created,
    but this setting controls the brief window before that happens.
@@ -143,7 +143,7 @@ following sync settings to control how data is written to Registry.
    when looking up the corresponding Person records in Registry. If this setting
    is not configured, Manager and Sponsor relationships will not be synced.
 
-**Flag All Email Addresses Verified** *(available as of v5.1.0)*
+**Flag All Email Addresses Verified** :bdg-secondary:`Available: v5.1.0`
    By default, email address verification status passes through from the source.
    Enabling this flag marks all Email Addresses from this source as verified on
    the Person record, regardless of what the source asserts.

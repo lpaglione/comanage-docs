@@ -16,13 +16,13 @@ alongside the Registry interface — a policy your members must acknowledge befo
 completing enrollment, an error message that tells them what to do when something
 goes wrong, a help page explaining what the enrollment process involves.
 
-**Mostly Static Pages** (available as of v5.1.0) solve this by letting you
+:bdg-secondary:`Available: v5.1.0` **Mostly Static Pages** solve this by letting you
 publish simple content pages that display within Registry's own look and feel —
 using the same navigation, header, footer, and CSS theme as the rest of the
 interface. Administrators create and edit page content through the Registry
 configuration interface, with no filesystem access required.
 
-**Mostly Static Resources** (available as of v5.3.0) extend this with a media
+:bdg-success:`New in v5` :bdg-secondary:`Available: v5.3.0` **Mostly Static Resources** extend this with a media
 library for uploading images and files that can be referenced from pages and
 themes, served at stable URLs within your CO.
 

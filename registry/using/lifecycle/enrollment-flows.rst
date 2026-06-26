@@ -10,7 +10,7 @@ Enrollment Flows
       :depth: 1
 
 
-Every organization has one or more ways of bringing new people into that
+:bdg-warning:`Redesigned in v5` :bdg-secondary:`Available: v5.1.0` Every organization has one or more ways of bringing new people into that
 organization — applications, invitations, intakes, signups. These processes
 vary significantly: some require approval, some require email verification, some
 involve collecting a specific set of attributes, some are immediate and others
@@ -33,8 +33,7 @@ in the Technical Manual.
 
 .. note::
 
-   Enrollment Flows were completely redesigned for v5 and are **available as of
-   v5.1.0**. They are not available in Registry v5.0.x.
+   Enrollment Flows are **not available in Registry v5.0.x**.
 
 Enrollment Flow Actors
 -----------------------
@@ -76,7 +75,7 @@ for the Enrollee before the Flow begins. This supports invitation-style Flows,
 where the collected address is used to hand off the Flow to the Enrollee. The
 address does not automatically become part of the Person record.
 
-**Enable People Picker for Self Service** *(v5.2.0)* — enables the People Picker
+**Enable People Picker for Self Service** :bdg-secondary:`Available: v5.2.0` — enables the People Picker
 API for unauthenticated Petitioners associated with this Flow.
 
 **Redirect on Duplicate** — when a Petition is flagged as a duplicate, the Actor
@@ -87,16 +86,16 @@ or to the ``duplicate-landing`` Mostly Static Page if none is configured.
 last step is redirected to the configured URL. Useful for a "What's next?"
 landing page with follow-up instructions.
 
-**Finalization Message Template** *(v5.2.0)* — if an Enrollee email address was
+**Finalization Message Template** :bdg-secondary:`Available: v5.2.0` — if an Enrollee email address was
 collected, Registry sends a message using this template (of context Enrollment
 Finalization) when the Petition is finalized. If no address was collected, a
 Notification is sent to the Enrollee Person instead (delivery via email depends
 on a configured email address on the Person record).
 
-**Notification Group** *(v5.2.0)* — all members of the specified Group receive a
+**Notification Group** :bdg-secondary:`Available: v5.2.0` — all members of the specified Group receive a
 Notification whenever any Step in this Flow is completed.
 
-**Group Notification Message Template** *(v5.2.0)* — the Message Template (of
+**Group Notification Message Template** :bdg-secondary:`Available: v5.2.0` — the Message Template (of
 context Enrollment Step Completed) used for Notifications to the Notification
 Group.
 
@@ -133,7 +132,7 @@ When an Actor Type of Approver is used, a Group must be identified to determine
 who may act as Approvers for that Step. Approvers do not need to be
 administrators. The Approver Group is resolved in this order:
 
-1. The Approver Group configured on the Step itself, if set *(v5.2.0)*.
+1. :bdg-secondary:`Available: v5.2.0` The Approver Group configured on the Step itself, if set.
 2. If a COU has been set for the Petition, the COU-specific Approvers Group.
 3. If no COU is set, the CO-wide Approvers Group.
 
