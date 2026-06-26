@@ -16,15 +16,15 @@ alongside the Registry interface — a policy your members must acknowledge befo
 completing enrollment, an error message that tells them what to do when something
 goes wrong, a help page explaining what the enrollment process involves.
 
-:bdg-secondary:`Available: v5.1.0` **Mostly Static Pages** solve this by letting you
-publish simple content pages that display within Registry's own look and feel —
-using the same navigation, header, footer, and CSS theme as the rest of the
-interface. Administrators create and edit page content through the Registry
-configuration interface, with no filesystem access required.
+**Mostly Static Pages** solve this by letting you publish simple content pages
+that display within Registry's own look and feel — using the same navigation,
+header, footer, and CSS theme as the rest of the interface. Administrators
+create and edit page content through the Registry configuration interface, with
+no filesystem access required.
 
-:bdg-success:`New in v5` :bdg-secondary:`Available: v5.3.0` **Mostly Static Resources** extend this with a media
-library for uploading images and files that can be referenced from pages and
-themes, served at stable URLs within your CO.
+**Mostly Static Resources** extend this with a media library for uploading
+images and files that can be referenced from pages and themes, served at stable
+URLs within your CO.
 
 For the full technical reference, see
 `Mostly Static Pages <https://spaces.at.internet2.edu/spaces/COmanage/pages/318570826/Mostly+Static+Pages>`_
@@ -34,6 +34,9 @@ in the Technical Manual.
 
 Mostly Static Pages
 ---------------------
+
+:bdg-secondary:`Available: v5.1.0` Mostly Static Pages are managed through the
+Registry configuration interface — no filesystem access required.
 
 **What they're for**
 
@@ -124,9 +127,10 @@ Consider updating the default pages early in your Registry setup. In particular:
 Mostly Static Resources
 ------------------------
 
-Mostly Static Resources (v5.3.0) provide a media library for your CO. You can
-upload images and other files that are then served at stable, public URLs within
-your CO — useful for images referenced in Mostly Static Pages or in CSS themes.
+:bdg-success:`New in v5` :bdg-secondary:`Available: v5.3.0` Mostly Static
+Resources provide a media library for your CO. You can upload images and other
+files that are then served at stable, public URLs within your CO — useful for
+images referenced in Mostly Static Pages or in CSS themes.
 
 **Adding resources**
 

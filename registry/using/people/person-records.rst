@@ -28,6 +28,17 @@ person-level data is stored in multi-valued related records so that, for
 example, a single person can have more than one name, more than one identifier,
 or more than one email address.
 
+In the Registry administrative interface, all of a Person's data is displayed
+on the **Person Canvas** :bdg-warning:`Redesigned in v5` — a single screen
+that brings together the attributes listed below alongside the person's group
+memberships, linked External Identities, Authenticator status, and provisioning
+history. The Canvas is the primary workspace for administrators managing
+individual People.
+
+.. TODO: The Person Canvas has enough depth to warrant its own dedicated
+   section on this page (layout, per-section actions, navigation). Expand
+   once developer review and v5 screenshots are complete.
+
 **Names**
    Every Person must have at least one name, and exactly one name must be
    designated as the **primary name**. Names can be encoded in any language

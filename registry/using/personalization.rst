@@ -51,7 +51,9 @@ Several Mostly Static Pages are created automatically with each CO for default
 error and enrollment handoff behavior. You can edit their content to match your
 organization's language and policies.
 
-:bdg-success:`New in v5` :bdg-secondary:`Available: v5.3.0` **Mostly Static Resources** provide a media library for uploading images and other
+**Mostly Static Resources** :bdg-success:`New in v5` :bdg-secondary:`Available: v5.3.0`
+
+Mostly Static Resources provide a media library for uploading images and other
 files that can be referenced from Mostly Static Pages and Themes. Resources are
 served at a stable URL within your CO.
 

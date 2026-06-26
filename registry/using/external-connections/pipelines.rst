@@ -114,7 +114,7 @@ Sync Configuration
 Once a match is found (or a new Person created), the Pipeline applies the
 following sync settings to control how data is written to Registry.
 
-**Person Status on Create** :bdg-secondary:`Available: v5.2.0`
+**Person Status on Create** :bdg-success:`New in v5` :bdg-secondary:`Available: v5.2.0`
    When the Pipeline creates a new Person record, this is its initial status.
    Status will typically be recalculated quickly once Person Roles are created,
    but this setting controls the brief window before that happens.
@@ -143,7 +143,7 @@ following sync settings to control how data is written to Registry.
    when looking up the corresponding Person records in Registry. If this setting
    is not configured, Manager and Sponsor relationships will not be synced.
 
-**Flag All Email Addresses Verified** :bdg-secondary:`Available: v5.1.0`
+**Flag All Email Addresses Verified** :bdg-success:`New in v5` :bdg-secondary:`Available: v5.1.0`
    By default, email address verification status passes through from the source.
    Enabling this flag marks all Email Addresses from this source as verified on
    the Person record, regardless of what the source asserts.
@@ -151,7 +151,7 @@ following sync settings to control how data is written to Registry.
 Frozen Attributes
 ------------------
 
-By default, every time the Pipeline syncs a record from the source, it
+:bdg-success:`New in v5` By default, every time the Pipeline syncs a record from the source, it
 overwrites the corresponding Person-level attribute with the source value. This
 keeps Registry in sync with the System of Record.
 
@@ -196,7 +196,7 @@ service. The right approach depends on your specific integration.
 Extending Pipelines with Plugins
 ----------------------------------
 
-Data flowing through a Pipeline can be modified using **Pipeline Plugins**,
+:bdg-success:`New in v5` Data flowing through a Pipeline can be modified using **Pipeline Plugins**,
 which are attached to the Pipeline via **Flanges**. A Flange connects a Plugin
 to a specific **Integration Point** — a defined location within the Pipeline
 flow where the Plugin is called.
