@@ -39,8 +39,8 @@ For the full technical reference, see
 `Registry PE External Identity Sources <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743514/Registry+PE+External+Identity+Sources>`_
 in the Technical Manual.
 
-Configuring an External Identity Source
------------------------------------------
+1. Configuring an External Identity Source
+------------------------------------------
 
 Before adding an External Identity Source, create a suitable Pipeline if one
 does not already exist. See :ref:`ec-pipelines` for guidance.
@@ -56,8 +56,8 @@ Once a Pipeline is in place:
    identifier is passed to the plugin to distinguish between source systems.
 6. Click **Save**, then configure the plugin-specific settings that appear.
 
-Sync Modes
------------
+2. Sync Modes
+-------------
 
 Each External Identity Source has a Status that controls how records are synced
 from the source into Registry. Choose the sync mode that matches how you want
@@ -95,8 +95,8 @@ records to flow.
    Disable a source when it is being reconfigured, during maintenance, or before
    running the Adopter Job (see Adoption, below).
 
-Syncing Records
-----------------
+3. Syncing Records
+------------------
 
 **Via Sync Job**
 
@@ -124,8 +124,8 @@ Administrators can manually search a source and sync individual records:
 
    Not all plugins support direct record retrieval and therefore manual syncing.
 
-Managing Synced Records
-------------------------
+4. Managing Synced Records
+--------------------------
 
 Once a record is synced into Registry, several administrative actions are
 available from the External Identity's gear menu on the Person record.
@@ -176,8 +176,8 @@ available from the External Identity's gear menu on the Person record.
    running it, set the source Status to Disabled to prevent unintentional data
    transformations.
 
-Configuration Options
-----------------------
+5. Configuration Options
+------------------------
 
 **Hashing Source Records**
 
@@ -206,8 +206,8 @@ unchanged. Enabling **Suppress No-op Logs** prevents Job History Records from
 being created for entries that have not changed. This reduces noise in Operations
 views for high-volume sources.
 
-Available Plugins
-------------------
+6. Available Plugins
+--------------------
 
 .. note::
 
@@ -231,8 +231,8 @@ See
 `External Identity Source Plugins (PE) <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743750/External+Identity+Source+Plugins+PE>`_
 in the Technical Manual for the technical specification.
 
-Technical Reference
---------------------
+7. Technical Reference
+----------------------
 
 .. note::
 
@@ -248,8 +248,8 @@ Technical Reference
    `Registry PE External Identity Sources <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743514/Registry+PE+External+Identity+Sources>`_
    in the Technical Manual for links to the relevant database table documentation.
 
-Changes from v4
-----------------
+8. Changes from v4
+------------------
 
 If you are migrating from Registry v4, the following changes apply:
 

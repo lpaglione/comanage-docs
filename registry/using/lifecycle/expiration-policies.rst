@@ -33,8 +33,8 @@ population-scale lifecycle management.
    `Registry community resources <https://spaces.at.internet2.edu/spaces/COmanage>`_
    for v5 updates.
 
-What Expiration Policies Do
-----------------------------
+1. What Expiration Policies Do
+------------------------------
 
 An Expiration Policy defines a rule of the form: when a Person Role meets
 condition X, change its status to Y. Conditions typically involve the Role's
@@ -53,8 +53,8 @@ has ended, Policies can:
 Each of these transitions triggers reprovisioning, so downstream systems
 automatically reflect the changing access at each stage.
 
-Running Expiration Policies
------------------------------
+2. Running Expiration Policies
+------------------------------
 
 Expiration Policies are triggered by a scheduled background job. The job
 processes all configured Policies for a CO and applies any resulting status
@@ -65,8 +65,8 @@ the start of a new day.
 For job configuration and scheduling details, see the Registry PE Technical
 Manual (Jobs section) and :ref:`using-operations`.
 
-Relationship to Validity Dates
---------------------------------
+3. Relationship to Validity Dates
+---------------------------------
 
 Expiration Policies and validity dates work together but serve different
 purposes. See :ref:`lifecycle-status-and-validity` for the full status model.
@@ -86,8 +86,8 @@ Both mechanisms can coexist in the same deployment. Many deployments use validit
 dates for straightforward cases and Expiration Policies for workflows that need
 more control.
 
-Changes from v4
-----------------
+4. Changes from v4
+------------------
 
 - **Expiration Policies exist in Registry v5** and are referenced in the v5
   Technical Reference as a mechanism for changing Person status. However, the

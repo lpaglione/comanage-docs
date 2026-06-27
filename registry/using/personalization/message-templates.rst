@@ -28,8 +28,8 @@ For the full technical reference, see
 `Registry Message Templates <https://spaces.at.internet2.edu/spaces/COmanage/pages/297862258/Registry+Message+Templates>`_
 in the Technical Manual.
 
-How Message Templates Work
----------------------------
+1. How Message Templates Work
+-----------------------------
 
 Message Templates are defined per-CO, at **ALL > Configuration > Message
 Templates**. When an event occurs that would send a notification, Registry looks
@@ -46,8 +46,8 @@ SMTP relay is configured as a Server in the External Connections area; see
 default reply-to set on the SMTP Server, allowing different templates to route
 replies to different inboxes.
 
-Contexts
----------
+2. Contexts
+-----------
 
 Each Message Template belongs to a **Context** — a label that groups templates
 by the situations in which they are used. Registry uses Contexts to match the
@@ -82,8 +82,8 @@ right template to the right event. The available Contexts are:
    Used for Email Address verifications — when Registry sends a verification
    link to confirm that a Person controls an email address.
 
-Defining a Template
----------------------
+3. Defining a Template
+----------------------
 
 To create a Message Template, navigate to **ALL > Configuration > Message
 Templates > Add a New Message Template** and provide:
@@ -105,8 +105,8 @@ Templates > Add a New Message Template** and provide:
 
 You can provide both Plain Text and HTML bodies, either alone or together.
 
-Substitution Tokens
---------------------
+4. Substitution Tokens
+----------------------
 
 Message Templates support **substitutions** — tokens in the message subject and
 body that Registry replaces with values specific to the notification being sent.
@@ -170,8 +170,8 @@ tokens are available in templates:
 Plugins may support their own additional substitutions — check the relevant
 Plugin documentation.
 
-Changes from v4
-----------------
+5. Changes from v4
+------------------
 
 Message Templates have been part of Registry since v2.0.0. The concept,
 structure, and substitution mechanism are unchanged. If you are migrating from

@@ -21,8 +21,8 @@ For the full technical reference, see
 `Person and External Identity Status <https://spaces.at.internet2.edu/spaces/COmanage/pages/281018939/Person+and+External+Identity+Status>`_
 in the Technical Manual.
 
-Person and Person Role Status
--------------------------------
+1. Person and Person Role Status
+--------------------------------
 
 Registry maintains status at two levels:
 
@@ -45,8 +45,8 @@ Status can change through several mechanisms:
   an automatic update would produce a different status, unless the Person is
   Locked or the Role is Frozen
 
-Status Values
---------------
+2. Status Values
+----------------
 
 **Active** — the person or role is currently active within the organization.
 Full person, role, and group membership data is provisioned to downstream
@@ -82,8 +82,8 @@ Several additional statuses exist to represent states within Enrollment Flows
 Pending, Duplicate). In Registry v5.2.0 and later, these do not appear on Person
 records because Person records are not created until Petition finalization.
 
-Validity Dates and Automatic Status Transitions
--------------------------------------------------
+3. Validity Dates and Automatic Status Transitions
+--------------------------------------------------
 
 Each Person Role can have a **Valid From** and **Valid Through** date. These
 dates drive automatic status transitions, reducing the need for manual updates
@@ -107,8 +107,8 @@ Validity dates can be collected during an Enrollment Flow, synced from an
 External Identity Source through a Pipeline, or set manually by an administrator
 on the Person Role record.
 
-Locking a Person
------------------
+4. Locking a Person
+-------------------
 
 Locking provides an immediate way to disable a person's entire record when
 needed — for example, when an account is under review or when temporary access
@@ -127,8 +127,8 @@ whether a Person should have access.
 Only a CO or COU administrator can unlock a Person. Enrollment Flows, Pipelines,
 and Expiration Policies cannot override the Locked status.
 
-External Identity Status
--------------------------
+5. External Identity Status
+---------------------------
 
 External Identity Sources can assign statuses to External Identity Roles, which
 then flow into Person Roles via the Pipeline. The statuses available for External
@@ -148,8 +148,8 @@ the backend deletes an External Identity Role entirely, the resulting Person Rol
 status is determined by the Pipeline's Role Status on Delete configuration. See
 :ref:`ec-pipelines` for details.
 
-How Status Affects Provisioning
----------------------------------
+6. How Status Affects Provisioning
+----------------------------------
 
 Status determines what data is sent to downstream systems on the next
 provisioning cycle:
@@ -167,8 +167,8 @@ maintained while the offboarding process is being managed. Only when status
 transitions to Expired or Suspended does provisioning reduce — triggering access
 removal in downstream systems.
 
-Changes from v4
-----------------
+7. Changes from v4
+------------------
 
 - **"Deleted" was renamed "Archived"** in Registry v5.0.0. Person and Role
   records that were in Deleted status in v4 will appear as Archived in v5. If

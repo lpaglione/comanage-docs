@@ -42,8 +42,8 @@ Together, these mechanisms mean Registry doesn't just store identity data at a
 point in time — it actively manages the lifecycle of that data as relationships
 change.
 
-Enrollment Flows
------------------
+1. Enrollment Flows
+-------------------
 
 :bdg-warning:`Redesigned in v5` :bdg-secondary:`Available: v5.1.0` **Enrollment Flows** are Registry's mechanism for bringing new people into a CO
 through interactive, human-driven processes. Every organization has its own
@@ -74,8 +74,8 @@ partial records from accumulating when Petitions are rejected or abandoned.
 
    Learn more about Enrollment Flows →
 
-Terms and Conditions
----------------------
+2. Terms and Conditions
+-----------------------
 
 :bdg-secondary:`Available: v5.2.0` **Terms and Conditions** let you present policy documents to people and track
 their agreement. Each T&C can be configured with an agreement duration (requiring
@@ -94,8 +94,8 @@ agreement on behalf of a person, or revoke an existing agreement.
 
    Learn more about Terms and Conditions →
 
-Status and Validity
---------------------
+3. Status and Validity
+----------------------
 
 **Status** is how Registry represents where a person stands in their lifecycle.
 Each Person Role carries a status, and the overall Person status is calculated
@@ -117,8 +117,8 @@ immediately disable access regardless of Role statuses.
 
    Learn more about Status and Validity →
 
-Expiration Policies
---------------------
+4. Expiration Policies
+----------------------
 
 **Expiration Policies** are rules that automatically manage person status over
 time — for example, moving a person from Active to Grace Period when a Role
@@ -146,8 +146,8 @@ events, making them suitable for managing large populations.
 
 ----
 
-If You Are Migrating from v4
-------------------------------
+5. If You Are Migrating from v4
+-------------------------------
 
 Several significant changes affect lifecycle management when migrating from v4:
 

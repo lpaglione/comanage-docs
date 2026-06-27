@@ -27,8 +27,8 @@ For the full technical reference, see
 `Registry Types <https://spaces.at.internet2.edu/spaces/COmanage/pages/207650961/Registry+Types>`_
 in the Technical Manual.
 
-Which Attributes Use Types
----------------------------
+1. Which Attributes Use Types
+-----------------------------
 
 The following attribute categories support Types in Registry:
 
@@ -44,8 +44,8 @@ The following attribute categories support Types in Registry:
 
 Types apply equally to Person-level and External Identity-level attributes.
 
-Default Types
---------------
+2. Default Types
+----------------
 
 When a new CO is created, Registry automatically creates a default set of Types
 for each supported attribute. This gives you a working starting point without
@@ -61,8 +61,8 @@ future releases as new functionality is added.
 If Types are accidentally deleted, they can be restored using the **Add/Restore
 Default Types** action, which applies to all available attribute types.
 
-Managing Types
----------------
+3. Managing Types
+-----------------
 
 Types are managed via **CO Settings > Types** (or via the Identifier Type,
 Email Address Type, etc. sub-menus, depending on your navigation).
@@ -85,8 +85,8 @@ Registry's changelog behavior, so it still cannot be deleted. Suspend a Type
 rather than trying to delete it if it should no longer be available for new
 assignments.
 
-Type-Specific Options
-----------------------
+4. Type-Specific Options
+------------------------
 
 Some attribute Types have additional configuration:
 
@@ -104,8 +104,8 @@ Some attribute Types have additional configuration:
    terminology differs from the standard values, the mapping lets you use your
    own labels internally while still exporting standard values downstream.
 
-Provisioning and Types
------------------------
+5. Provisioning and Types
+-------------------------
 
 Types that are provisioned to downstream systems carry their database **Value**
 (not their display Name). When configuring integrations, make sure the Values
@@ -118,8 +118,8 @@ Registry also provisions Type definitions as a first-class provisionable object
 receive the full list of your CO's Types and use them to configure the target
 system accordingly.
 
-Changes from v4
-----------------
+6. Changes from v4
+------------------
 
 If you are migrating from Registry v4:
 

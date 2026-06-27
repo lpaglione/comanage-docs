@@ -26,8 +26,8 @@ in the Technical Manual. For v4-era background, see also
 `CO Groups and Group Memberships <https://spaces.at.internet2.edu/spaces/COmanage/pages/102304360/CO+Groups+and+Group+Memberships>`_
 in the v4 Technical Manual.
 
-Standard Groups vs System Groups
-----------------------------------
+1. Standard Groups vs System Groups
+-----------------------------------
 
 There are two broad categories of Groups in Registry:
 
@@ -45,8 +45,8 @@ There are two broad categories of Groups in Registry:
    include Automatic Groups, Admin Groups, Approvers Groups, Members Groups,
    MFA Exemption Groups, and Owners Groups (each described below).
 
-Open vs Closed Groups
-----------------------
+2. Open vs Closed Groups
+------------------------
 
 **Open Groups** allow any CO member to self-join. No administrator action is
 required for a person to become a member.
@@ -54,8 +54,8 @@ required for a person to become a member.
 **Closed Groups** restrict membership management to the group's owners and CO
 administrators. Members must be added explicitly.
 
-Automatic Groups
------------------
+3. Automatic Groups
+-------------------
 
 Automatic Groups are managed entirely by Registry — memberships are updated
 automatically as people's statuses change. Administrators cannot manually
@@ -82,8 +82,8 @@ are automatically deprovisioned.
 
    Identifiers cannot be assigned to Automatic CO Groups.
 
-Special Groups
----------------
+4. Special Groups
+-----------------
 
 In addition to Automatic Groups, Registry creates and maintains several other
 System Groups with specific purposes.
@@ -131,8 +131,8 @@ System Groups with specific purposes.
    as Owners, use a Group Nesting to populate the Owners Group from a Standard
    Group.
 
-Group Memberships
-------------------
+5. Group Memberships
+--------------------
 
 Group Memberships attach at the Person level and can be managed in several
 ways:
@@ -152,8 +152,8 @@ ways:
    validity date takes effect, nested Group memberships will not automatically
    propagate — the ``ValidateGroupMember`` job must run first.
 
-Group Nestings
----------------
+6. Group Nestings
+-----------------
 
 A **Group Nesting** causes the members of one Group (the *source* Group) to
 be automatically included as members of another Group (the *target* Group).
@@ -208,8 +208,8 @@ nested member, the nesting itself must be removed.
    reconcile related Groups — if Group A nests Group B which nests Group C,
    reconciling C does not cascade to B or A.
 
-Group Hierarchy
-----------------
+7. Group Hierarchy
+------------------
 
 :bdg-success:`New in v5` :bdg-secondary:`Available: v5.2.0` Standard Groups can be organized into a parent/child hierarchy by assigning a
 **Parent Group** to a Standard Group. Hierarchy can be used to reflect
@@ -238,16 +238,16 @@ automatically make you a member of the parent Group.
    defines organizational structure without affecting memberships; Nestings
    manage membership propagation without implying hierarchy.
 
-Identifiers for Groups
------------------------
+8. Identifiers for Groups
+-------------------------
 
 Identifiers can be attached to Standard Groups, either manually or via
 Identifier Assignment. This is useful when provisioning Groups to downstream
 systems that require a stable external identifier. Identifiers cannot be
 assigned to Automatic CO Groups.
 
-Group Permissions Summary
---------------------------
+9. Group Permissions Summary
+----------------------------
 
 The following table summarizes who can perform key Group-related actions:
 
@@ -306,8 +306,8 @@ The following table summarizes who can perform key Group-related actions:
    COU Administrators do not receive any special Group management permissions
    beyond those granted by CO administrator status.
 
-Changes from v4
-----------------
+10. Changes from v4
+-------------------
 
 - **Group Ownership is now managed via Owners Groups** *(as of v5.0.0)*.
   In v4, Group owners were tracked as a flag on the Group Membership record

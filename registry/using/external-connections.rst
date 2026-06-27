@@ -50,8 +50,8 @@ repeating connection details.
    Pipelines) → Registry Person record → outbound (Provisioning) flow, with
    Authenticators and Identifier Assignment shown alongside.
 
-Inbound: External Identity Sources
-------------------------------------
+1. Inbound: External Identity Sources
+-------------------------------------
 
 An **External Identity Source** defines the connection between Registry and one
 external system of record. It tells Registry where to look for person data, which
@@ -90,8 +90,8 @@ in the Technical Manual.
 
    Learn more about External Identity Sources →
 
-Inbound: Pipelines
--------------------
+2. Inbound: Pipelines
+---------------------
 
 A **Pipeline** controls how data from an External Identity Source flows into
 Registry. Every External Identity Source requires a Pipeline. The Pipeline
@@ -118,8 +118,8 @@ in the Technical Manual.
 
    Learn more about Pipelines →
 
-Outbound: Provisioning
-------------------------
+3. Outbound: Provisioning
+-------------------------
 
 **Provisioning** is the process of exporting Registry data to downstream
 applications, typically to grant or remove access. Registry provisioning is
@@ -176,8 +176,8 @@ in the Technical Manual.
 
    Learn more about Provisioning →
 
-Authenticators
----------------
+4. Authenticators
+-----------------
 
 **Authenticators** are credentials that the CO issues and manages directly —
 passwords, SSH keys, and other credential types. Unlike External Identity data,
@@ -216,8 +216,8 @@ in the Technical Manual.
 
    Learn more about Authenticators →
 
-Identifier Assignment
-----------------------
+5. Identifier Assignment
+------------------------
 
 **Identifier Assignment** automatically generates and assigns identifiers and
 email addresses to entities within a CO. Rather than manually assigning IDs,
@@ -256,8 +256,8 @@ in the Technical Manual.
 
    Learn more about Identifier Assignment →
 
-Configuration: Servers
------------------------
+6. Configuration: Servers
+-------------------------
 
 A **Server** in Registry represents a physical or logical endpoint referenced by
 the CO — a backend system that External Identity Sources, Provisioners, or other
@@ -297,8 +297,8 @@ in the Technical Manual.
 
 .. _ec-v4-transition:
 
-If You Are Migrating from v4
-------------------------------
+7. If You Are Migrating from v4
+-------------------------------
 
 The v4 External Connections area included two outbound features — **Services**
 and **Email Lists** — that do not appear as distinct feature areas in v5.

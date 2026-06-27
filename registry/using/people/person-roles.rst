@@ -24,8 +24,8 @@ For the full technical reference, see
 `Registry Person Roles <https://spaces.at.internet2.edu/spaces/COmanage/pages/219918164/Registry+Person+Roles>`_
 in the Technical Manual.
 
-Role Attributes
-----------------
+1. Role Attributes
+------------------
 
 **Affiliation**
    Every Person Role must be assigned an Affiliation type. Affiliations are
@@ -84,8 +84,8 @@ Role Attributes
    :ref:`lifecycle-status-and-validity` for details on automatic status
    transitions.
 
-Role Ordering
---------------
+2. Role Ordering
+----------------
 
 When a Person has multiple Roles, roles can be ordered within the same Person.
 Role ordering can matter for downstream systems that consume the first or
@@ -95,8 +95,8 @@ affiliation for a directory entry.
 To set the order, edit the Role and assign it an order number. Lower numbers
 indicate higher priority.
 
-Multi-valued Attributes on Roles
-----------------------------------
+3. Multi-valued Attributes on Roles
+-----------------------------------
 
 In addition to the scalar attributes described above, several multi-valued
 attributes can be attached to Person Roles:
@@ -111,8 +111,8 @@ scoped to a specific role rather than the person as a whole. This allows, for
 example, storing a role-specific office phone number separately from the
 person's general contact telephone number.
 
-How Roles Are Created
------------------------
+4. How Roles Are Created
+------------------------
 
 Roles can be created:
 
@@ -128,8 +128,8 @@ Roles can be created:
 - **Manually by an administrator** — an administrator can add a Role to an
   existing Person record from the Person Canvas.
 
-Changes from v4
-----------------
+5. Changes from v4
+------------------
 
 - **The** ``affiliation`` **field was replaced with** ``affiliation_type_id``
   in v5.0.0, reflecting the transition to extended types for affiliations.

@@ -32,8 +32,8 @@ and
 `Mostly Static Resources <https://spaces.at.internet2.edu/spaces/COmanage/pages/409763999/Mostly+Static+Resources>`_
 in the Technical Manual.
 
-Mostly Static Pages
----------------------
+1. Mostly Static Pages
+----------------------
 
 :bdg-secondary:`Available: v5.1.0` Mostly Static Pages are managed through the
 Registry configuration interface — no filesystem access required.
@@ -78,8 +78,8 @@ within your CO. The format is generally ``$REGISTRY/<coid>/<slug>``.
 interface. It has no functional effect currently but may be used in future
 releases.
 
-Default Mostly Static Pages
------------------------------
+2. Default Mostly Static Pages
+------------------------------
 
 When a new CO is created, Registry automatically creates the following Mostly
 Static Pages with default content. These handle common error and workflow states
@@ -124,8 +124,8 @@ Consider updating the default pages early in your Registry setup. In particular:
 - Edit **petition-complete** to confirm next steps or set expectations for
   follow-up.
 
-Mostly Static Resources
-------------------------
+3. Mostly Static Resources
+--------------------------
 
 :bdg-success:`New in v5` :bdg-secondary:`Available: v5.3.0` Mostly Static
 Resources provide a media library for your CO. You can upload images and other
@@ -159,8 +159,8 @@ To use an image resource in a Mostly Static Page body, reference the resource
 URL in a standard HTML ``<img>`` tag. To use it in a CSS theme, reference the
 URL in the appropriate stylesheet rule.
 
-Changes from v4
-----------------
+4. Changes from v4
+------------------
 
 - **Mostly Static Pages are now a standard data model element** as of v5.1.0.
   In earlier versions of v5 (v5.0.x), Mostly Static Pages required filesystem

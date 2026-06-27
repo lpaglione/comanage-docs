@@ -25,8 +25,8 @@ For the full technical reference, see
 `Registry PE Terms and Conditions <https://spaces.at.internet2.edu/spaces/COmanage/pages/377389135/Registry+PE+Terms+and+Conditions>`_
 in the Technical Manual.
 
-Configuring Terms and Conditions
-----------------------------------
+1. Configuring Terms and Conditions
+-----------------------------------
 
 Terms and Conditions are defined via **Configuration > Terms and Conditions**.
 The available settings are:
@@ -51,7 +51,7 @@ The available settings are:
   record (regardless of whether the actual content changed) immediately requires
   a new agreement from all relevant people.
 
-Choosing How to Present T&C Content
+2. Choosing How to Present T&C Content
 --------------------------------------
 
 Content can be provided either via an external URL or via a Mostly Static Page
@@ -69,8 +69,8 @@ enforce a scroll-to-end requirement before the agreement button becomes active.
 The trade-off is that the content now exists as a copy within Registry, so if
 the official document changes, the Mostly Static Page must be updated separately.
 
-Agreement at Enrollment
-------------------------
+3. Agreement at Enrollment
+--------------------------
 
 Collecting T&C agreements as part of an Enrollment Flow requires adding an
 **Agreement Collector** Step to the Flow. The Agreement Collector is an Enroller
@@ -82,14 +82,14 @@ and
 `Agreement Collector Enroller Plugin <https://spaces.at.internet2.edu/spaces/COmanage/pages/377389152/Agreement+Collector+Enroller+Plugin>`_
 in the Technical Manual for plugin-specific configuration.
 
-Agreement at Login
--------------------
+4. Agreement at Login
+---------------------
 
 Agreement at Login — requiring a person to agree (or re-agree) to T&C when
 authenticating to Registry — is **not yet supported** in Registry v5.
 
-Administrative Operations
---------------------------
+5. Administrative Operations
+----------------------------
 
 **Agreeing on behalf of a person**
 
@@ -111,8 +111,8 @@ Platform Administrator who is not registered within the CO would not have a vali
 Person ID for that CO, making it impossible to maintain a proper audit trail of
 the revocation.
 
-Changes from v4
-----------------
+6. Changes from v4
+------------------
 
 - **Terms and Conditions are available as of Registry v5.2.0.** The feature
   existed in Registry v4 but was not included in v5.0.x or v5.1.x.

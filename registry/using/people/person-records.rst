@@ -19,8 +19,8 @@ For the full technical reference, see
 `Registry People <https://spaces.at.internet2.edu/spaces/COmanage/pages/219918161/Registry+People>`_
 in the Technical Manual.
 
-What a Person Record Contains
--------------------------------
+1. What a Person Record Contains
+--------------------------------
 
 The Person record itself carries relatively few top-level attributes — its
 role is to serve as the anchor for a collection of related objects. Most
@@ -100,8 +100,8 @@ individual People.
 **Pronouns**
    An optional field for preferred pronouns.
 
-Person Status
---------------
+2. Person Status
+----------------
 
 A Person's status is a **calculated value** derived from the statuses of the
 Person's Roles. Registry takes the most favorable active status across all of
@@ -117,8 +117,8 @@ applies directly to the Person record.
 For the full explanation of status values and how they interact, see
 :ref:`lifecycle-status-and-validity`.
 
-Managing Person Records
-------------------------
+3. Managing Person Records
+--------------------------
 
 **Viewing a Person**
    From the People listing, select a person to open the Person Canvas. The
@@ -149,8 +149,8 @@ Managing Person Records
    An administrator can manually trigger reprovisioning of a Person to any
    or all configured Provisioning Targets from the Person Canvas.
 
-Searching and Listing People
-------------------------------
+4. Searching and Listing People
+-------------------------------
 
 The People listing provides search and filter tools for finding people within
 the CO. You can search by name, identifier, or email address, and filter by
@@ -159,8 +159,8 @@ status or COU.
 For large COs, searching is strongly preferred over browsing the full list,
 which can become very long.
 
-Changes from v4
-----------------
+5. Changes from v4
+------------------
 
 - **CoPerson was renamed to Person** in Registry v5.0.0. The underlying
   concept is the same; only the terminology changed.

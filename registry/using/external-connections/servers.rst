@@ -25,8 +25,8 @@ For the full technical reference, see
 `Registry Servers <https://spaces.at.internet2.edu/spaces/COmanage/pages/256938867/Registry+Servers>`_
 in the Technical Manual.
 
-Adding a Server
-----------------
+1. Adding a Server
+------------------
 
 Servers are managed via **ALL > Servers > Add a New Server**.
 
@@ -39,8 +39,8 @@ When adding a server:
 
 The sections below describe the configuration for each server type.
 
-HTTP Servers
--------------
+2. HTTP Servers
+---------------
 
 :bdg-secondary:`Available: v5.1.0` HTTP Servers define connections to resources accessed via HTTP or HTTPS. They
 are used by any plugin or feature that needs to make web requests to a
@@ -57,8 +57,8 @@ and, as a foundation, Match Servers (see below).
 - **Disable SSL Certificate Verification** — useful for test environments where
   valid certificates are not in place; not recommended for production
 
-Match Servers
---------------
+3. Match Servers
+----------------
 
 :bdg-secondary:`Available: v5.1.0` Match Servers configure connections to servers implementing the
 `TAP Identity Match Protocol <https://github.internet2.edu/api-schema/id-match-api/blob/draft/id-match-api.adoc>`_.
@@ -79,8 +79,8 @@ in the Technical Manual for details on attribute configuration.
 
    Match Server Attributes configuration (mapping attributes for matching queries) is available as of v5.2.0.
 
-OAuth2 Servers
----------------
+4. OAuth2 Servers
+-----------------
 
 :bdg-secondary:`Available: v5.2.0` OAuth2 Servers configure connections to OAuth 2.0 authorization servers. They
 are used by plugins that authenticate to external APIs via OAuth2 — for example,
@@ -109,8 +109,8 @@ attempting to obtain a token.
 
 **Plugin:** ``CoreServer.Oauth2Servers``
 
-SMTP Servers
--------------
+5. SMTP Servers
+---------------
 
 SMTP Servers configure Registry's outgoing email relay. Registry sends
 notifications, enrollment confirmations, and other messages through this
@@ -136,8 +136,8 @@ SMTP Server configured.
 
 **Plugin:** ``CoreServer.SmtpServers``
 
-SQL Servers
-------------
+6. SQL Servers
+--------------
 
 SQL Servers configure connections to external SQL databases. They are used by
 plugins that read from or write to a database — including the SQL Source
@@ -164,8 +164,8 @@ contributions.
 
 **Plugin:** ``CoreServer.SqlServers``
 
-Kerberos Servers
------------------
+7. Kerberos Servers
+-------------------
 
 Kerberos Servers are provided by the **Kerberos Provisioner Plugin** (not the
 CoreServer plugin) and configure connections to Kerberos Key Distribution
@@ -175,8 +175,8 @@ infrastructure.
 Kerberos Servers are available when the Kerberos Provisioner Plugin is
 installed. See the plugin documentation for configuration details.
 
-Changes from v4
-----------------
+8. Changes from v4
+------------------
 
 If you are migrating from Registry v4, the following changes apply:
 

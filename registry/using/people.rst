@@ -18,8 +18,8 @@ Understanding how Registry models people is the foundation for everything else:
 how enrollment works, how provisioning is scoped, how status is calculated, and
 how your organizational structure maps onto your membership.
 
-How Registry Represents People
---------------------------------
+1. How Registry Represents People
+---------------------------------
 
 Registry uses a layered model to represent a person and their relationships.
 
@@ -58,8 +58,8 @@ which carry the attributes that drive downstream provisioning.
    **Groups** are covered under :ref:`using-organizations`, where they sit
    alongside COs and COUs as part of the organizational structure.
 
-The Person Canvas
-------------------
+2. The Person Canvas
+--------------------
 
 When you view a Person in the Registry administrative interface, you see the
 **Person Canvas** — a comprehensive view of all the information associated with
@@ -78,8 +78,8 @@ view status, and trigger provisioning operations.
 
    Learn more about Person Records →
 
-How People Get Into Registry
-------------------------------
+3. How People Get Into Registry
+-------------------------------
 
 People can enter Registry through any of three paths:
 
@@ -108,8 +108,8 @@ enrollment and later have their record updated via an identity source pipeline.
 
    Learn more about Person Roles →
 
-Notifications
---------------
+4. Notifications
+----------------
 
 Registry includes a notification facility for delivering short messages to
 People and Groups — for example, prompts for approvers to act on a pending

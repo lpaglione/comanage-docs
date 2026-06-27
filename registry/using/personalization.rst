@@ -36,8 +36,8 @@ Additional Personalization features — including CSS theming, dashboards,
 navigation links, and localization — are being completed for v5. See
 `Coming to v5`_ below.
 
-Visual Identity and Content
------------------------------
+1. Visual Identity and Content
+------------------------------
 
 **Mostly Static Pages**
 
@@ -65,8 +65,8 @@ served at a stable URL within your CO.
 
    Learn more about Mostly Static Pages and Resources →
 
-Communication
---------------
+2. Communication
+----------------
 
 **Message Templates**
 
@@ -88,8 +88,8 @@ identity management platform.
 
    Learn more about Message Templates →
 
-Data Model Customization
---------------------------
+3. Data Model Customization
+---------------------------
 
 **Types**
 
@@ -132,8 +132,8 @@ Plugins use when exporting data to downstream systems.
 
 .. _personalization-coming-to-v5:
 
-Coming to v5
--------------
+4. Coming to v5
+---------------
 
 The following Personalization features are available in Registry v4 and are
 being completed for v5 in the coming releases. See :doc:`../transitioning/index`
@@ -171,8 +171,8 @@ in the v4 Technical Manual.
 
 ----
 
-If You Are Migrating from v4
-------------------------------
+5. If You Are Migrating from v4
+-------------------------------
 
 Several v4 Personalization features have changed significantly in v5:
 

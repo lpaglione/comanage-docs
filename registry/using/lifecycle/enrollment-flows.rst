@@ -35,8 +35,8 @@ in the Technical Manual.
 
    Enrollment Flows are **not available in Registry v5.0.x**.
 
-Enrollment Flow Actors
------------------------
+1. Enrollment Flow Actors
+-------------------------
 
 Each participant in an Enrollment Flow plays a role, or **Actor type**:
 
@@ -53,8 +53,8 @@ When a Step is assigned to a different Actor type than the preceding Step, a
 the ``default-handoff`` Mostly Static Page) and the next Actor receives a
 Notification with a link to continue the Flow.
 
-Configuring Enrollment Flows
-------------------------------
+2. Configuring Enrollment Flows
+-------------------------------
 
 New Enrollment Flows are created via **Configuration > Enrollment Flows > Add a
 New Enrollment Flow**. The following settings are configured at the Flow level:
@@ -99,8 +99,8 @@ Notification whenever any Step in this Flow is completed.
 context Enrollment Step Completed) used for Notifications to the Notification
 Group.
 
-Enrollment Flow Steps
-----------------------
+3. Enrollment Flow Steps
+------------------------
 
 Once the Enrollment Flow is saved, a link to add **Steps** becomes available.
 Each Step represents one stage of the process, implemented by a plugin. Steps
@@ -140,7 +140,7 @@ If two consecutive Steps both have an Actor Type of Approver, and the current
 Actor is eligible to approve the second Step, no handoff occurs — the Approver
 moves directly to the next Step without a notification cycle.
 
-Working with Message Templates
+4. Working with Message Templates
 ---------------------------------
 
 Enrollment Flows use :ref:`personalization-message-templates` for handoffs and
@@ -155,8 +155,8 @@ substitution tokens are particularly important:
   templates sent to participants who need to take action — use ``(@ENTRY_URL)``
   instead.
 
-Available Enroller Plugins
----------------------------
+5. Available Enroller Plugins
+-----------------------------
 
 The following plugins are available for use as Enrollment Flow Steps:
 
@@ -196,8 +196,8 @@ For full documentation on each plugin, see
 `Enrollment Flow Plugins (PE) <https://spaces.at.internet2.edu/spaces/COmanage/pages/289113581/Enrollment+Flow+Plugins+PE>`_
 in the Technical Manual.
 
-Running Enrollment Flows
--------------------------
+6. Running Enrollment Flows
+---------------------------
 
 **Starting a Flow**
 
@@ -243,8 +243,8 @@ An unfinalized Petition can be canceled in several ways:
 
 Once canceled, a Petition cannot be restarted.
 
-Primary Names and Enrollment
-------------------------------
+7. Primary Names and Enrollment
+-------------------------------
 
 Registry requires every Person to have a Primary Name at all times. For Flows
 that create a new Person, there is no Primary Name until one is collected and
@@ -257,8 +257,8 @@ will always become the Primary — regardless of which plugin runs first.
 For additional role enrollments (Flows that attach a new Role to an existing
 Person), the Primary Name starts as the existing Person's Primary Name.
 
-Changes from v4
-----------------
+8. Changes from v4
+------------------
 
 The Enrollment Flow feature in v5 is a substantial redesign, not an incremental
 update. If you are migrating from v4, expect to rebuild your Enrollment Flows

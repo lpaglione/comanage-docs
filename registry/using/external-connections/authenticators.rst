@@ -29,8 +29,8 @@ Authenticators have been part of Registry since v3.1.0. For the full technical r
 `Registry Authenticators <https://spaces.at.internet2.edu/spaces/COmanage/pages/350160332/Registry+Authenticators>`_
 in the Technical Manual.
 
-Terminology
-------------
+1. Terminology
+--------------
 
 Registry uses several related terms when discussing Authenticators:
 
@@ -51,8 +51,8 @@ Registry uses several related terms when discussing Authenticators:
    An Authenticator combined with an Identifier — the package of "who you are"
    plus "how you prove it."
 
-Single-Valued vs. Multi-Valued Authenticators
-----------------------------------------------
+2. Single-Valued vs. Multi-Valued Authenticators
+------------------------------------------------
 
 Authenticator Backends can be single-valued or multi-valued, depending on the
 Plugin.
@@ -68,8 +68,8 @@ can hold as many SSH keys as a Person needs. In general, there is no reason to
 instantiate a multi-valued Plugin more than once, though it is technically
 possible.
 
-Administrative Operations
---------------------------
+3. Administrative Operations
+----------------------------
 
 Registry supports the following operations on a Person's Authenticators:
 
@@ -106,8 +106,8 @@ Provisioner Plugins can take appropriate action in the downstream systems.
 Authenticators can also be manually reprovisioned using the standard
 reprovisioning process.
 
-Configuration
---------------
+4. Configuration
+----------------
 
 Authenticators are configured via **Configuration > Authenticators**, where you
 instantiate one or more Authenticator Backends by selecting a Plugin and
@@ -130,8 +130,8 @@ providing the configuration that Plugin requires.
    The Message Template notification option (to notify a Person when their
    Authenticator is updated) is not yet available.
 
-Self-Service and Enrollment
-----------------------------
+5. Self-Service and Enrollment
+------------------------------
 
 Depending on Plugin and configuration, Authenticators can be managed by People
 themselves — setting their own password or uploading their own SSH keys — rather
@@ -146,8 +146,8 @@ to set a credential as part of joining the CO.
    Documentation for Authenticator self-service configuration and Enrollment
    Flow integration is under development.
 
-Using Authenticators to Enable Registry Login
-----------------------------------------------
+6. Using Authenticators to Enable Registry Login
+------------------------------------------------
 
 Because Registry does not validate Authenticators itself, additional
 infrastructure is needed if you want People to use Authenticators to log into
@@ -164,8 +164,8 @@ Registry. The general approach is:
    Identifier flagged for login on the Person record (not the External Identity
    record).
 
-Available Authenticator Types
--------------------------------
+7. Available Authenticator Types
+--------------------------------
 
 .. note::
 
@@ -183,8 +183,8 @@ types. See
 `Writing Registry PE Plugins <https://spaces.at.internet2.edu/spaces/COmanage/pages/250251876/Writing+Registry+PE+Plugins>`_
 in the Technical Manual for the technical specification.
 
-Changes from v4
-----------------
+8. Changes from v4
+------------------
 
 Authenticators have been part of Registry since v3.1.0 and are available in
 v5 as of v5.2.0. The core concept — collaboration-managed credentials stored

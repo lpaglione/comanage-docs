@@ -26,8 +26,8 @@ For the full technical reference, see
 `Registry PE Provisioning <https://spaces.at.internet2.edu/spaces/COmanage/pages/256939260/Registry+PE+Provisioning>`_
 in the Technical Manual.
 
-What Gets Provisioned
-----------------------
+1. What Gets Provisioned
+------------------------
 
 Registry supports provisioning the following types of objects:
 
@@ -61,8 +61,8 @@ Registry supports provisioning the following types of objects:
    Registry Type definitions (custom attribute enumerations) can be provisioned
    to targets that need them, following Active/Inactive eligibility rules.
 
-Configuring Provisioning Targets
-----------------------------------
+2. Configuring Provisioning Targets
+-----------------------------------
 
 Provisioning Targets are managed via **Configuration > Provisioning Targets**.
 
@@ -79,8 +79,8 @@ When adding a new Provisioning Target:
    If you need to change plugins, delete the Provisioning Target and create a
    new one.
 
-Provisioning Modes
--------------------
+3. Provisioning Modes
+---------------------
 
 The Provisioning Mode controls when and how Registry sends data to a target.
 
@@ -131,8 +131,8 @@ The Provisioning Mode controls when and how Registry sends data to a target.
    disables retries (one attempt only). Setting Max Retries to 0 causes Registry
    to retry indefinitely until the job succeeds or is manually cancelled.
 
-Provisioning Groups
---------------------
+4. Provisioning Groups
+----------------------
 
 By default, all eligible People are sent to every Provisioning Target. If you
 need to scope provisioning — sending some people to one system and others to
@@ -148,16 +148,16 @@ The Provisioning Group configuration also applies to Group provisioning: if set,
 only the configured Group itself will be sent to this Provisioning Target (not
 all Groups in the CO).
 
-Provisioning Order
--------------------
+5. Provisioning Order
+---------------------
 
 If your downstream systems have dependencies — for example, an LDAP directory
 must be populated before a system that authenticates against it — you can
 assign a **Provisioning Order** to your Provisioning Targets. Targets with
 lower order numbers run first (e.g., Order 1 runs before Order 2).
 
-Provisioning Keys
-------------------
+6. Provisioning Keys
+--------------------
 
 :bdg-secondary:`Available: v5.2.0` When a Provisioner Plugin assigns or generates an identifier for a Person or
 Group in the target system (such as a unique row ID in a database or a
@@ -171,8 +171,8 @@ edited via the entity's Identifiers, doing so is not recommended — editing a
 Provisioning Key may interfere with the plugin's ability to find the record on
 subsequent provisioning runs.
 
-Monitoring Provisioning Status
---------------------------------
+7. Monitoring Provisioning Status
+---------------------------------
 
 Registry tracks a Provisioning History Record for every provisioning event,
 for all object types. You can view provisioning status for any entity from
@@ -194,16 +194,16 @@ Last Status shows the failure.
    failures. Failures are only visible by reviewing Provisioning Status on
    individual entities or checking provisioning history records.
 
-Reprovisioning All Entities
------------------------------
+8. Reprovisioning All Entities
+------------------------------
 
 To (re)provision all entities within a CO to a specific target, use the
 **Provisioner Job Plugin**. This is useful after initial configuration, after
 recovering from a failure that left many records out of sync, or when making
 broad configuration changes that require all records to be re-sent.
 
-Available Plugins
-------------------
+9. Available Plugins
+--------------------
 
 .. note::
 
@@ -223,8 +223,8 @@ See
 `Provisioner Plugins (PE) <https://spaces.at.internet2.edu/spaces/COmanage/pages/256938864/Provisioner+Plugins+PE>`_
 in the Technical Manual for the technical specification.
 
-Changes from v4
-----------------
+10. Changes from v4
+-------------------
 
 If you are migrating from Registry v4, the following Provisioning changes apply:
 

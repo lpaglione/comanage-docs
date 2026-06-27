@@ -30,7 +30,7 @@ For the full technical reference, see
 `Registry PE Pipelines <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743515/Registry+PE+Pipelines>`_
 in the Technical Manual.
 
-How Data Flows Through a Pipeline
+1. How Data Flows Through a Pipeline
 ------------------------------------
 
 Data moves through the Pipeline in a specific sequence:
@@ -57,8 +57,8 @@ manages — are owned by Registry and can be updated both from source syncs and
 by administrator action. For more on this ownership model, see Frozen Attributes
 below.
 
-Match Strategy
----------------
+2. Match Strategy
+-----------------
 
 Before the Pipeline can do anything else, it must determine whether the incoming
 record represents a new person or an existing Person record. This is controlled
@@ -108,8 +108,8 @@ by the **Match Strategy**.
    When matching, the Pipeline ignores the overall Person status — it may match
    and attach to a Person in any status, including Suspended or Archived.
 
-Sync Configuration
--------------------
+3. Sync Configuration
+---------------------
 
 Once a match is found (or a new Person created), the Pipeline applies the
 following sync settings to control how data is written to Registry.
@@ -148,8 +148,8 @@ following sync settings to control how data is written to Registry.
    Enabling this flag marks all Email Addresses from this source as verified on
    the Person record, regardless of what the source asserts.
 
-Frozen Attributes
-------------------
+4. Frozen Attributes
+--------------------
 
 :bdg-success:`New in v5` By default, every time the Pipeline syncs a record from the source, it
 overwrites the corresponding Person-level attribute with the source value. This
@@ -175,8 +175,8 @@ overwrite it again.
    Attributes can be set as Frozen via the Registry REST API. Unfreezing
    currently requires the user interface.
 
-Person Roles and External Identity Roles
------------------------------------------
+5. Person Roles and External Identity Roles
+-------------------------------------------
 
 The Pipeline automatically creates a **Person Role** for each **External
 Identity Role** present in the incoming source record. If the source later
@@ -193,8 +193,8 @@ reaches the plugin; using Identifier-based matching so all roles resolve to the
 same Person; or using the External Match Strategy with an external matching
 service. The right approach depends on your specific integration.
 
-Extending Pipelines with Plugins
-----------------------------------
+6. Extending Pipelines with Plugins
+-----------------------------------
 
 :bdg-success:`New in v5` Data flowing through a Pipeline can be modified using **Pipeline Plugins**,
 which are attached to the Pipeline via **Flanges**. A Flange connects a Plugin
@@ -209,16 +209,16 @@ Available Pipeline Plugins and their supported Integration Points are listed in
 `Available Pipeline Plugins <https://spaces.at.internet2.edu/spaces/COmanage/pages/310247815/Available+Pipeline+Plugins>`_
 in the Technical Manual.
 
-Manually Rerunning a Pipeline
-------------------------------
+7. Manually Rerunning a Pipeline
+--------------------------------
 
 To rerun a Pipeline for a specific record, retrieve the current record from the
 External Identity Source (either by searching in the source or navigating from
 the Person record) and select **Sync Record to CO**. This reprocesses the record
 from the source and reruns the Pipeline, even if the source data has not changed.
 
-Changes from v4
-----------------
+8. Changes from v4
+------------------
 
 If you are migrating from Registry v4, the following Pipeline changes apply:
 
