@@ -91,61 +91,71 @@ links to where each is documented.
    * - Plugin Type
      - What it does
      - Where documented
-   * - :bdg-secondary:`Available: v5.2.0`
-       **API**
+   * - **API**
+
+       :bdg-secondary:`Available: v5.2.0`
      - Implements domain-specific REST APIs on top of Registry's standard
        model-specific API, enabling higher-level, function-oriented endpoints
        for external integration.
      - :ref:`extend-api`
-   * - :bdg-secondary:`Available: v5.2.0`
-       **Authenticator**
+   * - **Authenticator**
+
+       :bdg-secondary:`Available: v5.2.0`
      - Manages credentials issued by the CO, such as passwords and SSH keys.
        Combined with an Identifier, an Authenticator forms a credential that
        can prove a person's identity to an application or service.
      - :ref:`ec-authenticators`
-   * - :bdg-secondary:`Available: v5.1.0`
-       **Enrollment Flow Step**
+   * - **Enrollment Flow Step**
+
+       :bdg-secondary:`Available: v5.1.0`
      - Implements steps within an Enrollment Flow, such as collecting
        attributes, verifying email addresses, presenting terms and conditions,
        or managing approval decisions.
      - :ref:`lifecycle-enrollment-flows`
-   * - :bdg-secondary:`Available: v5.0.0`
-       **External Identity Source**
+   * - **External Identity Source**
+
+       :bdg-secondary:`Available: v5.0.0`
      - Connects Registry to external systems of record — LDAP directories,
        SQL databases, REST APIs, flat files, ORCID, and others — that provide
        authoritative data about people.
      - :ref:`ec-external-identity-sources`
-   * - :bdg-secondary:`Available: v5.0.0`
-       **Identifier Assignment**
+   * - **Identifier Assignment**
+
+       :bdg-secondary:`Available: v5.0.0`
      - Automatically generates and assigns identifiers (usernames, email
        addresses, and other identifier types) according to configurable rules
        and algorithms.
      - :ref:`ec-identifier-assignment`
-   * - :bdg-secondary:`Available: v5.0.0`
-       **Job**
+   * - **Job**
+
+       :bdg-secondary:`Available: v5.0.0`
      - Implements background tasks that run on a schedule or can be triggered
        on demand — syncing records, reconciling group memberships, processing
        deletions, and similar operational tasks.
      - Operations section *(in development)*
-   * - :bdg-secondary:`Available: v5.0.0`
-       **Pipeline Plugin (Flange)**
+   * - **Pipeline Plugin (Flange)**
+
+       :bdg-secondary:`Available: v5.0.0`
      - Transforms or processes data as it flows through a Pipeline —
        remapping attribute values, filtering records, or applying custom
        logic before data is written to Registry records.
      - :ref:`ec-pipelines`
-   * - :bdg-secondary:`Available: v5.0.0`
-       **Provisioner**
+   * - **Provisioner**
+
+       :bdg-secondary:`Available: v5.0.0`
      - Pushes Registry data to downstream applications and services — LDAP
        directories, SQL databases, collaboration platforms, Kerberos KDCs,
        and other targets.
      - :ref:`ec-provisioning`
-   * - :bdg-secondary:`Available: v5.0.0`
-       **Server**
+   * - **Server**
+
+       :bdg-secondary:`Available: v5.0.0`
      - Adds support for additional server endpoint types beyond those provided
        by the Core Server Plugin (HTTP, LDAP, OAuth2, SMTP, SQL).
      - :ref:`ec-servers`
-   * - :bdg-secondary:`Available: v5.1.0`
-       **Traffic**
+   * - **Traffic**
+
+       :bdg-secondary:`Available: v5.1.0`
      - Intercepts the platform's authentication flow at specific points —
        before, during, or after login — enabling custom handling such as
        redirecting authentication events to external systems.
