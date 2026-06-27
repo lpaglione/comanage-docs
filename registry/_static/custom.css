@@ -1,0 +1,8 @@
+/* Override sphinx_rtd_theme's table cell white-space lock so that table
+   content wraps normally. The theme sets white-space: nowrap on all
+   .wy-table-responsive cells, which prevents any table text from wrapping
+   regardless of column widths. */
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+    white-space: normal;
+}
