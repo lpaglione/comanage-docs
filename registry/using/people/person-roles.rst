@@ -44,8 +44,8 @@ in the Technical Manual.
    an organizational subdivision (department, working group, project team,
    etc.). Roles without a COU are assigned at the CO level.
 
-   COUs are configured in the Organizations section. See
-   :ref:`using-organizations`.
+   COUs are configured in the Structure section. See
+   :ref:`using-structure`.
 
 **Department**
    An optional free-text field describing the department within the COU or

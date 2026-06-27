@@ -18,11 +18,11 @@ technical references, recipes, and case studies.
       Managing Person records, identities, attributes, authenticators, and
       the identity lifecycle — the core of what Registry does.
 
-   .. grid-item-card:: Organizations
-      :link: organizations
+   .. grid-item-card:: Structure
+      :link: structure
       :link-type: doc
 
-      Modeling your organizational structure with Collaborative Organizations
+      Modeling your population's structure with Collaborative Organizations
       (COs), Collaborative Organizational Units (COUs), and Groups.
 
    .. grid-item-card:: Lifecycle Management
@@ -67,7 +67,7 @@ technical references, recipes, and case studies.
    :hidden:
 
    people
-   organizations
+   structure
    lifecycle
    external-connections
    operations

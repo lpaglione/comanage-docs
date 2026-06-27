@@ -55,7 +55,7 @@ which carry the attributes that drive downstream provisioning.
    under :ref:`using-external-connections`. This section focuses on managing
    Person records and Person Roles once people are in the system.
 
-   **Groups** are covered under :ref:`using-organizations`, where they sit
+   **Groups** are covered under :ref:`using-structure`, where they sit
    alongside COs and COUs as part of the organizational structure.
 
 2. The Person Canvas

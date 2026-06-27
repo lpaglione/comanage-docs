@@ -1,12 +1,47 @@
 .. _transitioning-index:
 
-Transitioning
-=============
+Transitioning from v4 to v5
+=============================
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
+   feature-status
+   upgrading
+   transmogrification
+
+Registry v5 is a ground-up rebuild of Registry v4 — the same concepts and
+capabilities, re-engineered from scratch. If you are running v4 and planning a
+move to v5, this section covers what to expect, what has changed, and how to
+migrate your data.
+
+.. grid:: 2
+   :gutter: 3
+
+   .. grid-item-card:: Feature Status in v5
+      :link: transitioning-feature-status
+      :link-type: ref
+
+      The six-point maturity scale the COmanage Project uses to track feature
+      completion, and where v5 currently stands relative to v4 feature parity.
+
+   .. grid-item-card:: Upgrading to v5
+      :link: transitioning-upgrading
+      :link-type: ref
+
+      The overall upgrade process: prerequisites, sequencing, and
+      version-specific notes for each v5 release.
+
+   .. grid-item-card:: Transmogrification
+      :link: transitioning-transmogrification
+      :link-type: ref
+
+      The command-line tool that migrates your v4 database to the v5 schema —
+      what it does, how to run it, and what to watch out for.
+
 .. note::
 
-   This section is under development. Content will be added throughout 2026.
+   This section is under development. Upgrading and Transmogrification pages
+   will be expanded throughout 2026. For current technical detail, see the
+   `COmanage Technical Manual <https://spaces.at.internet2.edu/display/COmanage/Technical+Manual>`_.
