@@ -16,7 +16,7 @@ your own policies about what people can do for themselves. Personalization is
 how you make Registry feel like it belongs to your organization rather than
 just a piece of software you happen to be operating.
 
-The features currently available in this section fall into three broad purposes:
+The features currently available in this section fall into two broad purposes:
 
 **Visual identity and content** — create custom content pages (policies, help
 text, error messages, enrollment landing pages) that display within Registry's
@@ -26,11 +26,6 @@ own look and feel, and maintain a media library of images for use in those pages
 Templates let you define reusable email content for notifications, enrollment
 events, and authentication updates, with substitutions that personalize each
 message for its recipient and context.
-
-**Data model customization** — control how Registry labels the building blocks
-of your identity data. Types let you define the categories that apply to
-multi-valued attributes across your CO: what kinds of names, identifiers, email
-addresses, affiliations, and addresses your organization recognizes.
 
 Additional Personalization features — including CSS theming, dashboards,
 navigation links, and localization — are being completed for v5. See
@@ -88,51 +83,11 @@ identity management platform.
 
    Learn more about Message Templates →
 
-3. Data Model Customization
----------------------------
-
-**Types**
-
-Types are the category labels used across Registry's multi-valued attributes.
-When a Person record can have multiple email addresses, the Type is what
-distinguishes them — "official," "personal," "preferred," or whatever categories
-make sense for your organization. The same pattern applies to Names, Identifiers,
-Addresses, Telephone Numbers, URLs, Organizations, Departments, and Person Role
-Affiliations.
-
-Types are defined per-CO. When a new CO is created, Registry populates a default
-set of Types for each supported attribute. You can add, modify, or (if not yet
-used) delete Types to match your organization's terminology and workflows.
-
-Affiliations (a type of Person Role attribute) have an additional option: they
-can be mapped to standard eduPersonAffiliation values, which certain Provisioner
-Plugins use when exporting data to downstream systems.
-
-.. button-ref:: personalization-types
-   :ref-type: ref
-   :color: primary
-   :outline:
-   :align: right
-
-   Learn more about Types →
-
-.. note::
-
-   **Relationship to v4 Attribute Enumerations and Dictionaries**
-
-   In v4, Registry supported Attribute Enumerations (constraining free-form
-   field values to a defined list) and Dictionaries (reusable value lists).
-   These features were redesigned in v5. Registry Types in v5 govern attribute
-   *categorization* (the type of a multi-valued attribute), not value
-   *constraint* in the v4 sense. The status of value-constraint functionality
-   in v5 is under active development — check the Technical Manual or community
-   channels for current status.
-
 ----
 
 .. _personalization-coming-to-v5:
 
-4. Coming to v5
+3. Coming to v5
 ---------------
 
 The following Personalization features are available in Registry v4 and are
@@ -171,10 +126,15 @@ in the v4 Technical Manual.
 
 ----
 
-5. If You Are Migrating from v4
+4. If You Are Migrating from v4
 -------------------------------
 
 Several v4 Personalization features have changed significantly in v5:
+
+- **Extended Types** — In v4, Extended Types were part of Personalization. In
+  v5, they have been renamed to **Types** and moved to the Extending Registry
+  section, reflecting their role in extending the data model. See
+  :ref:`extend-types`.
 
 - **Attribute Enumerations** — The v4 mechanism for constraining free-form
   field values to a defined list has been redesigned. In v5, Types govern
@@ -203,4 +163,3 @@ Pages in This Section
 
    personalization/mostly-static-pages
    personalization/message-templates
-   personalization/types
