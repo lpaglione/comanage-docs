@@ -86,6 +86,7 @@ links to where each is documented.
 
 .. list-table::
    :header-rows: 1
+   :widths: auto
 
    * - Plugin Type
      - What it does
