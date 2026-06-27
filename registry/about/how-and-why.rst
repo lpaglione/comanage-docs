@@ -54,27 +54,29 @@ invitation or self-service workflows, manage what they can access, and remove
 that access cleanly when their relationship with your organization ends — all
 without requiring accounts in your enterprise systems. Registry manages the
 guest lifecycle on its own terms, freeing your team to focus on the populations
-and systems that need the most attention.
+and systems that most need their attention.
 
-"Enrollment is painful — we rely on central IT for everything."
----------------------------------------------------------------
+"Our enrollment process can't keep up with the variety of our populations."
+---------------------------------------------------------------------------
 
-If enrolling a new person into your systems means filing a ticket, waiting for an
-administrator, or writing XML configuration, Registry can change that. Enrollment
-workflows in Registry are designed to be configured by the people closest to the
-process — not developers. You define the steps, the approval stages, and the
-end-user experience through Registry's interface, without writing code.
+Registry puts enrollment configuration in the hands of tool administrators —
+no developer involvement required. Each enrollment workflow is built through
+Registry's interface: you define the steps, the approval stages, and the
+end-user experience. A research collaboration can configure an invitation-based
+workflow for new collaborators. A department can configure a self-enrollment
+process with its own approval chain. These workflows can be designed and
+maintained independently by the people closest to each population, without
+waiting on a central queue or writing any code.
 
-Self-service enrollment lets new members initiate their own onboarding. Invitation
-workflows let you reach out to people who need to be added. And conscription
-workflows let you automatically enroll people based on data coming from an
-authoritative system. The right approach depends on your population; Registry
-supports all three, and they can be combined.
+Self-service enrollment lets new members initiate their own onboarding.
+Invitation workflows let you reach out to people who need to be added.
+Conscription workflows automatically enroll people based on data arriving from
+an authoritative system. These approaches can be combined — a single enrollment
+flow can pull from multiple sources and require multiple approval stages.
 
-Registry makes it practical to delegate enrollment management to department
-administrators, project leads, or collaboration coordinators — giving them the
-tools to manage their own populations while keeping central IT in control of
-the overall configuration and policies. This is one of the most commonly cited
+This delegation model — where department administrators, project leads, or
+collaboration coordinators can manage their own enrollment workflows while
+central IT retains overall platform control — is one of the most commonly cited
 benefits of Registry among organizations that use it.
 
 "We manage a multi-institution research collaboration."
@@ -93,19 +95,29 @@ This works within a lightweight structure that each participating institution's
 team can configure and maintain, with minimal coordination overhead across
 institutions.
 
-"We need to provision access to multiple systems automatically."
----------------------------------------------------------------
+"We need to keep multiple systems in sync with our Registry data."
+-----------------------------------------------------------------
 
-Once people are in Registry, getting their data to the systems that need it is
-where provisioning comes in. Registry connects to LDAP directories, collaboration
-platforms, mailing lists, Grouper, and more through a flexible plugin
-architecture. You decide when provisioning happens — in real time as changes
-occur, or in batches — and Registry handles the rest.
+Once people are in Registry, their data can be pushed to the systems that need
+it through Registry's provisioning layer. Registry connects to LDAP directories,
+collaboration platforms, mailing lists, Grouper, and more through a flexible
+plugin architecture. You configure when provisioning happens — in real time as
+changes occur, or in batches — and Registry handles the rest.
 
 When a person's role changes, their access updates. When they leave, offboarding
 policies trigger automatically. The goal is that the right people have access to
 the right systems at the right time, with as little manual intervention as
 possible.
+
+Registry is not a purpose-built enterprise provisioning engine — for deployments
+with complex, fine-grained provisioning requirements, a dedicated provisioning
+tool may be a better fit. But for many deployments, Registry's provisioning
+capabilities are exactly what's needed: a straightforward way to grant and
+revoke access based on Registry membership, and to push data from Registry's
+aggregated records to downstream systems. Provisioning in Registry isn't limited
+to access control — it can also mean pushing updated name, affiliation, or
+attribute data to other systems to keep them current as people's information
+changes.
 
 "We're not sure if Registry is the right tool for us."
 ------------------------------------------------------

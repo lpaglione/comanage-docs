@@ -35,19 +35,22 @@ last year knows them only by their ORCID iD. When these records arrive in Regist
 how do you know they all belong to the same person?
 
 Simple matching on name or email address fails quickly in practice. Names change,
-email addresses change, data entry is inconsistent across systems, and common
-names create false positives. Getting matching wrong has real consequences:
-duplicate records lead to split identities and missed provisioning, while
-incorrect merges expose one person's data to another person's access.
+email addresses change, and data entry is inconsistent across systems — all of
+which can cause a simple matching approach to miss a match that should have been
+found. Common names and shared email formats create the opposite problem:
+incorrectly matching records that belong to different people. Getting matching
+wrong in either direction has real consequences: duplicate records lead to split
+identities and missed provisioning, while incorrect merges expose one person's
+data to another person's access.
 
-**Identity matching** is the systematic process of determining whether a person
-presented by one system is already known to your identity management system —
-and doing so reliably across imperfect, inconsistent data.
+**Identity matching** is the systematic process of determining whether a
+person's record presented by one system is already known to your identity
+management system — and doing so reliably across imperfect, inconsistent data.
 
 2. What COmanage Match Does
 -----------------------------
 
-COmanage Match provides a heuristic-based matching engine that compares incoming
+COmanage Match provides a heuristic-based (rules-based) matching engine that compares incoming
 identity records against existing records across multiple authoritative systems of
 record. Rather than requiring an exact field match, Match evaluates a
 configurable set of attributes and applies weighted rules to determine the
@@ -67,9 +70,9 @@ identifier is returned.
 **Ambiguous result.** The incoming record partially resembles one or more
 existing records, but the rules could not reach a definitive determination.
 This case is routed for human review — either interactively by the system
-presenting the data, or asynchronously by a designated reconciliation manager.
-The reviewer examines the potential match and makes the call: confirmed match
-or confirmed non-match.
+presenting the data, or asynchronously by a staff member designated to review
+and resolve ambiguous records. The reviewer examines the potential match and
+makes the call: confirmed match or confirmed non-match.
 
 The ambiguous case is where Match's value is most apparent. A simple matching
 approach either forces a merge (risking incorrect links) or creates a duplicate
@@ -90,21 +93,17 @@ the population is well-enough defined that ambiguous cases are rare or easily
 handled.
 
 **COmanage Match** is most valuable when matching needs to happen at a broader
-scope — across multiple authoritative systems before data even reaches Registry,
-or as a shared matching service for systems beyond Registry itself. Match can be
-used in two configurations:
+scope — across multiple authoritative systems before data even reaches Registry.
+Match can be integrated with Registry in two ways:
 
-*Match before Registry:* Incoming records from systems of record are matched
-against a central identity dataset before being passed to Registry. Registry
-receives pre-matched records with a reference identifier already assigned,
-simplifying the enrollment and linking process.
+*Match before Registry:* Incoming records from systems of record are evaluated
+by COmanage Match before being passed to Registry. Registry receives data with
+a matching determination already made, simplifying the enrollment and linking
+process for complex or large-scale identity populations.
 
-*Match at Registry:* Registry itself requests matching as part of its processing,
-using Match as an external service to evaluate incoming identity data.
-
-In both configurations, Match acts as the authoritative source for reference
-identifiers — the stable, canonical IDs that persist across name changes, role
-changes, and system transitions.
+*Match at Registry:* Registry calls COmanage Match as part of its Pipeline
+processing, using the External Match Strategy to send incoming identity data to
+Match for evaluation and receive a matching determination in return.
 
 4. Do You Need Match?
 -----------------------

@@ -6,8 +6,6 @@
 ..   CO (Collaborative Organization) ✓ still used in v5
 ..   COU (Collaborative Organizational Unit) ✓ still used in v5
 ..   Groups                 ✓ unchanged
-.. TODO: Replace "your organization in Registry" with "CO" and update
-..       "sub-units (sometimes called COUs)" to use COU as primary term
 
 .. _concepts-overview:
 
@@ -36,19 +34,28 @@ Registry for your organization.
 1. Your Organization in Registry
 ---------------------------------
 
-Registry is a multi-tenant system, meaning it can support multiple organizations
-within a single installation. Each organization gets its own distinct space — its
-own people, its own groups, its own configuration, and its own enrollment
-workflows. When you deploy Registry, the first thing you do is define the
-organization (or organizations) that will use it.
+When you deploy Registry, the first thing you define is your
+**Collaborative Organization (CO)** — the population of people you are managing.
+The name might suggest a legal institution, but a CO in Registry is more
+flexible than that: it could be a research collaboration spanning multiple
+universities, a department managing guest access for external collaborators, a
+service provider with a diverse user population, or a traditional institutional
+deployment. The defining characteristic isn't organizational structure — it's
+that a CO is the top-level container for everyone you are organizing within
+Registry.
 
-Within your organization, Registry gives you a set of tools to model your
-population's structure: you can define sub-units for departments, programs, or
-teams; create groups to drive roles and access; and configure policies that
-govern how people move through their relationship with your organization.
+Registry is a multi-tenant system, meaning a single installation can support
+multiple COs, each with its own people, groups, configuration, and enrollment
+workflows.
 
-Think of your organization in Registry as the frame. Everything else —
-people, groups, connections to external systems — lives within that frame.
+Within your CO, Registry gives you tools to model your population's structure:
+you can define COUs (Collaborative Organizational Units) for sub-groups with
+different enrollment and governance policies; create groups to drive roles and
+access; and configure policies that govern how people move through their
+relationship with your CO.
+
+Think of your CO as the frame. Everything else — people, groups, connections to
+external systems — lives within that frame.
 
 2. Person Records
 -----------------
@@ -57,7 +64,7 @@ The **person record** is the heart of Registry. It represents a single individua
 and their relationship with your organization.
 
 A person record is not just a copy of data from one system — it is an aggregated
-view, assembled from every source that knows about that person. Someone who
+view, assembled from every connected source that knows about that person. Someone who
 appears in your HR system, your student information system, and a collaboration
 platform they joined last year has one person record in Registry, with data drawn
 from all three sources. Registry holds these together as a unified, consistent
@@ -92,35 +99,34 @@ identities that feed into it — is what allows Registry to accommodate the
 complexity of real-world organizational data: the same person seen differently by
 different systems, brought together in one place.
 
-.. note::
+4. Organizational Structure: COUs and Groups
+---------------------------------------------
 
-   External identities can be linked automatically through pipelines (when
-   Registry connects to a live system of record) or manually by an administrator.
-   See :doc:`Managing People in Registry </using/people/managing-people>` for
-   more detail on how person records and external identities are created and
-   maintained.
+Registry gives you two main tools for organizing your population: **COUs** and
+**groups**.
 
-4. Organizational Structure: Groups and Sub-units
---------------------------------------------------
+**Collaborative Organizational Units (COUs)** divide your CO into sub-groups
+based on differences in policy — how people join and leave, what rules govern
+provisioning and deprovisioning, who manages their records, and what information
+is stored about them. You might define a COU when one segment of your population
+needs to be enrolled, managed, or governed differently than another. COUs don't
+have to map to boxes on an org chart; they reflect the policy distinctions that
+matter for managing your population.
 
-Registry gives you two main tools for organizing your population: **sub-units**
-and **groups**.
+COUs can be arranged in a hierarchy or kept flat. The key benefit of a hierarchy
+is administrative delegation: administrators of a parent COU can also manage the
+COUs nested within it, allowing responsibility to be distributed to the people
+closest to each population.
 
-**Sub-units** (sometimes called COUs — CO Organizational Units) model the
-hierarchical structure of your organization: departments, colleges, programs,
-teams, or any other subdivision that matters for how you manage people.
-Sub-units can be nested, so you can represent complex organizational hierarchies.
-Administrators can be delegated responsibility for specific sub-units, allowing
-the people who know a population best to manage it directly.
+**Groups** are the mechanism for applying an action or policy to a set of people
+at once. When you want to grant a set of people access to an application,
+subscribe them to a mailing list, or have an expiration policy apply to them at
+the same time, you define a Group and configure that action against it.
 
-**Groups** are more flexible. A group can contain any set of person records,
-regardless of their sub-unit membership, and groups can be used to drive roles,
-access provisioning, mailing list membership, and more. Groups can be managed
-automatically (based on rules and attributes) or manually by administrators or
-even by end users, depending on how you configure them.
-
-In practice, sub-units and groups work together: sub-units reflect your org
-chart, while groups reflect the functional units that cut across it.
+Some groups are automatic: Registry automatically maintains groups for all
+members and active members of each CO and COU, updating membership as people's
+statuses change. Other groups are explicit, managed by administrators or — when
+configured — by end users themselves.
 
 5. Connecting to External Systems
 ----------------------------------
@@ -142,8 +148,9 @@ Registry, the right systems are updated without manual intervention.
 
 The plugin architecture on both sides is designed to be extensible. Registry
 ships with plugins for common systems, and the open-source community has
-contributed others. If you need to connect to a system that isn't covered, you
-can build your own plugin.
+contributed others. When members of the community need to connect to systems
+that aren't covered, they can build their own light-weight plugin and
+share it through the COmanage project's open source policies.
 
 6. Lifecycle: From Enrollment to Offboarding
 ---------------------------------------------
@@ -154,8 +161,8 @@ organization, from their first record to their departure.
 **Enrollment** is how people enter Registry. An enrollment flow defines the steps
 a new person goes through to get a person record: who initiates the enrollment,
 what information is collected, what approvals are required, and what happens when
-the enrollment is complete. Registry supports self-service, invitation, and
-automatic enrollment from external systems.
+the enrollment is complete. Registry supports self-service, invitation, account
+linking, and automatic enrollment from external systems.
 
 **Ongoing management** is handled through group memberships, attribute updates,
 and provisioning rules. As a person's role changes — moving between departments,
@@ -176,12 +183,13 @@ Putting It Together
 
 These concepts fit together as a coherent system:
 
-- Your **organization in Registry** is the frame within which everything operates.
+- Your **CO (Collaborative Organization)** is the top-level container within
+  which everything operates.
 - **Person records** represent individuals — one per person, aggregating data
   from all sources.
 - **External identities** are the connections to those sources, each holding what
   one system knows about a person.
-- **Sub-units and groups** organize your population and drive roles and access.
+- **COUs and groups** organize your population and drive roles and access.
 - **Pipelines and provisioning** connect Registry to the systems around it,
   inbound and outbound.
 - **Enrollment flows and expiration policies** govern how people enter and exit.

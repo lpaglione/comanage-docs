@@ -114,41 +114,16 @@ support new capabilities as v5 continues to develop.
 4. Feature Status in v5
 ------------------------
 
-v5 is an Early Adopter Release, and the project is transparent about where things
-stand. Features are tracked on a six-point maturity scale:
+v5 is an Early Adopter Release, and the COmanage Project is transparent about
+where things stand. The areas where v5 is already at or near feature parity
+with v4 include core person management, enrollment flows, organizational
+structure, provisioning infrastructure, and global search. Areas actively in
+progress include authenticators, notifications, LDAP provisioning, and
+dashboards.
 
-.. list-table::
-   :widths: 10 20 55
-   :header-rows: 1
-
-   * - Level
-     - Label
-     - What it means
-   * - 5
-     - Complete
-     - Fully implemented; meets or exceeds v4 behavior
-   * - 4
-     - Feature Equivalent
-     - Matches v4 functionality; refinements may continue
-   * - 3
-     - Functional
-     - Core behavior works; some v4 capabilities may still be in progress
-   * - 2
-     - In Progress
-     - Under active development; usable but incomplete
-   * - 1
-     - Design Review
-     - Scoped and planned; implementation not yet started
-   * - 0
-     - Not Started
-     - On the roadmap; not yet scoped for a specific release
-
-The areas where v5 is already at or near feature parity with v4 include core
-person management, enrollment flows, organizational structure, provisioning
-infrastructure, and global search. Areas actively in progress include
-authenticators, notifications, LDAP provisioning, and dashboards.
-
-For the full feature-by-feature status, see
+The project tracks feature progress on a structured maturity scale, with a goal
+of reaching full feature parity as v5 continues to develop. For the full
+feature-by-feature status and the maturity scale definitions, see
 :doc:`../transitioning/feature-status`.
 
 .. note::

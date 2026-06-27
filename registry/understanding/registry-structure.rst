@@ -38,7 +38,7 @@ in the Technical Manual.
 ------------------------
 
 At the outermost level, Registry is a **Collaboration Management Platform
-(CMP)** — the installation itself. A CMP can host one or more **Collaborative
+(CMP)** — the installation itself. It can host one or more **Collaborative
 Organizations (COs)**. Each CO is a fully isolated space with its own people,
 groups, configuration, and connections to external systems.
 

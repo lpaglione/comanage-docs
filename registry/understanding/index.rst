@@ -3,6 +3,8 @@
 Understanding
 =============
 
+*A COmanage Registry Orientation*
+
 .. toctree::
    :maxdepth: 2
    :hidden:
