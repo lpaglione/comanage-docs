@@ -42,12 +42,6 @@ affiliations. Types are defined per-CO, so your organization controls both the
 category options that appear in the interface and the values used in data exports
 and provisioning. (In v4, these were called Extended Types.)
 
-**Ad Hoc Attributes** are simple key/value pairs that can be attached to People,
-Person Roles, and External Identities when the standard data model is
-insufficient but the overhead of a full structured extension is not warranted.
-Ad Hoc Attributes are available via the REST API and can be handled in Pipeline
-processing and Provisioner Plugins.
-
 .. button-ref:: extend-types
    :ref-type: ref
    :color: primary
@@ -55,6 +49,12 @@ processing and Provisioner Plugins.
    :align: right
 
    Learn more about Types →
+
+**Ad Hoc Attributes** are simple key/value pairs that can be attached to People,
+Person Roles, and External Identities when the standard data model is
+insufficient but the overhead of a full structured extension is not warranted.
+Ad Hoc Attributes are available via the REST API and can be handled in Pipeline
+processing and Provisioner Plugins.
 
 .. button-ref:: extend-ad-hoc-attributes
    :ref-type: ref
