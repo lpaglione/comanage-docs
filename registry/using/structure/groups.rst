@@ -157,6 +157,15 @@ ways:
   can add Group memberships
 - **Via Group Nestings** — automatic population of one Group from another
 
+.. TODO: Add a decision guide — "Pipeline-driven Group membership vs Group
+   Nestings: which should I use?" — to help administrators choose between these
+   two automatic Group population mechanisms. Key distinction: use Pipeline
+   attribute mapping when group membership is determined by data in the source
+   system (e.g. an LDAP attribute or HR job code that maps to a Registry Group);
+   use Group Nestings when membership should derive from other Registry Group
+   memberships (e.g. everyone in Group A and Group B should also be in Group C).
+   Candidate for Recipes or Case Studies section.
+
 **Validity Dates on Memberships**
    Group Memberships can have **Valid From** and **Valid Through** dates,
    restricting the membership to a specific time window. Validity date

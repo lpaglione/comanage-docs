@@ -29,6 +29,16 @@ same systems, they probably don't need separate COUs — Groups or a simple nami
 convention may be sufficient. A COU is the right tool when policy genuinely
 differs between populations.
 
+.. TODO: Add a case study or decision guide — "COUs vs Groups: which should I
+   use to model a sub-population?" — to help administrators navigate this common
+   design question. Key distinction: COUs carry policy (enrollment flows, admin
+   delegation, identifier assignment, provisioning scope); Groups carry actions
+   (access control, mailing lists, provisioning filters). A person can be in a
+   Group without having a Role in a COU. Real-world scenarios (e.g., a
+   department that needs its own enrollment process vs. a project team that just
+   needs an LDAP group) would make this concrete. Candidate for Recipes or Case
+   Studies section.
+
 For the full technical reference, see
 `Collaborative Organizational Units (COUs) <https://spaces.at.internet2.edu/spaces/COmanage/pages/392724546/Collaborative+Organizational+Units+COUs>`_
 in the Technical Manual.

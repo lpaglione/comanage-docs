@@ -23,6 +23,15 @@ the policies, and the resources they access are distinct enough that there is no
 meaningful cross-membership. If people might belong to both groups, COUs and
 Groups within a single CO are generally the better approach.
 
+.. TODO: Add a case study or decision guide — "Multiple COs vs a single CO with
+   COUs: which should I use?" — to help administrators make this foundational
+   design decision. Key factors: whether people might cross-participate (argues
+   for one CO), whether administrative separation is needed (argues for COUs or
+   separate COs), whether resource sharing (e.g. enrollment flows, pipelines) is
+   desirable (argues for one CO). Real-world scenarios (e.g., multi-campus
+   federation vs. departmental sub-populations) would make this concrete.
+   Candidate for the Recipes or Case Studies section.
+
 For the full technical reference, see
 `Registry Collaborative Organizations (COs) <https://spaces.at.internet2.edu/spaces/COmanage/pages/392724540/Registry+Collaborative+Organizations+COs>`_
 in the Technical Manual.

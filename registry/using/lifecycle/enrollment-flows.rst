@@ -27,6 +27,17 @@ Enrollment Flows are designed for interactive, human-driven processes. For
 automated system-to-system population of Registry, see
 :ref:`ec-external-identity-sources` instead.
 
+.. TODO: Add a case study or decision guide — "Enrollment Flows vs Pipelines:
+   which should I use to bring people into Registry?" — to help administrators
+   choose between these two intake mechanisms. Key distinction: Enrollment Flows
+   are interactive and human-driven (the person or a nominator participates in
+   the process, steps may involve approval and email verification); Pipelines are
+   automated and system-driven (an authoritative source pushes records into
+   Registry without human steps). Many deployments use both: Pipelines for known
+   populations (employees, students) and Enrollment Flows for populations without
+   an authoritative source (collaborators, external partners). Candidate for
+   Recipes or Case Studies section.
+
 For the full technical reference, see
 `Registry PE Enrollment Flows <https://spaces.at.internet2.edu/spaces/COmanage/pages/289113561/Registry+PE+Enrollment+Flows>`_
 in the Technical Manual.

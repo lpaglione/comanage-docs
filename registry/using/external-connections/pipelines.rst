@@ -30,6 +30,26 @@ For the full technical reference, see
 `Registry PE Pipelines <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743515/Registry+PE+Pipelines>`_
 in the Technical Manual.
 
+.. TODO: Add a case study or decision guide — "Enrollment Flows vs Pipelines:
+   which should I use to bring people into Registry?" — to help administrators
+   choose between these two intake mechanisms. From the Pipeline side: Pipelines
+   are the right choice when an authoritative source already knows about the
+   person (employees in HR, students in a SIS, members in a directory). The
+   Pipeline syncs them automatically without any human steps. Enrollment Flows
+   are the right choice when the person or a nominator needs to actively
+   participate in the intake process. Many deployments use both. Candidate for
+   Recipes or Case Studies section.
+
+.. TODO: Document Group membership via Pipelines. Currently this page does not
+   cover how Pipelines can add or manage Group memberships as part of attribute
+   mapping. Once documented, add a decision guide — "Pipeline-driven Group
+   membership vs Group Nestings: which should I use?" — to help administrators
+   choose between populating Groups via Pipeline attribute mapping (good when
+   group membership is determined by source data, e.g. an LDAP group attribute)
+   vs Group Nestings (good when membership should derive from other Registry
+   Group memberships rather than from source data). Candidate for Recipes or
+   Case Studies section.
+
 1. How Data Flows Through a Pipeline
 ------------------------------------
 
