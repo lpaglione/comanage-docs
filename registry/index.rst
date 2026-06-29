@@ -35,6 +35,19 @@ concepts, configuration recipes, and case studies to complement the
       What Registry can do and how to use it — organized by feature area,
       with context, configuration guidance, and links to the Technical Manual.
 
+   .. grid-item-card:: Transitioning from v4 to v5
+      :link: transitioning/index
+      :link-type: doc
+
+      What's changed, feature completion status, and migration planning.
+
+----
+
+*The following documentation areas are still under development.*
+
+.. grid:: 2
+   :gutter: 3
+
    .. grid-item-card:: Configuration Recipes
       :link: recipes/index
       :link-type: doc
@@ -46,12 +59,6 @@ concepts, configuration recipes, and case studies to complement the
       :link-type: doc
 
       Real-world stories from organizations using Registry.
-
-   .. grid-item-card:: Transitioning from v4 to v5
-      :link: transitioning/index
-      :link-type: doc
-
-      What's changed, feature completion status, and migration planning.
 
    .. grid-item-card:: The COmanage Community
       :link: community/index
