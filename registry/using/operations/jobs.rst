@@ -130,3 +130,10 @@ page for the list of Job Plugins included with Registry.
 - **As of v5.2.0**, a single queue runner no longer processes Jobs in parallel
   (though multiple queue runners may still be launched). This change improves
   reliability and predictability of Job processing.
+
+- **The SQL Assigner Job Plugin is new in v5.2.0.** It assigns identifiers
+  or email addresses to CO Persons by querying an external SQL database,
+  drawing on a configured SQL Assigner Identifier Assignment. This plugin
+  has no direct v4 equivalent. See the Technical Manual's
+  `SQL Assigner Job Plugin <https://spaces.at.internet2.edu/spaces/COmanage/pages/346129582/SQL+Assigner+Job+Plugin>`_
+  page for configuration details.

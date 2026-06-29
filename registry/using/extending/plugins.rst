@@ -58,8 +58,7 @@ the Plugin registry is next refreshed.
 
 **Activating an Available or Local Plugin**
 
-Activating a Plugin is done through the Registry administrative interface —
-no command-line steps are required:
+Activating a Plugin is done through the Registry administrative interface:
 
 1. Log in as a Platform Administrator.
 2. Navigate to **COmanage CO > Configuration > Plugins**.
@@ -70,6 +69,22 @@ no command-line steps are required:
 
 A Plugin that is in use cannot be suspended. Before deactivating a Plugin,
 remove any configurations that reference it.
+
+**Activating Plugins from the command line** :bdg-secondary:`Available: v5.2.0`
+
+Plugins can also be managed from the command line using the Plugin Command,
+which is useful for scripted deployments or container initialization:
+
+.. code-block:: bash
+
+   cd $APP
+   ./bin/cake Plugin -a activate -p PluginName
+   ./bin/cake Plugin -a deactivate -p PluginName
+   ./bin/cake Plugin -a applySchema -p PluginName
+
+Multiple plugins can be specified as a comma-separated list with a single
+``-p`` option. In v4, the command line was the only way to manage plugins;
+in v5 the interface is the recommended approach for most administrators.
 
 .. note::
 

@@ -134,6 +134,8 @@ The Provisioning Mode controls when and how Registry sends data to a target.
 4. Provisioning Groups
 ----------------------
 
+:bdg-secondary:`Available: v5.2.0`
+
 By default, all eligible People are sent to every Provisioning Target. If you
 need to scope provisioning — sending some people to one system and others to
 another — use a **Provisioning Group**.
