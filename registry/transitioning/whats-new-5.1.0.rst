@@ -22,18 +22,6 @@ the
 1. New Capabilities
 --------------------
 
-**Env Source Plugin**
-
-The Env Source Plugin is a new External Identity Source type that reads
-identity attributes from environment variables — the variables set by a
-web server or identity provider at authentication time. This makes it
-straightforward to bring attributes like name, email, and affiliation
-directly from a SAML assertion or OIDC token into Registry without an
-intermediate directory or database. Env Source also supports syncing a
-person's record each time they log in, restoring the Sync on Login
-behavior that was not available in v5.0.x. See
-:ref:`ec-external-identity-sources`.
-
 **Identifier Mapper Pipeline Plugin**
 
 A new Pipeline Plugin is available for deployments that need to set the
@@ -61,15 +49,6 @@ External Identity's gear menu and select Relink, then find the correct target
 Person. Relink moves the External Identity but does not resync — the Pipeline
 must be run afterward to apply the source data to the new person. See
 :ref:`ec-external-identity-sources`.
-
-**HTTP Servers and Match Servers**
-
-Two new Server types are available. **HTTP Servers** define connections to
-resources accessed via HTTP or HTTPS, including authentication credentials
-and TLS configuration. **Match Servers** build on HTTP Servers to configure
-connections to servers implementing the COmanage Match API — used when a
-Pipeline's External Match Strategy calls out to an external matching service
-to resolve identity matches. See :ref:`ec-servers`.
 
 **Traffic Plugins**
 
@@ -99,6 +78,26 @@ Assignment Enroller** for assigning identifiers during enrollment; and the
 implementation in v5.1.0 is focused on initial use cases; some v4 Enrollment
 Flow capabilities are planned for future releases. See
 :ref:`lifecycle-enrollment-flows`.
+
+**Env Source Plugin**
+
+The Env Source Plugin reads identity attributes from environment variables —
+the variables set by a web server or identity provider at authentication time.
+This makes it straightforward to bring attributes like name, email, and
+affiliation directly from a SAML assertion or OIDC token into Registry without
+an intermediate directory or database. Env Source also restores Sync on Login
+behavior that was not available in v5.0.x — the plugin can be configured to
+sync a person's record each time they log in. See
+:ref:`ec-external-identity-sources`.
+
+**HTTP Servers and Match Servers**
+
+**HTTP Servers** define connections to resources accessed via HTTP or HTTPS,
+including authentication credentials and TLS configuration. **Match Servers**
+build on HTTP Servers to configure connections to servers implementing the
+COmanage Match API — used when a Pipeline's External Match Strategy calls out
+to an external matching service to resolve identity matches. See
+:ref:`ec-servers`.
 
 **Mostly Static Pages**
 
