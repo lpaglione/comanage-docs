@@ -13,6 +13,7 @@ Understanding
    registry-structure
    roles
    planning
+   interface
 
 .. grid:: 2
    :gutter: 3
@@ -41,6 +42,14 @@ Understanding
       :link-type: doc
 
       Key decisions to think through before you start configuring Registry.
+
+   .. grid-item-card:: The v5 Interface
+      :link: interface
+      :link-type: doc
+
+      What changed in the completely redesigned v5 user interface — new navigation,
+      improved search, the Person Canvas, and usability improvements for new and
+      infrequent users.
 
 .. note::
 

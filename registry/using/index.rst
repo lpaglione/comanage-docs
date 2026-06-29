@@ -3,7 +3,7 @@
 Registry Features and Use
 ==========================
 
-Registry's capabilities are organized into seven areas. Each section below
+Registry's capabilities are organized into eight areas. Each section below
 describes what that area of Registry does and why it matters, inventories the
 features available within it, and links to pages covering configuration details,
 technical references, recipes, and case studies.
@@ -62,6 +62,13 @@ technical references, recipes, and case studies.
       An overview of the Registry plugin architecture and how plugins extend
       the platform's capabilities.
 
+   .. grid-item-card:: Match Integration
+      :link: match
+      :link-type: doc
+
+      Integrating Registry with COmanage Match for identity deduplication —
+      detecting and resolving duplicate person records across your population.
+
 .. toctree::
    :maxdepth: 2
    :hidden:
@@ -73,6 +80,7 @@ technical references, recipes, and case studies.
    operations
    personalization
    extending
+   match
 
 .. note::
 
