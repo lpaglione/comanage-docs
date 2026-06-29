@@ -68,9 +68,8 @@ for configuration details.
 2. Capabilities Restored from v4
 ----------------------------------
 
-This release completes the first phase of feature equivalency work. The
-following capabilities existed in Registry v4 and are now available in
-Registry PE v5.
+The following capabilities existed in Registry v4 and are now available
+in Registry v5.2.0.
 
 **Terms and Conditions**
 
@@ -211,9 +210,8 @@ Hierarchy) has been improved. See :ref:`transitioning-transmogrification`.
 -----------------
 
 Registry v5.2.0 marks the next phase of feature equivalency work.
-Information about what the COmanage Project is focusing on next — and the
-broader v4 end-of-life plan — is available at the `COmanage v4 EOL Plan
-<https://spaces.at.internet2.edu/x/74ABFg>`_.
+For the current status of feature equivalency between v4 and v5, see
+:ref:`transitioning-feature-status`.
 
 The COmanage Project's monthly **Open Office Hours** is an open call where
 you can ask questions, share feedback, and hear how other organizations are
