@@ -7,6 +7,8 @@ Transitioning from v4 to v5
    :maxdepth: 2
    :hidden:
 
+   whats-new-5.2.0
+   whats-new-5.1.0
    feature-status
    upgrading
    transmogrification
@@ -18,6 +20,20 @@ migrate your data.
 
 .. grid:: 2
    :gutter: 3
+
+   .. grid-item-card:: What's New in v5.2.0
+      :link: transitioning-whats-new-5.2.0
+      :link-type: ref
+
+      New capabilities, restored v4 features, and interface improvements in
+      Registry v5.2.0.
+
+   .. grid-item-card:: What's New in v5.1.0
+      :link: transitioning-whats-new-5.1.0
+      :link-type: ref
+
+      Enrollment Flows, Record Adoption, Relinking, and other new capabilities
+      in Registry v5.1.0.
 
    .. grid-item-card:: Feature Status in v5
       :link: transitioning-feature-status

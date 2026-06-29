@@ -253,8 +253,10 @@ If you are migrating from Registry v4, the following changes apply:
   Person Roles. See the Pipeline documentation for details.
 
 - **Sync modes changed.** The v4 **Query** mode (matching against verified email
-  addresses) and **Sync on Login** are not available in v5. The sync modes in v5
-  are Full, Update, Manual, and Disabled.
+  addresses) is not available in v5. The sync modes in v5 are Full, Update,
+  Manual, and Disabled. **Sync on Login**, which was not available in v5.0.x,
+  was restored in v5.1.0 as a feature of the Env Source Plugin — the Env Source
+  can be configured to sync a person's record each time they log in to Registry.
 
 - **Record Adoption added (v5.1.0).** Administrators can now convert External
   Identities to Registry-native records via adoption.

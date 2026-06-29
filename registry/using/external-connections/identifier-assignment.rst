@@ -137,8 +137,10 @@ note the failure in the logs.
 
 .. note::
 
-   Identifier Assignment currently works best with standard ASCII characters.
-   UTF-8 characters are not fully supported.
+   Identifier Assignment works best with standard ASCII characters. If source
+   name attributes may include accented or non-Latin characters, enable
+   **transliteration** in the Format Identifier Assignment Plugin to convert
+   non-ASCII characters to ASCII equivalents before generating the identifier.
 
 5. Available Plugins
 --------------------
@@ -168,3 +170,14 @@ If you are migrating from Registry v4, the following changes apply:
 
 - **Email Address uniqueness checks are now scoped to the configured Email
   Address type**, rather than being global across all email addresses.
+
+- **Transliteration support added (v5.1.0).** The Format Identifier Assignment
+  Plugin can now be configured to convert non-ASCII characters to their ASCII
+  equivalents before generating the identifier. This is useful when identifiers
+  must be ASCII-only but source name attributes may include accented or
+  non-Latin characters.
+
+- **Minimum length setting added (v5.1.0).** The Format Identifier Assignment
+  Plugin now supports a minimum length constraint. If the generated candidate
+  is shorter than the configured minimum, the plugin continues iterating
+  (appending numeric suffixes) until the identifier meets the minimum length.

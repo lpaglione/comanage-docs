@@ -76,7 +76,20 @@ time. This includes improvements to:
 .. TODO: Document specific usability improvements with examples and screenshots
    once the v5 UI is finalized and feedback from early adopters is incorporated.
 
-6. Changes from v4
+6. User Display Preferences
+----------------------------
+
+:bdg-secondary:`Available: v5.1.0`
+
+Registry v5 stores individual user display preferences across sessions. Users
+can adjust settings such as **display density** (compact vs. normal view for
+list and canvas views) and **dark mode**, independently of operating system
+settings. Pagination state is also remembered per user.
+
+.. TODO: Add screenshots of the user preferences panel and document how to
+   access it once v5 UI screenshots are available.
+
+7. Changes from v4
 -------------------
 
 The v5 interface is a ground-up redesign; many things have moved. Where
