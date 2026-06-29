@@ -167,16 +167,10 @@ Registry. The general approach is:
 7. Available Authenticator Types
 --------------------------------
 
-.. note::
-
-   **About this section**
-
-   The current set of available Authenticator Plugins is listed in the Technical
-   Manual. See
-   `Available Authenticator Plugins <https://spaces.at.internet2.edu/spaces/COmanage/pages/350160334/Available+Authenticator+Plugins>`_
-   for the current list.
-
-   Available types in v5 include Password and SSH Key.
+The canonical list of available Authenticator Plugins is maintained in the
+Technical Manual. See
+`Available Authenticator Plugins <https://spaces.at.internet2.edu/spaces/COmanage/pages/350160334/Available+Authenticator+Plugins>`_
+for the current set.
 
 Custom Authenticator Plugins can be written to support additional credential
 types. See

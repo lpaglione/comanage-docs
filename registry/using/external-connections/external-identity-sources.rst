@@ -209,22 +209,10 @@ views for high-volume sources.
 6. Available Plugins
 --------------------
 
-.. note::
-
-   **About this section**
-
-   In the original v4 documentation, this list was generated automatically from
-   a content-by-label macro in Confluence, pulling all pages tagged as External
-   Identity Source plugins. We are evaluating the best way to surface this list
-   dynamically — or to maintain it — within this Read The Docs site.
-
-   For now, the canonical list of available External Identity Source Plugins is:
-
-   `Available External Identity Source Plugins <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743510/Available+External+Identity+Source+Plugins>`_
-   in the Technical Manual.
-
-   The plugins available in Registry v5 are: API Source, Env Source, File Source,
-   ORCID Source, and SQL Source.
+The canonical list of available External Identity Source Plugins is maintained
+in the Technical Manual. See
+`Available External Identity Source Plugins <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743510/Available+External+Identity+Source+Plugins>`_
+for the current set.
 
 If none of the available plugins meets your needs, custom plugins can be written.
 See

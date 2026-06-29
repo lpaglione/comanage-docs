@@ -143,20 +143,10 @@ note the failure in the logs.
 5. Available Plugins
 --------------------
 
-.. note::
-
-   **About this section**
-
-   The canonical list of available Identifier Assignment Plugins is maintained
-   in the Technical Manual. See
-   `Available Identifier Assignment Plugins <https://spaces.at.internet2.edu/spaces/COmanage/pages/269746381/Available+Identifier+Assignment+Plugins>`_
-   for the current set.
-
-   We are evaluating the best approach for surfacing this list within this
-   documentation.
-
-   Available plugins in v5 include the Format Identifier Assignment Plugin and
-   the SQL Identifier Assignment Plugin.
+The canonical list of available Identifier Assignment Plugins is maintained
+in the Technical Manual. See
+`Available Identifier Assignment Plugins <https://spaces.at.internet2.edu/spaces/COmanage/pages/269746381/Available+Identifier+Assignment+Plugins>`_
+for the current set.
 
 Custom plugins can be written to implement arbitrary generation strategies. See
 `Identifier Assignment Plugins (PE) <https://spaces.at.internet2.edu/spaces/COmanage/pages/269746376/Identifier+Assignment+Plugins+PE>`_
