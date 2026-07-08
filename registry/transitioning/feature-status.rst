@@ -16,8 +16,8 @@ are not listed here.
 
 .. note::
 
-   Status data is sourced from the COmanage Project's feature equivalency
-   tracker, last updated May 2026. Items marked with a ✓ in the v5.2.0
+   Status data is sourced from the `COmanage Project's feature equivalency
+   tracker <https://docs.google.com/spreadsheets/d/1ZptfWonz7tvcg9y3pGWHUid-TFJlMKFvl32Et1dpubM/edit?gid=1518583801#gid=1518583801&fvid=1089383874>`_, last updated May 2026. Items marked with a ✓ in the v5.2.0
    column were completed in that release. Planned release targets are
    subject to change based on community priorities and funding.
 
