@@ -16,6 +16,9 @@ sphinx:
   configuration: registry/conf.py
   fail_on_warning: false
 
+submodules:
+  include: all
+
 python:
   install:
     - requirements: registry/requirements.txt

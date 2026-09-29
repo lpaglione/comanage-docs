@@ -1,0 +1,3 @@
+[submodule "docs/source/comanage-files"]
+	path = docs/source/comanage-files
+	url = https://github.internet2.edu/InCommon-Training/comanage-files.git
