@@ -64,7 +64,7 @@ names, identifiers, email addresses, and status. Most of the richness comes
 from the objects connected to it — external identities, person roles, group
 memberships, and attributes.
 
-.. figure:: _images/ModelingPersonOrgRelationships.png
+.. figure:: /comanage-files/registry/original-class/101-getting-to-know/ModelingPersonOrgRelationships.png
    :alt: How Registry is structured, showing CMP, COs, Person records, External
          Identities, Person Roles, COUs, Groups, Authenticators, and Email Lists
    :width: 100%
@@ -81,7 +81,7 @@ person as known by external systems. Each External Identity captures what one
 system of record knows about the person: their name, identifiers, email
 addresses, affiliation, and other attributes as held by that source.
 
-.. figure:: _images/ModelingPeople.png
+.. figure:: /comanage-files/registry/original-class/101-getting-to-know/ModelingPeople.png
    :alt: Diagram showing how External Identity Sources, cached source records,
          External Identities, and Person records relate to each other
    :width: 80%
@@ -89,21 +89,6 @@ addresses, affiliation, and other attributes as held by that source.
    How a person moves from an external source into Registry. *Note: this diagram
    uses v4 terminology. "Org Identity Source" = External Identity Source;
    "Org Identity" = External Identity; "CO Person" = Person.*
-
-.. figure:: /comanage-files/registry/original-class/310-modeling-people/co310.5_modeling_people.png
-   :alt: Diagram showing how External Identity Sources, cached source records,
-         External Identities, and Person records relate to each other
-   :width: 80%
-
-   caption - this is the image from the submodule.
-
-.. figure:: /comanage-files/registry/original-class/workbook/00-getting-started/00-platform.png
-   :alt: Diagram showing how External Identity Sources, cached source records,
-         External Identities, and Person records relate to each other
-   :width: 80%
-
-   caption - this is the image from the submodule.
-
 
 The flow from an external source into Registry works in layers:
 
@@ -228,7 +213,7 @@ Registry provides two tools for organizing your population within a CO: COUs
 and Groups. They serve different purposes and work at different levels of
 Registry's structure.
 
-.. figure:: _images/ModelingOrgs.png
+.. figure:: /comanage-files/registry/original-class/101-getting-to-know/ModelingOrgs.png
    :alt: Table comparing CO, COU, CO Group, and CO Department along dimensions
          of membership, hierarchy, and supported attributes
    :width: 90%
