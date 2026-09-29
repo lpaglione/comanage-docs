@@ -87,6 +87,7 @@ addresses, affiliation, and other attributes as held by that source.
    :width: 80%
 
 .. figure:: /comanage-files/registry/original-class/310-modeling-people/co310.5_modeling_people.png
+
     caption - this is the image from the submodule.
 
    How a person moves from an external source into Registry. *Note: this diagram
