@@ -94,6 +94,8 @@ addresses, affiliation, and other attributes as held by that source.
    uses v4 terminology. "Org Identity Source" = External Identity Source;
    "Org Identity" = External Identity; "CO Person" = Person.*
 
+.. figure:: /comanage-files/registry/original-class/workbook/00-getting-started/00-platform.png
+
 The flow from an external source into Registry works in layers:
 
 **External Identity Source** (configured in Registry)
