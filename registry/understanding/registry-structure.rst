@@ -86,15 +86,24 @@ addresses, affiliation, and other attributes as held by that source.
          External Identities, and Person records relate to each other
    :width: 80%
 
-.. figure:: /comanage-files/registry/original-class/310-modeling-people/co310.5_modeling_people.png
-
-    caption - this is the image from the submodule.
-
    How a person moves from an external source into Registry. *Note: this diagram
    uses v4 terminology. "Org Identity Source" = External Identity Source;
    "Org Identity" = External Identity; "CO Person" = Person.*
 
+.. figure:: /comanage-files/registry/original-class/310-modeling-people/co310.5_modeling_people.png
+   :alt: Diagram showing how External Identity Sources, cached source records,
+         External Identities, and Person records relate to each other
+   :width: 80%
+
+   caption - this is the image from the submodule.
+
 .. figure:: /comanage-files/registry/original-class/workbook/00-getting-started/00-platform.png
+   :alt: Diagram showing how External Identity Sources, cached source records,
+         External Identities, and Person records relate to each other
+   :width: 80%
+
+   caption - this is the image from the submodule.
+
 
 The flow from an external source into Registry works in layers:
 
