@@ -60,12 +60,20 @@ the Plugin registry is next refreshed.
 
 Activating a Plugin is done through the Registry administrative interface:
 
+.. figure:: /comanage-files/registry_v5.2/configuration/Platform_Configuration_Menu.png
+   :alt: The Platform-Wide Configuration menu from the Platform CO (COmanage)
+   :width: 100%
+
 1. Log in as a Platform Administrator.
 2. Navigate to **COmanage CO > Configuration > Plugins**.
    Loading this page refreshes the Plugin registry, and any newly installed
    Local Plugins will appear in the list.
 3. Find the Plugin you want to activate and select **Activate**.
    This applies the Plugin's database schema automatically.
+
+.. figure:: /comanage-files/registry_v5.2/configuration/Platform_Plugin_Configuration.png
+   :alt: The Plugin configuration list. Available plugins can be activated by clicking on the "Gear" icon and selecting "activate".
+   :width: 100%
 
 A Plugin that is in use cannot be suspended. Before deactivating a Plugin,
 remove any configurations that reference it.
