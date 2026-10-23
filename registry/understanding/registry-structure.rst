@@ -84,7 +84,7 @@ addresses, affiliation, and other attributes as held by that source.
 .. figure:: /comanage-files/registry/original-class/101-getting-to-know/ModelingPeople.png
    :alt: Diagram showing how External Identity Sources, cached source records,
          External Identities, and Person records relate to each other
-   :width: 80%
+   :width: 100%
 
    How a person moves from an external source into Registry. *Note: this diagram
    uses v4 terminology. "Org Identity Source" = External Identity Source;
@@ -216,7 +216,7 @@ Registry's structure.
 .. figure:: /comanage-files/registry/original-class/101-getting-to-know/ModelingOrgs.png
    :alt: Table comparing CO, COU, CO Group, and CO Department along dimensions
          of membership, hierarchy, and supported attributes
-   :width: 90%
+   :width: 100%
 
    Comparison of CO, COU, and Group along key dimensions. *Note: this diagram
    uses v4 terminology.*

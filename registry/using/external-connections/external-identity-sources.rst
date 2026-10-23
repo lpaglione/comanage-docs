@@ -50,16 +50,29 @@ Once a Pipeline is in place:
 1. Navigate to **Configuration > External Identity Sources > Add a New External
    Identity Source**.
 2. Set the **Status** (sync mode) as described below.
-3. Select the desired **Plugin** for your source type.
+3. Select the desired **Plugin** for your source type. The menu lists each
+   plugin as ``Package.Plugin`` (for example, ``FileConnector.FileSources``).
+   Plugins that aren't Core appear only after their package has been
+   activated; see `6. Available Plugins`_ below.
 4. Select the **Pipeline** to use for processing incoming records.
-5. If using the API Source Plugin, enter a **System of Record Label** — this
-   identifier is passed to the plugin to distinguish between source systems.
+5. Enter a **System of Record Label** if the plugin uses one. API Source
+   uses it to identify the source system in its endpoint URL; see
+   :ref:`eis-api-source`.
 6. Click **Save**, then configure the plugin-specific settings that appear.
 
 2. Sync Modes
 -------------
 
-Each External Identity Source has a Status that controls how records are synced
+.. note::
+
+   **Sync mode and Status are the same thing.** On the External Identity
+   Source configuration page, the sync mode is set in the field labeled
+   **Status**. The Technical Manual calls it "Status (Sync Mode)".
+
+.. REVIEW: update this note if the UI label changes from "Status" to
+   "Sync Mode" (change requested October 2026).
+
+Each External Identity Source has a sync mode that controls how records are synced
 from the source into Registry. Choose the sync mode that matches how you want
 records to flow.
 
@@ -107,8 +120,8 @@ manually by an administrator or scheduled to run periodically.
 
 .. note::
 
-   Not all External Identity Source Plugins support all sync modes. Consult the
-   plugin documentation to confirm which modes are supported.
+   Not all External Identity Source Plugins support all sync modes. See the
+   table in `6. Available Plugins`_ and each plugin's page.
 
 **Manually (one record at a time)**
 
@@ -209,15 +222,60 @@ views for high-volume sources.
 6. Available Plugins
 --------------------
 
-The canonical list of available External Identity Source Plugins is maintained
-in the Technical Manual. See
-`Available External Identity Source Plugins <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743510/Available+External+Identity+Source+Plugins>`_
-for the current set.
+Registry v5 includes five External Identity Source plugins. Each has its own
+page describing what it connects to, how to enable it and how to configure
+it.
 
-If none of the available plugins meets your needs, custom plugins can be written.
+.. list-table::
+   :header-rows: 1
+   :widths: 16 30 24 30
+
+   * - Source
+     - Connects to
+     - To enable
+     - Sync
+   * - :ref:`File Source <eis-file-source>`
+     - A CSV file on the Registry server. Most often used for an initial
+       load.
+     - Activate **FileConnector** (Available)
+     - Full, Update and Manual
+   * - :ref:`SQL Source <eis-sql-source>`
+     - A table or view in an external SQL database
+     - Activate **SqlConnector** (Available)
+     - Full, Update and Manual
+   * - :ref:`API Source <eis-api-source>`
+     - An external system that sends records to Registry through a REST API
+     - Activate **ApiConnector** (Available)
+     - None needed: records arrive as they are sent
+   * - :ref:`Env Source <eis-env-source>`
+     - Attributes from a person's identity provider, captured when they log
+       in, typically during enrollment
+     - Nothing: **EnvSource** is Core
+     - None on a schedule; can refresh at each login
+   * - :ref:`ORCID Source <eis-orcid-source>`
+     - A person's ORCID record, linked when they sign in to ORCID during
+       enrollment
+     - Nothing: **OrcidSource** is Core
+     - None on a schedule
+
+The "To enable" column names the plugin package as it appears on the
+**Plugins** page. Some packages contain other plugins too; for example,
+activating FileConnector also makes File Provisioner available. See
+:ref:`extend-plugins` for the full list.
+
+If none of these plugins meets your needs, custom plugins can be written.
 See
 `External Identity Source Plugins (PE) <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743750/External+Identity+Source+Plugins+PE>`_
 in the Technical Manual for the technical specification.
+
+.. toctree::
+   :hidden:
+
+   external-identity-sources/file-source
+   external-identity-sources/sql-source
+   external-identity-sources/api-source
+   external-identity-sources/env-source
+   external-identity-sources/orcid-source
 
 7. Technical Reference
 ----------------------
@@ -263,7 +321,9 @@ If you are migrating from Registry v4, the following changes apply:
 
 - **Plugins changed.** Several v4 plugins (LDAP Source, netFORUM Source, Novi
   Source, Salesforce Source) are not available in the v5 plugin library. The v5
-  plugins are: API Source, Env Source, File Source, ORCID Source, SQL Source.
+  plugins are :ref:`API Source <eis-api-source>`,
+  :ref:`Env Source <eis-env-source>`, :ref:`File Source <eis-file-source>`,
+  :ref:`ORCID Source <eis-orcid-source>` and :ref:`SQL Source <eis-sql-source>`.
 
 - **ePPN generation removed.** The v4 configuration option for automatically
   generating ePPN identifiers from source data is not present in v5. This

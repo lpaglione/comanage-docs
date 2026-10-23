@@ -40,10 +40,55 @@ and managed:
    vendor-supplied plugins, or plugins you write yourself. Local Plugins must
    be installed on the Registry filesystem before they can be activated.
 
-A single Plugin can implement multiple Plugin Types. For example, a Plugin
-that connects Registry to a specific downstream application might implement
-both the Provisioner type and the External Identity Source type, making it a
-"Connector."
+**Plugin packages and the plugins inside them**
+
+What you activate on the **Plugins** page is a *package*. A package
+provides one or more plugins, and each of those plugins is of a particular
+Plugin Type (see Section 3). For example:
+
+- the **FileConnector** package provides **File Source** (an External
+  Identity Source) and **File Provisioner** (a Provisioner);
+- the **EnvSource** package provides **Env Source** (an External Identity
+  Source), **Env Source Collector** (an Enrollment Flow Step) and **Env
+  Source Detour** (a Traffic plugin).
+
+Packages that connect Registry to an outside system in both directions are
+often named "Connectors", but the name isn't a reliable guide to what a
+package contains. The `4. Plugin Catalog`_ below lists every package that
+ships with Registry and what it provides.
+
+Three places use different names for the same thing, which can be
+confusing at first:
+
+.. list-table::
+   :header-rows: 1
+   :widths: 35 30 35
+
+   * - Where
+     - What it shows
+     - Example
+   * - The **Plugins** page (activation)
+     - Package name only
+     - FileConnector
+   * - The **Plugin** menu when configuring something
+     - ``Package.Plugin``
+     - ``FileConnector.FileSources``
+   * - The Technical Manual
+     - Plugin name
+     - File Source Plugin
+
+The ``Package.Plugin`` form in configuration menus tells you exactly which
+package a plugin comes from. That matters when two packages provide plugins
+with similar names. For example, a locally installed package called
+``MyCampusPlugins`` could also provide a file-based source, which would
+appear as ``MyCampusPlugins.FileSources``.
+
+.. note::
+
+   The **Plugins** page currently shows Core or Available in a column
+   labeled *Location*.
+
+.. REVIEW: update or remove the note above once the UI label changes.
 
 2. Installing and Activating Plugins
 --------------------------------------
@@ -70,6 +115,13 @@ Activating a Plugin is done through the Registry administrative interface:
    Local Plugins will appear in the list.
 3. Find the Plugin you want to activate and select **Activate**.
    This applies the Plugin's database schema automatically.
+
+.. tip::
+
+   The Plugins list shows package names, not the plugins inside them. To
+   find which package provides the plugin you need, see the
+   `4. Plugin Catalog`_ below, or the page for that kind of plugin (for
+   example, :ref:`ec-external-identity-sources`).
 
 .. figure:: /comanage-files/registry_v5.2/configuration/Platform_Plugin_Configuration.png
    :alt: The Plugin configuration list. Available plugins can be activated by clicking on the "Gear" icon and selecting "activate".
@@ -184,8 +236,88 @@ links to where each is documented.
        redirecting authentication events to external systems.
      - *(Not yet separately documented)*
 
-4. Changes from v4
--------------------
+4. Plugin Catalog
+-----------------
+
+These are the plugin packages that ship with Registry v5.2.0. Core packages
+are always active; Available packages must be activated before their
+plugins can be used.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 24 14 62
+
+   * - Package (as on the Plugins page)
+     - Core / Available
+     - Plugins it provides (Plugin Type)
+   * - **ApiConnector**
+     - Available
+     - :ref:`API Source <eis-api-source>` (External Identity Source);
+       API Source Endpoint (API)
+   * - **CoreApi**
+     - Core
+     - Match Callback (API)
+   * - **CoreAssigner**
+     - Core
+     - Format Assigner, SQL Assigner (Identifier Assignment)
+   * - **CoreEnroller**
+     - Core
+     - Approval Collector, Attribute Collector, Basic Attribute Collector,
+       Email Verifier, Identifier Collector, Invitation Accepter
+       (Enrollment Flow Step)
+   * - **CoreJob**
+     - Core
+     - Adopter, Assigner, Deletion, Nester, Provisioner and Sync Jobs (Job)
+   * - **CoreServer**
+     - Core
+     - HTTP, Match, OAuth2, SMTP and SQL Servers (Server)
+   * - **EnvSource**
+     - Core
+     - :ref:`Env Source <eis-env-source>` (External Identity Source);
+       Env Source Collector (Enrollment Flow Step);
+       Env Source Detour (Traffic)
+   * - **FileConnector**
+     - Available
+     - :ref:`File Source <eis-file-source>` (External Identity Source);
+       File Provisioner (Provisioner)
+   * - **HistoricPetitionViewer**
+     - Available
+     - No plugin types; a utility for viewing petitions migrated from v4
+   * - **KerberosConnector**
+     - Available
+     - Kerberos Provisioner (Provisioner); Kerberos Server (Server)
+   * - **OrcidSource**
+     - Core
+     - :ref:`ORCID Source <eis-orcid-source>` (External Identity Source);
+       ORCID Source Collector (Enrollment Flow Step)
+   * - **PasswordAuthenticator**
+     - Available
+     - Password Authenticator (Authenticator)
+   * - **PipelineToolkit**
+     - Available
+     - Identifier Mapper, Person Role Mapper (Pipeline Plugin)
+   * - **SqlConnector**
+     - Available
+     - :ref:`SQL Source <eis-sql-source>` (External Identity Source);
+       SQL Provisioner (Provisioner)
+   * - **SshKeyAuthenticator**
+     - Core
+     - SSH Key Authenticator (Authenticator)
+   * - **TermsAgreer**
+     - Core
+     - T&C Agreement Collector (Enrollment Flow Step)
+   * - **Transmogrify**
+     - Available
+     - No plugin types; the v4-to-v5 data migration tool (see
+       :ref:`transitioning-transmogrification`)
+
+.. REVIEW: this list was compiled from the v5.2.0 source code (each
+   package's plugin.json). Check it against the Plugins page in a running
+   instance, and confirm the descriptions of HistoricPetitionViewer and
+   Transmogrify with the developers.
+
+5. Changes from v4
+------------------
 
 - **Plugin activation is now entirely UI-based.** In v4, enabling a non-core
   Plugin required creating a symlink and running command-line tools to clear

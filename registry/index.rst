@@ -48,6 +48,13 @@ concepts, configuration recipes, and case studies to complement the
 .. grid:: 2
    :gutter: 3
 
+   .. grid-item-card:: Getting Started
+      :link: getting-started/index
+      :link-type: doc
+
+      Hands-on lessons for learning Registry by doing, following three sample
+      organizations from a first CO through enrollment and provisioning.
+
    .. grid-item-card:: Configuration Recipes
       :link: recipes/index
       :link-type: doc
@@ -69,12 +76,25 @@ concepts, configuration recipes, and case studies to complement the
 .. toctree::
    :maxdepth: 2
    :hidden:
-   :caption: Contents
+   :caption: Learn about Registry
 
    about/index
    understanding/index
    using/index
+   transitioning/index
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Registry in practice
+
+   getting-started/index
    recipes/index
    case-studies/index
-   transitioning/index
+
+.. toctree::
+   :maxdepth: 2
+   :hidden:
+   :caption: Community
+
    community/index

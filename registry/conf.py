@@ -23,7 +23,17 @@ extensions = [
 templates_path = ['_templates']
 
 # Patterns relative to source directory to exclude from build
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+# Getting Started lessons that are drafted but not yet verified on Registry
+# v5.2.0. Listed files are left out of the build (and so out of Read the
+# Docs). To publish a lesson, delete its line here and add it to its module's
+# toctree.
+UNVERIFIED = [
+    'getting-started/structure/first-co.rst',
+    'getting-started/connections/source-hr-file.rst',
+    # 'getting-started/connections/source-hr-api.rst',
+]
+
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store'] + UNVERIFIED
 
 # Warn on broken cross-references
 nitpicky = False
