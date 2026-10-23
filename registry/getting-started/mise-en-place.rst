@@ -3,8 +3,11 @@
 
 .. _gs-before-you-begin:
 
-Before You Begin
-================
+Mise en Place: Getting Ready
+============================
+
+*Mise en place* is the cook's habit of getting everything in place before
+starting. This lesson does the same for Registry.
 
 .. sidebar:: On this page
 
@@ -12,7 +15,7 @@ Before You Begin
       :local:
       :depth: 1
 
-**Module:** 0, Before you begin · **Sample org:** all three ·
+**Module:** 0, Mise en place · **Sample org:** all three ·
 **Registry:** v5.2.0 or later
 
 The scenario

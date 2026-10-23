@@ -32,6 +32,12 @@ Start with :ref:`gs-before-you-begin`. It covers what you need in place (a
 running Registry environment where you can create COs) and a few tools that
 make the lessons easier.
 
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+
+   mise-en-place
+
 Modules
 -------
 
@@ -86,6 +92,19 @@ Modules
 
       Run and monitor background work from the Registry interface.
 
+.. toctree::
+   :hidden:
+   :maxdepth: 2
+
+   module-1
+   module-2
+   module-3
+   module-4
+   module-5
+   module-6
+   module-7
+   module-8
+
 Learning paths
 --------------
 
@@ -100,15 +119,6 @@ sequences the lessons that matter most for that use case.
    :hidden:
    :maxdepth: 2
 
-   before-you-begin
-   module-1
-   module-2
-   module-3
-   module-4
-   module-5
-   module-6
-   module-7
-   module-8
    path-enterprise
    path-guest
    path-vo
