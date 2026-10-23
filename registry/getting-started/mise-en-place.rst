@@ -15,7 +15,7 @@ starting. This lesson does the same for Registry.
       :local:
       :depth: 1
 
-**Module:** 0, Mise en place · **Sample org:** all three ·
+**Module:** 0, Mise en place · **Learning paths:** all ·
 **Registry:** v5.2.0 or later
 
 The scenario
@@ -94,7 +94,8 @@ if your version is different, some screens may not match.
    The Configuration panel in the COmanage CO. Platform-Wide Configuration
    appears only here.
 
-.. seealso::
+.. admonition:: Learn more
+   :class: seealso
 
    User guide: :ref:`struct-co`
 
@@ -131,7 +132,8 @@ The lessons in this series use these available plugins:
 
 .. REVIEW: update this list as lessons are written.
 
-.. seealso::
+.. admonition:: Learn more
+   :class: seealso
 
    User guide: :ref:`extend-plugins`
 

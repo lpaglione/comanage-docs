@@ -1,4 +1,4 @@
-.. DRAFT (Oct 2026): Lesson 1. Unpublished (listed in UNVERIFIED in conf.py).
+.. DRAFT (Oct 2026): Lesson 1. Published on the Module 1 page (Oct 23).
    Click paths confirmed in workshop testing on the 5.2.0 kit (deck Section 1).
    Screenshots are 5.2.0 captures; some show the Discovery TNG demo CO and
    should be retaken with the sample orgs.
@@ -14,7 +14,7 @@ Your First CO
       :local:
       :depth: 1
 
-**Module:** 1, Your First CO · **Sample org:** all three ·
+**Module:** 1, Your First CO · **Learning paths:** all ·
 **Features section:** :ref:`using-structure` · **Registry:** v5.2.0
 
 The scenario
@@ -71,19 +71,44 @@ not something an administrator of an individual CO can do.
    :alt: The Available Collaborations page
    :width: 100%
 
-.. seealso::
+.. admonition:: Learn more
+   :class: seealso
 
    User guide: :ref:`struct-co`
 
 2. Create Redcurrant University
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Which COs you create depends on the path you're following. Every path
+needs a CO for the next lessons; Redcurrant University is the one the
+lessons use as their example.
+
+.. list-table::
+   :header-rows: 1
+   :widths: 30 25 45
+
+   * - CO
+     - Create it?
+     - For
+   * - **Redcurrant University**
+     - Yes
+     - Every path, and all the lessons that follow. If you're not following
+       a particular path, this is the only CO you need.
+   * - **Guests**
+     - Optional
+     - The :ref:`gs-path-guest` path. Create it now or when that path asks
+       for it.
+   * - **MESS**
+     - Optional
+     - The :ref:`gs-path-vo` path. Create it now or when that path asks for
+       it.
+
+To create a CO:
+
 #. Open **Configuration** in the menu on the left. Under
    **Platform-Wide Configuration**, select **COs**.
 #. Select **Add a New CO**.
-#. Fill in the form using the Redcurrant University values below, then save.
-#. Optionally, repeat for Guests and MESS. Later lessons say which CO they
-   use.
+#. Fill in the form using the values in the tab for that CO, then save.
 
 .. figure:: /comanage-files/registry_v5.2/configuration/Platform_Configuration_Menu.png
    :alt: The Configuration panel in the COmanage CO, with COs listed under Platform-Wide Configuration
@@ -96,7 +121,7 @@ not something an administrator of an individual CO can do.
 
 .. tab-set::
 
-   .. tab-item:: Redcurrant University
+   .. tab-item:: Redcurrant University (every path)
 
       .. list-table::
          :header-rows: 1
@@ -116,7 +141,7 @@ not something an administrator of an individual CO can do.
            - Active
            - The CO is usable as soon as it's saved.
 
-   .. tab-item:: Guests
+   .. tab-item:: Guests (optional, Guest path)
 
       .. list-table::
          :header-rows: 1
@@ -136,7 +161,7 @@ not something an administrator of an individual CO can do.
            - Active
            - The CO is usable as soon as it's saved.
 
-   .. tab-item:: MESS
+   .. tab-item:: MESS (optional, Research path)
 
       .. list-table::
          :header-rows: 1
@@ -168,7 +193,8 @@ use as a starting point for others. For these lessons, always choose Active.
    same environment (in a workshop, for example), add your initials, such as
    ``MESS-LP``.
 
-.. seealso::
+.. admonition:: Learn more
+   :class: seealso
 
    User guide: :ref:`struct-co`
 
@@ -177,9 +203,19 @@ use as a starting point for others. For these lessons, always choose Active.
 
 Once your COs exist, you need to be *in* one to work on it.
 
-#. Open the user menu (your name, at the top right) and choose
-   **Switch CO**.
+#. Open the **My Identity** menu: your name, at the top right.
+#. Choose **Switch CO**.
 #. Select **Redcurrant University**.
+
+.. figure:: /comanage-files/registry_v5.2/people/My_Identity_Menu.png
+   :alt: The My Identity menu open at the upper right, with Switch CO, the link to your own record, display settings and Log Out
+   :width: 100%
+
+   The My Identity menu. You'll come back to it to switch COs, open your own
+   record, change display settings, or log out.
+
+.. SCREENSHOT: My_Identity_Menu.png isn't in the local comanage-files
+   checkout yet (update the submodule). Check the alt text against it.
 
 .. note::
 
@@ -192,15 +228,27 @@ the habit of checking it: working in the wrong CO is one of the easiest
 mistakes to make in Registry.
 
 .. figure:: /comanage-files/registry_v5.2/orgStructure/MESS_Home.png
-   :alt: The home page of the MESS CO, with the CO name in the banner and the five menu areas on the left
+   :alt: The home page of a new CO, with the CO name in the banner and the five menu areas on the left
    :width: 100%
 
    The home page of a new CO. The CO's name is in the banner.
+
+.. SCREENSHOT: shows the MESS CO; the step describes Redcurrant University.
+   Retake as Redcurrant University's home page.
 
 **Note the CO's ID number.** Every CO has a numeric ID. You'll need it in
 the next lesson, and whenever you use the API or command-line tools. It
 appears in your browser's address bar while you're working in the CO, as
 ``co_id=`` followed by the number (for example ``co_id=2``).
+
+.. figure:: /comanage-files/registry_v5.2/configuration/co_id.png
+   :alt: The browser address bar while working in a CO, with co_id and the CO's number highlighted
+   :width: 100%
+
+   Where to find the CO's ID: ``co_id=`` in the address bar.
+
+.. SCREENSHOT: co_id.png isn't in the local comanage-files checkout yet
+   (update the submodule). Check the alt text against it.
 
 .. note::
 
@@ -274,9 +322,9 @@ grouped by type (people, groups, and so on), so you can go straight to the
 record you want. Lists such as My Population also have their own
 **Filter**, which narrows just that list.
 
-**Your display settings.** The user menu (top right) lets you choose a
-display **density** and **dark mode**. Registry remembers these choices for
-you.
+**Your display settings.** The **My Identity** menu (top right, shown in
+step 3) has a **Settings** section where you choose a display **density**
+and **dark mode**. Registry remembers these choices for you.
 
 .. note::
 
@@ -284,7 +332,8 @@ you.
    (it was a separate Platform menu in v4), and the CO menu is organized
    into the five areas above instead of a single long configuration page.
 
-.. seealso::
+.. admonition:: Learn more
+   :class: seealso
 
    User guide: :ref:`understanding-interface`
 
@@ -318,7 +367,7 @@ uses that name, possibly with different capitalization. Choose a different
 name, for example by adding your initials.
 
 **Clicking your new CO's name opens a form instead of the CO.** That's the
-CO's edit page in the COmanage CO. Use **Switch CO** in the user menu to go
+CO's edit page in the COmanage CO. Use **Switch CO** in the My Identity menu to go
 into the CO.
 
 **Your new CO doesn't appear in the list, or you can't open it.** Check that

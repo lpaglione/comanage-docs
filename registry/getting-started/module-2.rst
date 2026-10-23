@@ -14,10 +14,10 @@ Background reading
 Lessons
 -------
 
-.. note::
+.. toctree::
+   :maxdepth: 1
 
-   Lessons in this module will appear here as they are verified against
-   Registry v5.2.0.
+   connections/source-hr-file
 
-.. Add published lessons to a toctree here. Unverified lessons stay in
-   UNVERIFIED in conf.py and are not listed.
+.. Add each lesson here once it's verified on Registry v5.2.0. Unverified
+   lessons stay in UNVERIFIED in conf.py and are not listed.

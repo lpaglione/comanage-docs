@@ -1,8 +1,7 @@
-.. DRAFT (Oct 2026): Lesson 2. Unpublished (listed in UNVERIFIED in conf.py).
+.. DRAFT (Oct 2026): Lesson 2. Published on the Module 2 page (Oct 23).
    Procedure follows the workshop deck's Section 2 and the kit's instructor
-   guide, both tested on 5.2.0. Screenshots for the flange pages and the
-   source's Search tab are still TODO (the deck's images aren't in
-   comanage-files).
+   guide, both tested on 5.2.0. Screenshots of the source's Search tab are
+   still TODO.
 
 .. _gs-source-hr-file:
 
@@ -15,7 +14,8 @@ Bring People In from an HR File
       :local:
       :depth: 1
 
-**Module:** 2, Bring People In · **Sample org:** Redcurrant University ·
+**Module:** 2, Bring People In · **Learning paths:** Enterprise (Redcurrant
+University; any CO from Module 1 works) ·
 **Features section:** :ref:`using-external-connections` · **Registry:** v5.2.0
 
 The scenario
@@ -33,18 +33,18 @@ What you'll learn
 - How data gets from a source into Registry: an **External Identity Source**
   reads the source, and a **Pipeline** turns each record into a Person. See
   :ref:`ec-external-identity-sources` and :ref:`ec-pipelines`.
-- What a **flange** is, and why this one is needed for people to log in.
+- What a **flange** is, and why one is needed in this case for people to log in.
 - How to test a source with one person before syncing everyone.
 
 Ingredients
 -----------
 
-- Completed: :ref:`gs-module-1` (Redcurrant University exists, and you know
-  its CO ID)
+- Completed: :ref:`gs-module-1` (you have created a CO and know its ID)
 - Activated plugins (see :ref:`gs-before-you-begin`): **FileConnector** and
   **PipelineToolkit**
-- The HR file, ``hr.csv``, placed **on the Registry server** where Registry
-  can read it. Its first rows look like this:
+- The HR file, :download:`hr.csv <../files/hr.csv>`, placed **on the
+  Registry server** where Registry can read it. Its first rows look like
+  this:
 
   .. code-block:: text
 
@@ -53,8 +53,9 @@ Ingredients
      045c03e1-c76c-4638-9151-52c26e23bda5,Rachel,Payne,rachel.payne
      88f9f30f-82ae-4f99-a295-4f5b86281bcd,Vera,Montoya,vera.montoya
 
-  .. REVIEW: link the full 45-person hr.csv once its public home is settled
-     (it's in the workshop kit, filesource/hr.csv).
+  .. REVIEW: hr.csv and registrar.csv are copied into getting-started/files/
+     from the workshop kit (filesource/). If the kit becomes the home for
+     the exercises, link to it instead.
 
 - To sync the whole file at once: command-line access to the Registry
   server. (You can do everything else, including syncing one person at a
@@ -92,6 +93,12 @@ Each row of ``hr.csv`` is one person. The columns are:
 
 The headers aren't arbitrary: they follow the **CSV v3** format the File
 Source expects.
+
+.. admonition:: Learn more
+   :class: seealso
+
+   User guide: :ref:`eis-file-source` · Technical Manual:
+   `CSV v3 format <https://spaces.at.internet2.edu/spaces/COmanage/pages/275743557/File+Source+Plugin#FileSourcePlugin-CSVv3>`_
 
 Data flows in this order:
 
@@ -146,7 +153,8 @@ In Redcurrant University, open **Connections > Pipelines** and select
 
 Saving returns you to the Pipelines list.
 
-.. seealso::
+.. admonition:: Learn more
+   :class: seealso
 
    User guide: :ref:`ec-pipelines`
 
@@ -155,19 +163,25 @@ Saving returns you to the Pipelines list.
 
 :bdg-success:`New in v5`
 
-A **flange** plugs an extra step into a pipeline. You need one here because
-the CSV v3 format can't mark an identifier as a login. Without a flange,
-people from the file sync fine but can't log in.
+A **flange** adds a capability to a pipeline. You need one here because the
+CSV v3 format can't mark an identifier as a login. Without a flange, people
+from the file sync fine but can't log in.
 
-The **Identifier Mapper** flange (from PipelineToolkit) copies each person's
-uid onto their Person record and marks it as a **Login** identifier, so Ruth
-can sign in as ``ruth.spence``.
+The **Identifier Mapper** flange (from PipelineToolkit) lets the pipeline
+copy each person's uid onto their Person record as a **Login** identifier, so
+Ruth can sign in as ``ruth.spence``.
 
 **Add the flange**
 
 #. In the Pipelines list, select **Process HR File Inputs** to reopen it.
 #. Select **Flanges** at the upper right of its edit page, then **Add**.
 #. Fill in the form, then save.
+
+.. figure:: /comanage-files/registry_v5.2/connections/Pipeline_Add_a_Flange.png
+   :alt: The Edit Process HR File Inputs page, with an arrow pointing to the Flanges link at the upper right
+   :width: 100%
+
+   The Flanges link is at the upper right of the saved pipeline's edit page.
 
 .. list-table::
    :header-rows: 1
@@ -188,8 +202,18 @@ can sign in as ``ruth.spence``.
      - ``PipelineToolkit.IdentifierMappers``
      - The plugin that does the work.
 
-.. TODO screenshot: the pipeline's edit page with the Flanges link at the
-   upper right, and the Add a New Flange form with the Status list open.
+.. figure:: /comanage-files/registry_v5.2/connections/Pipeline_Flange_Status.png
+   :alt: The Add a New Flange form with the Status list open: Disabled, Build Person Role, Build Related Attributes, Retrieve External Identity
+   :width: 100%
+
+   The flange's Status list: where in the pipeline the flange acts.
+
+.. tip::
+
+   **Can't find** ``PipelineToolkit.IdentifierMappers`` **in the Plugin
+   list?** The PipelineToolkit plugin isn't activated yet. Check this
+   lesson's *Ingredients* and activate the plugins it needs (see
+   :ref:`gs-before-you-begin`).
 
 **Configure it** (don't skip this part)
 
@@ -205,15 +229,20 @@ settings are one click away.
 If you lose this page, you can get back to it: **Connections > Pipelines >
 Process HR File Inputs > Flanges >** your flange **> Configure Plugin**.
 
-.. TODO screenshot: the flange's Configure page, with the Login Identifier
-   Types link at the upper right.
+.. figure:: /comanage-files/registry_v5.2/connections/Pipeline_Flange_Configure_Plugin.png
+   :alt: A flange's Configure page after saving: a Saved message, the ID and creation date, a collapsible Changelog, and an arrow pointing to the Login Identifier Types link at the upper right
+   :width: 100%
+
+   The flange's Configure page. Its settings are behind **Login Identifier
+   Types**, at the upper right.
 
 .. note::
 
-   The number after "Configure" is the flange's record ID, not its name, so
-   yours may differ.
+   The number after "Configure" is a record ID, not the flange's name, so
+   yours may differ. You don't need it for anything in this lesson.
 
-.. seealso::
+.. admonition:: Learn more
+   :class: seealso
 
    User guide: :ref:`ec-pipelines` (Extending Pipelines with Plugins)
 
@@ -244,7 +273,7 @@ Open **Connections > External Identity Sources** and select **Add**.
        syncing a Disabled source gives an error.
    * - Plugin
      - ``FileConnector.FileSources``
-     - Reads a CSV file.
+     - Reads a source that is configured as a CSV file.
    * - Pipeline
      - Process HR File Inputs
      - The pipeline that handles this source's records.
@@ -257,13 +286,20 @@ Open **Connections > External Identity Sources** and select **Add**.
    * - File Name
      - The file's full path **on the Registry server**, for example
        ``/srv/filesource/hr.csv``
-     - Registry reads the file where it runs, not from your computer.
+     - Registry reads the file where it runs, not from your computer (unless you are running Registry locally).
    * - File Format
      - CSV v3
      - The format the file's headers follow.
 
 Leave Archive Directory empty for now. (It lets later syncs compare the file
 with its previous copy, which matters for larger files.)
+
+.. tip::
+
+   **Can't find** ``FileConnector.FileSources`` **in the Plugin list?** The
+   FileConnector plugin isn't activated yet. Check this lesson's
+   *Ingredients* and activate the plugins it needs (see
+   :ref:`gs-before-you-begin`).
 
 .. figure:: /comanage-files/registry_v5.2/people/Add_New_External_Identity_SourceNEW.png
    :alt: The Add a New External Identity Source form: Description, Status, Plugin, Pipeline and System of Record Label
@@ -273,7 +309,8 @@ with its previous copy, which matters for larger files.)
 
 After you save Part 1, the **Configure Plugin** tab opens for Part 2.
 
-.. seealso::
+.. admonition:: Learn more
+   :class: seealso
 
    User guide: :ref:`ec-external-identity-sources`
 
@@ -320,6 +357,16 @@ the web server's user:
 - ``<source ID>`` is the HR File source's number, which appears in the
   address when you edit it (``external-identity-sources/edit/1``).
 
+.. figure:: /comanage-files/registry_v5.2/connections/FileSource_ID.png
+   :alt: Editing the HR File source, with the source's ID highlighted in the browser address bar
+   :width: 100%
+
+   Where to find the External Identity Source's ID.
+
+.. SCREENSHOT: FileSource_ID.png isn't in the local comanage-files checkout
+   yet (update the submodule); Laura gave the folder as "Connections/", so
+   check the capitalization. Check the alt text against it.
+
 If Registry runs in a container, you run the same command inside it, for
 example with ``docker compose exec``.
 
@@ -336,7 +383,8 @@ When it finishes, it reports something like:
 "44 new" because Ruth is already there. The job number varies. The same
 result is in the CO under **Operations > Jobs**.
 
-.. seealso::
+.. admonition:: Learn more
+   :class: seealso
 
    User guide: :ref:`ops-jobs`
 
@@ -345,10 +393,17 @@ Check your work
 
 - **People > My Population** lists 45 people, with Ruth Spence there once.
 - Ruth's record has an **External Identities** tab showing her HR record.
-- You can sign in as ``ruth.spence`` and land in Redcurrant University.
+- You can sign in as ``ruth.spence`` and land in Redcurrant University. Use
+  a private window or a second browser, or log out as the administrator
+  first (**My Identity** menu, top right).
 
 Troubleshoot
 ------------
+
+**The plugin you need isn't in the Plugin list** (for example
+``FileConnector.FileSources`` or ``PipelineToolkit.IdentifierMappers``). Its
+plugin isn't activated. In the COmanage CO, open **Configuration > Plugins**
+and activate the plugins listed under *Ingredients*.
 
 **Every record fails to sync, with no error in the interface.** Check the
 pipeline's **Person Status On Create**. If it's blank, choose Active and
@@ -375,14 +430,17 @@ What you learned
 ----------------
 
 - An External Identity Source reads people from a system of record, and a
-  Pipeline turns each record into a Person. The pipeline comes first.
-- Flanges, new in v5, add steps to a pipeline. The Identifier Mapper turns a
-  source's uid into a login identifier.
+  Pipeline turns each record into a Person. When you set them up, create the
+  pipeline first, because the source has to name it.
+- Flanges, new in v5, add capabilities to a pipeline. The Identifier Mapper
+  flange makes it possible for the pipeline to turn a source's uid into a
+  login identifier.
 - Test a source with one record before syncing everyone.
 
 Where to go next
 ----------------
 
 - Next: :ref:`gs-module-3`, to give Redcurrant University its structure
-- Try on your own: add a second source for a registrar file, with the same
-  pipeline and the System of Record Label ``registrar``, and sync it.
+- Try on your own: add a second source for the registrar file,
+  :download:`registrar.csv <../files/registrar.csv>`, with the same pipeline
+  and the System of Record Label ``registrar``, and sync it.

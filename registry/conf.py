@@ -28,8 +28,6 @@ templates_path = ['_templates']
 # Docs). To publish a lesson, delete its line here and add it to its module's
 # toctree.
 UNVERIFIED = [
-    'getting-started/structure/first-co.rst',
-    'getting-started/connections/source-hr-file.rst',
     # 'getting-started/connections/source-hr-api.rst',
 ]
 
