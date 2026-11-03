@@ -17,7 +17,6 @@ Model Redcurrant University's Structure
 **Module:** 3, Model Your Structure · **Learning paths:** Enterprise (Redcurrant
 University; any CO with people in it works) ·
 **Features section:** :ref:`using-structure` · **Registry:** v5.2.0
-**Features section:** :ref:`using-structure` · **Registry:** v5.2.0
 
 The scenario
 ------------
@@ -60,15 +59,59 @@ Ingredients
 Steps at a glance
 -----------------
 
-#. Prepare: the four building blocks
-#. Configure: add four COUs, and see the special groups Registry creates
-#. Configure: create a standard group, and nest the active retirees into it
-#. Enable: give Ruth a Faculty/Staff role
-#. Use: Ruth retires
-#. Check your work
+Select a card to jump to that step.
+
+.. grid:: 1 2 3 3
+   :gutter: 3
+
+   .. grid-item-card:: 1. Prepare
+      :link: gs-struct-step-blocks
+      :link-type: ref
+
+      Meet the four building blocks: COUs, roles, special and standard
+      groups.
+
+   .. grid-item-card:: 2. Add four COUs
+      :link: gs-struct-step-cous
+      :link-type: ref
+      :img-top: /comanage-files/registry_v5.2/orgStructure/COUs_Saved.png
+      :img-alt: The COUs list in Redcurrant University
+
+      Add the units, and see the special groups Registry creates.
+
+   .. grid-item-card:: 3. Nest a group
+      :link: gs-struct-step-nest
+      :link-type: ref
+      :img-top: /comanage-files/registry_v5.2/orgStructure/Add_New_Group_Nesting.png
+      :img-alt: The Add a New Group Nesting dialog
+
+      Create a standard group, and nest the active retirees into it.
+
+   .. grid-item-card:: 4. Give Ruth a role
+      :link: gs-struct-step-role
+      :link-type: ref
+      :img-top: /comanage-files/registry_v5.2/orgStructure/Add_New_Person_Role.png
+      :img-alt: The Add a New Person Role form
+
+      Give Ruth a Faculty/Staff role.
+
+   .. grid-item-card:: 5. Ruth retires
+      :link: gs-struct-step-retire
+      :link-type: ref
+      :img-top: /comanage-files/registry_v5.2/orgStructure/Ruth_Spence_Group_Memberships_Retirees.png
+      :img-alt: Ruth Spence's Groups tab after her Retirees role
+
+      Change her roles, and watch her groups follow.
+
+Then :ref:`check your work <getting-started/structure/structure-enterprise:Check your work>`.
 
 Step details
 ------------
+
+Each step shows what to do. Select a heading marked ▸ to see why, or what to
+do if something looks different.
+
+.. _gs-struct-step-blocks:
 
 1. The four building blocks
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,6 +140,8 @@ The idea that ties them together: **roles drive membership.** Change a
 role's status and the special groups follow, and through nesting, so do the
 standard groups you've built on them. That's what downstream services see.
 
+.. _gs-struct-step-cous:
+
 2. Add four COUs
 ~~~~~~~~~~~~~~~~
 
@@ -118,9 +163,14 @@ COU**. Fill in the Name and Description and save. Repeat for each COU.
    * - ``Students``
      - Active students
 
-Leave **Parent** empty: all four sit directly under the CO. Descriptions are
-optional, but they appear in the COUs list and help others tell the units
-apart.
+Leave **Parent** empty.
+
+.. dropdown:: Why these settings?
+   :icon: info
+
+   With Parent empty, all four COUs sit directly under the CO. Descriptions
+   are optional, but they appear in the COUs list and help others tell the
+   units apart.
 
 .. figure:: /comanage-files/registry_v5.2/orgStructure/COUs_Saved.png
    :alt: The COUs list in Redcurrant University: Alumni, Faculty/Staff, Retirees and Students, each with its description
@@ -131,15 +181,23 @@ apart.
 **See what Registry created.** Open **Structure > Groups**. For each COU,
 Registry has added a set of special groups, for example:
 
-- ``CO:COU:Retirees:admins`` and ``CO:COU:Retirees:approvers``: the people who
-  administer this COU, and who approve its enrollments
-- ``CO:COU:Retirees:members:active``: everyone with an **active** role in the
-  COU
-- ``CO:COU:Retirees:members:all``: everyone with **any** role in the COU,
-  active or not (except archived)
+- ``CO:COU:Retirees:admins`` and ``CO:COU:Retirees:approvers``
+- ``CO:COU:Retirees:members:active``
+- ``CO:COU:Retirees:members:all``
 
-Registry also creates owners groups. You don't add anyone to the members
-groups yourself; Registry fills them from people's roles.
+You don't add anyone to the members groups yourself; Registry fills them
+from people's roles.
+
+.. dropdown:: What are these groups for?
+   :icon: info
+
+   - ``admins`` and ``approvers``: the people who administer this COU, and
+     who approve its enrollments
+   - ``members:active``: everyone with an **active** role in the COU
+   - ``members:all``: everyone with **any** role in the COU, active or not
+     (except archived)
+
+   Registry also creates owners groups.
 
 .. SCREENSHOT: the Groups list in Redcurrant University after adding the COUs
    (Groups.png in comanage-files shows the Discovery TNG CO).
@@ -148,6 +206,8 @@ groups yourself; Registry fills them from people's roles.
    :class: seealso
 
    User guide: :ref:`struct-cous` · :ref:`org-groups`
+
+.. _gs-struct-step-nest:
 
 3. Create a standard group, and nest the active retirees into it
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -162,26 +222,31 @@ Open **Structure > Groups** and select **Add a New Group**.
 
 .. list-table::
    :header-rows: 1
-   :widths: 25 30 45
+   :widths: 40 60
 
    * - Field
      - Value
-     - Why
    * - Name
      - ``Access-wiki``
-     - Names the group. Standard group names can't start with ``CO:``, which
-       is kept for special groups.
    * - Description
      - The individuals that can access the wiki tool.
-     - Shows in lists and on people's records.
    * - Status
      - Active
-     - The group is in use.
+
+.. dropdown:: Why these settings?
+   :icon: info
+
+   - **Name** names the group. Standard group names can't start with
+     ``CO:``, which is kept for special groups.
+   - **Description** shows in lists and on people's records.
+   - **Status: Active** means the group is in use.
 
 **Nest the retirees into it**
 
-You set up nesting from the group whose members should flow **in**, not from
-the group they flow into.
+.. important::
+
+   Set up nesting from the group whose members should flow **in**, not from
+   the group they flow into.
 
 #. In the Groups list, open ``CO:COU:Retirees:members:active``.
 #. Open its **Group Nestings** tab and select **Add**.
@@ -198,7 +263,8 @@ the group they flow into.
 
    Nesting the active retirees into Access-wiki.
 
-.. note::
+.. dropdown:: The dialog stayed open after you saved?
+   :icon: question
 
    In 5.2.0 the dialog stays open after you save, still showing a Save
    button, and the green "Saved" bar doesn't always appear. One save is
@@ -209,6 +275,8 @@ the group they flow into.
    :class: seealso
 
    User guide: :ref:`org-groups` (Group Nestings)
+
+.. _gs-struct-step-role:
 
 4. Give Ruth a Faculty/Staff role
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -224,27 +292,30 @@ Give her one by hand.
 
 .. list-table::
    :header-rows: 1
-   :widths: 25 30 45
+   :widths: 40 60
 
    * - Field
      - Value
-     - Why
    * - COU
      - Faculty/Staff
-     - The unit this role belongs to.
    * - Affiliation
      - Member
-     - The kind of relationship. The list comes from your CO's affiliation
-       types.
    * - Status
      - Active
-     - An active role puts her in the COU's ``members:active`` group.
    * - Title
      - ``Associate Professor``
-     - Her job title in this role.
    * - Department
      - ``Biology``
-     - Free text, for information.
+
+.. dropdown:: Why these settings?
+   :icon: info
+
+   - **COU** is the unit this role belongs to.
+   - **Affiliation** is the kind of relationship. The list comes from your
+     CO's affiliation types.
+   - **Status: Active** puts her in the COU's ``members:active`` group.
+   - **Title** is her job title in this role.
+   - **Department** is free text, for information.
 
 .. figure:: /comanage-files/registry_v5.2/orgStructure/Add_New_Person_Role.png
    :alt: The Add a New Person Role form for Ruth Spence
@@ -259,6 +330,8 @@ and ``CO:COU:Faculty/Staff:members:all``, with no one adding her to either.
    :class: seealso
 
    User guide: :ref:`using-people` (Person Roles)
+
+.. _gs-struct-step-retire:
 
 5. Ruth retires
 ~~~~~~~~~~~~~~~
@@ -286,9 +359,7 @@ COU **Retirees**, Affiliation **Member**, Status **Active**. Save, and look at
 her **Groups** tab once more.
 
 Ruth is Active again. She's in both Retirees members groups, and in
-**Access-wiki** too, through the nesting you set up in step 3. The icon
-beside Access-wiki means the membership can't be edited here: it comes from
-the nesting, not from someone adding her.
+**Access-wiki** too, through the nesting you set up in step 3.
 
 .. figure:: /comanage-files/registry_v5.2/orgStructure/Ruth_Spence_Group_Memberships_Retirees.png
    :alt: Ruth Spence's Groups tab after the Retirees role: CO members groups, Faculty/Staff members:all, both Retirees members groups, and Access-wiki with a not-editable icon
@@ -296,7 +367,14 @@ the nesting, not from someone adding her.
 
    After her Retirees role is added. Access-wiki comes from the nesting.
 
-.. note::
+.. dropdown:: What does the icon beside Access-wiki mean?
+   :icon: info
+
+   The membership can't be edited here: it comes from the nesting, not from
+   someone adding her.
+
+.. dropdown:: Coming from v4? Where are expiration policies?
+   :icon: info
 
    This is how someone leaving or changing jobs looks in 5.2.0: you change
    their roles. Expiration policies, which automate this in v4, aren't
@@ -316,28 +394,33 @@ Check your work
 Troubleshoot
 ------------
 
-**You can't add someone to a members group.** The ``members:active`` and
-``members:all`` groups are filled automatically from roles. Give the person a
-role in that COU instead.
+.. dropdown:: You can't add someone to a members group
 
-**The nesting doesn't appear in the Group Nestings list.** Close the dialog
-with the X; the list updates only after it closes. If it's still missing,
-open the dialog again and check that the Target Group was chosen before you
-saved.
+   The ``members:active`` and ``members:all`` groups are filled
+   automatically from roles. Give the person a role in that COU instead.
 
-**The nesting goes the wrong way.** Check which group you started from: the
-group you open is the one whose members flow *into* the Target Group. To
-undo a nesting, click its row in the Group Nestings list (anywhere except the
-group name) and delete it.
+.. dropdown:: The nesting doesn't appear in the Group Nestings list
 
-**Ruth isn't in Access-wiki after getting the Retirees role.** Check that the
-Retirees role's Status is Active (only active roles count for
-``members:active``) and that the nesting is on
-``CO:COU:Retirees:members:active``, not on ``members:all``.
+   Close the dialog with the X; the list updates only after it closes. If
+   it's still missing, open the dialog again and check that the Target Group
+   was chosen before you saved.
 
-**Ruth is still in a Faculty/Staff group after her role expired.** That's
-expected for ``members:all``, which includes every role in the COU whatever
-its status. Only ``members:active`` drops her.
+.. dropdown:: The nesting goes the wrong way
+
+   Check which group you started from: the group you open is the one whose
+   members flow *into* the Target Group. To undo a nesting, click its row in
+   the Group Nestings list (anywhere except the group name) and delete it.
+
+.. dropdown:: Ruth isn't in Access-wiki after getting the Retirees role
+
+   Check that the Retirees role's Status is Active (only active roles count
+   for ``members:active``) and that the nesting is on
+   ``CO:COU:Retirees:members:active``, not on ``members:all``.
+
+.. dropdown:: Ruth is still in a Faculty/Staff group after her role expired
+
+   That's expected for ``members:all``, which includes every role in the
+   COU whatever its status. Only ``members:active`` drops her.
 
 What you learned
 ----------------

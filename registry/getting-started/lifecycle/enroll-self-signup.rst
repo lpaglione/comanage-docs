@@ -54,14 +54,44 @@ Ingredients
 Steps at a glance
 -----------------
 
-#. Prepare: add a COU for visitors
-#. Configure: create the flow
-#. Configure: add the steps
-#. Use: sign up as a visitor
-#. Check your work
+Select a card to jump to that step.
+
+.. grid:: 1 2 4 4
+   :gutter: 3
+
+   .. grid-item-card:: 1. Prepare
+      :link: gs-signup-step-cou
+      :link-type: ref
+
+      Add a COU for visitors.
+
+   .. grid-item-card:: 2. Create the flow
+      :link: gs-signup-step-flow
+      :link-type: ref
+
+      Set up a flow anyone who can sign in may start.
+
+   .. grid-item-card:: 3. Add the steps
+      :link: gs-signup-step-steps
+      :link-type: ref
+
+      About you, verify your email, link your login.
+
+   .. grid-item-card:: 4. Sign up
+      :link: gs-signup-step-run
+      :link-type: ref
+
+      Sign up as a visitor, and sign in again.
+
+Then :ref:`check your work <getting-started/lifecycle/enroll-self-signup:Check your work>`.
 
 Step details
 ------------
+
+Each step shows what to do. Select a heading marked ▸ to see why, or what to
+do if something looks different.
+
+.. _gs-signup-step-cou:
 
 1. Add a COU for visitors
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -76,6 +106,8 @@ Guests who sign up need a unit to belong to. In the Guests CO, open
    Lesson: :ref:`gs-structure-enterprise` (COUs and the special groups
    Registry creates for them)
 
+.. _gs-signup-step-flow:
+
 2. Create the flow
 ~~~~~~~~~~~~~~~~~~
 
@@ -83,27 +115,37 @@ Open **People > Enrollment Flows** and select **Add**.
 
 .. list-table::
    :header-rows: 1
-   :widths: 30 30 40
+   :widths: 40 60
 
    * - Field
      - Value
-     - Why
    * - Name
      - ``Join Guest Wi-Fi``
-     - Shown to the visitor when they start.
    * - Status
      - Active
-     - The flow can be used.
    * - Petitioner Authorization
      - Any Authenticated User
-     - Anyone who can sign in may start it: this is what makes it self
-       sign-up.
    * - Collect Enrollee Email
      - Ticked
-     - Without it, the welcome message is never sent.
    * - Finalization Message Template
      - Guests Welcome
-     - The email the visitor gets when they're enrolled.
+
+.. important::
+
+   **Tick Collect Enrollee Email.** Without it, the welcome message is never
+   sent.
+
+.. dropdown:: Why these settings?
+   :icon: info
+
+   - **Name**: Shown to the visitor when they start.
+   - **Status**: The flow can be used.
+   - **Petitioner Authorization**: Anyone who can sign in may start it: this
+     is what makes it self sign-up.
+   - **Collect Enrollee Email**: Without it, the welcome message is never
+     sent.
+   - **Finalization Message Template**: The email the visitor gets when
+     they're enrolled.
 
 .. figure:: /comanage-files/registry_v5.2/enrollment/Enrollment-New.png
    :alt: The Add a New Enrollment Flow form: Name, Description, Status, Petitioner Authorization, Collect Enrollee Email, Redirect on Duplicate, Redirect on Finalize, Finalization Message Template and Notification Group
@@ -113,6 +155,8 @@ Open **People > Enrollment Flows** and select **Add**.
 
 .. SCREENSHOT: Enrollment-New.png shows the Discovery TNG CO; retake in
    Guests.
+
+.. _gs-signup-step-steps:
 
 3. Add the steps
 ~~~~~~~~~~~~~~~~
@@ -135,36 +179,45 @@ second save.
 
   .. list-table::
      :header-rows: 1
-     :widths: 30 25 45
+     :widths: 40 60
 
      * - Field
        - Value
-       - Why
      * - Mode
        - One
-       - The visitor verifies one address.
      * - Message Template
        - Guests Email Verification
-       - The email carrying the code.
      * - Request Validity
-       - ``60``
-       - How long the code stays valid. Required: the field shows a
-         placeholder, but you have to type a value.
+       - ``60`` (required: type a value)
      * - Enable Attempt Blocker
        - Unticked
-       - Leave it off while testing, so a few wrong codes don't lock you
-         out.
+
+  .. dropdown:: Why these settings?
+     :icon: info
+
+     - **Mode**: The visitor verifies one address.
+     - **Message Template**: The email carrying the code.
+     - **Request Validity**: How long the code stays valid. Required: the
+       field shows a placeholder, but you have to type a value.
+     - **Enable Attempt Blocker**: Leave it off while testing, so a few
+       wrong codes don't lock you out.
 
 **Step 3: Link your login**
 
 - Step form: Order ``3``, Plugin ``CoreEnroller.IdentifierCollectors``
 - Plugin form: Identifier Type **Network**
 
-This step has no page of its own. It records the username the visitor signed
-in with as their login identifier, so they can sign in again later.
+.. dropdown:: What does this step do?
+   :icon: info
+
+   This step has no page of its own. It records the username the visitor
+   signed in with as their login identifier, so they can sign in again
+   later.
 
 .. REVIEW: confirm the Request Validity unit, and whether the Identifier
    Collector needs "Login" set anywhere.
+
+.. _gs-signup-step-run:
 
 4. Sign up as a visitor
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -186,7 +239,8 @@ in with as their login identifier, so they can sign in again later.
    Don't click **START** while you're logged in as the administrator. In a
    self sign-up flow, whoever starts it becomes the enrollee.
 
-.. note::
+.. dropdown:: In your own deployment
+   :icon: server
 
    How a visitor signs in depends on your environment. In a test environment
    that accepts any username, typing a new one is enough. In production,
@@ -204,22 +258,29 @@ Check your work
 Troubleshoot
 ------------
 
-**The visitor never gets a verification code.** Check that the Email
-Verifier's Message Template is set and Active, and that the environment can
-send mail.
+.. dropdown:: The visitor never gets a verification code
 
-**Saving the Email Verifier fails.** Request Validity is required; type a
-value.
+   Check that the Email Verifier's Message Template is set and Active, and
+   that the environment can send mail.
 
-**No welcome email.** Check that the flow has **Collect Enrollee Email**
-ticked and a Finalization Message Template set.
+.. dropdown:: Saving the Email Verifier fails
 
-**The administrator ended up as the enrollee.** Someone selected START while
-logged in as the administrator. Terminate that petition under **People >
-Petitions**, and start the flow from a window that isn't logged in.
+   Request Validity is required; type a value.
 
-**Signing up again with the same username fails.** Each login can enroll
-only once. Use a different username to test again.
+.. dropdown:: No welcome email
+
+   Check that the flow has **Collect Enrollee Email** ticked and a
+   Finalization Message Template set.
+
+.. dropdown:: The administrator ended up as the enrollee
+
+   Someone selected START while logged in as the administrator. Terminate
+   that petition under **People > Petitions**, and start the flow from a
+   window that isn't logged in.
+
+.. dropdown:: Signing up again with the same username fails
+
+   Each login can enroll only once. Use a different username to test again.
 
 What you learned
 ----------------

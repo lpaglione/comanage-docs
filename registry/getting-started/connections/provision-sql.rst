@@ -47,14 +47,44 @@ Ingredients
 Steps at a glance
 -----------------
 
-#. Configure: describe the database as a Server
-#. Configure: create the target, Disabled
-#. Enable: switch it to Immediate
-#. Use: change Ruth, and look in the database
-#. Check your work
+Select a card to jump to that step.
+
+.. grid:: 1 2 4 4
+   :gutter: 3
+
+   .. grid-item-card:: 1. Describe the database
+      :link: gs-psql-step-server
+      :link-type: ref
+
+      Add the database as a Server.
+
+   .. grid-item-card:: 2. Create the target
+      :link: gs-psql-step-create
+      :link-type: ref
+
+      Create the provisioning target, Disabled.
+
+   .. grid-item-card:: 3. Switch it on
+      :link: gs-psql-step-on
+      :link-type: ref
+
+      Set the target to Immediate.
+
+   .. grid-item-card:: 4. Change Ruth
+      :link: gs-psql-step-ruth
+      :link-type: ref
+
+      Make a change, and look in the database.
+
+Then :ref:`check your work <getting-started/connections/provision-sql:Check your work>`.
 
 Step details
 ------------
+
+Each step shows what to do. Select a heading marked ▸ to see why, or what to
+do if something looks different.
+
+.. _gs-psql-step-server:
 
 1. Describe the database as a Server
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -92,6 +122,8 @@ Description ``Target Database``, Status Active, Plugin
 
    User guide: :ref:`ec-servers` (SQL Servers)
 
+.. _gs-psql-step-create:
+
 2. Create the target, Disabled
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -101,17 +133,24 @@ Provisioning Target**: Description ``SQL Export``, Provisioning Mode
 Provisioner's form, choose Server **Target Database**, keep the Table Name
 Prefix ``sp_``, and save.
 
-Saving creates the provisioner's tables in the target database (such as
-``sp_people``, ``sp_names``, ``sp_identifiers``, ``sp_person_roles``,
-``sp_groups`` and ``sp_group_members``) and copies reference data such as
-Types, COUs and Groups. The **Configure Plugin** tab also has **Reapply
-Target Database Schema** and **Resync Reference Data**, for later.
+.. dropdown:: What does saving do?
+   :icon: info
+
+   Saving creates the provisioner's tables in the target database (such as
+   ``sp_people``, ``sp_names``, ``sp_identifiers``, ``sp_person_roles``,
+   ``sp_groups`` and ``sp_group_members``) and copies reference data such as
+   Types, COUs and Groups. The **Configure Plugin** tab also has **Reapply
+   Target Database Schema** and **Resync Reference Data**, for later.
+
+.. _gs-psql-step-on:
 
 3. Switch it to Immediate
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 On the target's **Properties** tab, set **Provisioning Mode** to
 **Immediate** and save.
+
+.. _gs-psql-step-ruth:
 
 4. Change Ruth, and look in the database
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -128,9 +167,12 @@ Then query the target database. For example, in PostgreSQL:
    left join sp_person_roles r on r.person_id = p.id
    order by n.family, n.given limit 5;
 
-The ``sp_`` IDs are Registry's own IDs. People from the HR file have two
-names in ``sp_names``, just as in Registry: their primary name, and the copy
-attached to their HR record.
+.. dropdown:: What am I looking at?
+   :icon: info
+
+   The ``sp_`` IDs are Registry's own IDs. People from the HR file have two
+   names in ``sp_names``, just as in Registry: their primary name, and the
+   copy attached to their HR record.
 
 As with the file, people who were already there go out when they change,
 or with **Provision Now** or **Reprovision All** (see
@@ -147,16 +189,21 @@ Check your work
 Troubleshoot
 ------------
 
-**Saving the SQL Provisioner fails.** Registry can't reach or write to the
-database. Check the Server's host name, database name and credentials, and
-that the account can create tables.
+.. dropdown:: Saving the SQL Provisioner fails
 
-**Every save of a person fails with an error page.** The target was switched
-on before its plugin form was saved. See :ref:`gs-provision-file`,
-Troubleshoot.
+   Registry can't reach or write to the database. Check the Server's host
+   name, database name and credentials, and that the account can create
+   tables.
 
-**A person has two names in the database.** That's expected for people from
-a source: their primary name, and the copy attached to their source record.
+.. dropdown:: Every save of a person fails with an error page
+
+   The target was switched on before its plugin form was saved. See
+   :ref:`gs-provision-file`, Troubleshoot.
+
+.. dropdown:: A person has two names in the database
+
+   That's expected for people from a source: their primary name, and the
+   copy attached to their source record.
 
 What you learned
 ----------------

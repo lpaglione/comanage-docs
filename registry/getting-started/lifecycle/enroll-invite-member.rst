@@ -52,15 +52,50 @@ Ingredients
 Steps at a glance
 -----------------
 
-#. Prepare: the flow you'll build
-#. Prepare: make Ruth an administrator, with a verified email
-#. Configure: create the flow
-#. Configure: add the steps
-#. Use: Ruth invites Casey, Casey accepts, Ruth approves
-#. Check your work
+Select a card to jump to that step.
+
+.. grid:: 1 2 3 3
+   :gutter: 3
+
+   .. grid-item-card:: 1. Prepare
+      :link: gs-invite-step-flow
+      :link-type: ref
+
+      See the flow you'll build: four steps, three actors.
+
+   .. grid-item-card:: 2. Get Ruth ready
+      :link: gs-invite-step-ruth
+      :link-type: ref
+
+      Make Ruth an administrator, with a verified email.
+
+   .. grid-item-card:: 3. Create the flow
+      :link: gs-invite-step-create
+      :link-type: ref
+
+      Set up the enrollment flow's properties.
+
+   .. grid-item-card:: 4. Add the steps
+      :link: gs-invite-step-steps
+      :link-type: ref
+
+      Add the four steps, one for each hand-off.
+
+   .. grid-item-card:: 5. Run it
+      :link: gs-invite-step-run
+      :link-type: ref
+
+      Ruth invites Casey, Casey accepts, Ruth approves.
+
+Then :ref:`check your work <getting-started/lifecycle/enroll-invite-member:Check your work>`.
 
 Step details
 ------------
+
+Each step shows what to do. Select a heading marked ▸ to see why, or what to
+do if something looks different.
+
+.. _gs-invite-step-flow:
 
 1. The flow you'll build
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -101,14 +136,19 @@ name and email, and Casey adds their pronouns.
 Everything that happens is recorded in a **petition**, which you can follow
 under **People > Petitions**.
 
-Why Ruth, and not the platform administrator? In 5.2.0, starting an
-invitation that's limited to CO Administrators needs someone who is a
-Person in the CO. The platform administrator isn't, so Ruth does it.
+.. dropdown:: Why Ruth, and not the platform administrator?
+   :icon: info
+
+   In 5.2.0, starting an invitation that's limited to CO Administrators
+   needs someone who is a Person in the CO. The platform administrator
+   isn't, so Ruth does it.
 
 .. admonition:: Learn more
    :class: seealso
 
    User guide: :ref:`lifecycle-enrollment-flows`
+
+.. _gs-invite-step-ruth:
 
 2. Make Ruth an administrator, with a verified email
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -131,13 +171,18 @@ As the platform administrator, in Redcurrant University:
 
 .. warning::
 
-   Ruth approves in this lesson, so she needs a **verified** email. In 5.2.0,
-   if a member of the approver group has no verified email, the invitee sees
-   "An Internal Error Has Occurred" after adding their pronouns, and no
-   approval request is sent.
-
-   Press **Force Verify** only once: pressing it again on an address that's
+   Ruth approves in this lesson, so she needs a **verified** email. Press
+   **Force Verify** only once: pressing it again on an address that's
    already verified gives an error.
+
+.. dropdown:: What happens without a verified email?
+   :icon: info
+
+   In 5.2.0, if a member of the approver group has no verified email, the
+   invitee sees "An Internal Error Has Occurred" after adding their
+   pronouns, and no approval request is sent.
+
+.. _gs-invite-step-create:
 
 3. Create the flow
 ~~~~~~~~~~~~~~~~~~
@@ -147,26 +192,35 @@ properties and save.
 
 .. list-table::
    :header-rows: 1
-   :widths: 30 30 40
+   :widths: 40 60
 
    * - Field
      - Value
-     - Why
    * - Name
      - ``Invite a Member``
-     - Shown to people who can start the flow.
    * - Status
      - Active
-     - The flow can be used.
    * - Petitioner Authorization
      - CO Administrator
-     - Who may start it: here, Redcurrant's administrators, such as Ruth.
    * - Collect Enrollee Email
      - Ticked
-     - Off by default. Without it, the welcome message is never sent.
    * - Finalization Message Template
      - Redcurrant Welcome
-     - The email Casey gets when the enrollment is complete.
+
+.. important::
+
+   **Tick Collect Enrollee Email.** It's off by default, and without it the
+   welcome message is never sent.
+
+.. dropdown:: Why these settings?
+   :icon: info
+
+   - **Name** is shown to people who can start the flow.
+   - **Status: Active** means the flow can be used.
+   - **Petitioner Authorization** is who may start it: here, Redcurrant's
+     administrators, such as Ruth.
+   - **Finalization Message Template** is the email Casey gets when the
+     enrollment is complete.
 
 .. figure:: /comanage-files/registry_v5.2/enrollment/Configure_Enrollment_Flow.png
    :alt: The Properties tab of the Invite a Member enrollment flow: Name, Description, Status Active, Petitioner Authorization CO Administrator, Collect Enrollee Email ticked, with the START button at the upper right
@@ -174,6 +228,8 @@ properties and save.
 
    The flow's Properties tab. Once it's saved, the **Enrollment Flow Steps**
    and **Petitions** tabs appear.
+
+.. _gs-invite-step-steps:
 
 4. Add the steps
 ~~~~~~~~~~~~~~~~
@@ -189,15 +245,13 @@ with the **X**.
 - Step form: Order ``1``, Actor Type **Petitioner**, Plugin
   ``CoreEnroller.BasicAttributeCollectors``
 - Plugin form: Name type and Email Address type **Official**, Affiliation
-  type **Member**, COU **Faculty/Staff**. (The COU gives Casey a Faculty/Staff
-  role when the enrollment finishes.)
+  type **Member**, COU **Faculty/Staff**
 
 **Step 2: Accept invitation**
 
 - Step form: Order ``2``, Actor Type **Enrollee**, Plugin
   ``CoreEnroller.InvitationAccepters``, Handoff Message Template **Redcurrant
-  Invitation**. (The handoff message is the email sent to whoever acts on
-  this step, so this is Casey's invitation.)
+  Invitation**
 - Plugin form: Invitation Validity ``0`` (no expiry)
 
 .. warning::
@@ -220,7 +274,7 @@ with the **X**.
   Approval Request**
 - After saving, select the step again and **Edit** it: set **Approver Group**
   to ``CO:admins``. In 5.2.0 this field only appears when you edit a saved
-  step. Without it, the CO's approvers group is used, which has no one in it.
+  step.
 
 .. figure:: /comanage-files/registry_v5.2/enrollment/Enrollment_Flow_Steps.png
    :alt: The Enrollment Flow Steps tab of Invite a Member: Enter invitee details (Petitioner), Accept invitation (Enrollee), Tell us about yourself (Enrollee) and Approve new member (Approver), with their plugins
@@ -228,11 +282,25 @@ with the **X**.
 
    The finished flow: four steps, three actors.
 
-.. tip::
+.. dropdown:: Why these settings?
+   :icon: info
+
+   - **Step 1's COU** gives Casey a Faculty/Staff role when the enrollment
+     finishes.
+   - **A step's Handoff Message Template** is the email sent to whoever acts
+     on that step, so step 2's is Casey's invitation, and step 4's is Ruth's
+     approval request.
+   - **Approver Group** ``CO:admins``: without it, the CO's approvers group
+     is used, which has no one in it.
+
+.. dropdown:: Can't find the pronouns or the Approver Group?
+   :icon: question
 
    Two settings hide in corners: the pronouns are behind the **Enrollment
    Attributes** link on the Attribute Collector's page, and the Approver
    Group only shows when you **Edit** a saved step.
+
+.. _gs-invite-step-run:
 
 5. Ruth invites Casey, Casey accepts, Ruth approves
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -252,16 +320,20 @@ right person's browser.
 #. **Casey's browser.** When the welcome email arrives, log in as
    ``casey.invitee``.
 
-.. note::
+.. dropdown:: A red bar says "Petition N is not in Finalizing status"?
+   :icon: question
 
    After Ruth approves, the page says **Enrollment Complete**, with a red bar
    reading "Petition N is not in Finalizing status". In 5.2.0 this appears on
    every successful enrollment, and the petition is finalized. The page has
    no menus; use the browser's Back button to return to Registry.
 
-Casey doesn't log in during the enrollment: the links in the emails carry
-everything needed. Casey's username comes from the Identifier Assignment
-you set up in :ref:`gs-module-4`.
+.. dropdown:: Why doesn't Casey log in until the end?
+   :icon: info
+
+   Casey doesn't log in during the enrollment: the links in the emails carry
+   everything needed. Casey's username comes from the Identifier Assignment
+   you set up in :ref:`gs-module-4`.
 
 Check your work
 ---------------
@@ -275,34 +347,45 @@ Check your work
 Troubleshoot
 ------------
 
-**Starting the flow as the platform administrator ends in "too many
-redirects".** In 5.2.0 the administrator isn't a Person in the CO, so it
-can't start a CO Administrator flow. Start it as Ruth.
+.. dropdown:: Starting the flow as the platform administrator ends in "too many redirects"
 
-**Casey sees "An Internal Error Has Occurred" after adding pronouns.** A
-member of the approver group (Ruth) has no verified email. Force-verify
-Ruth's email, then have Ruth open the petition under **People > Petitions**
-and resume it to approve.
+   In 5.2.0 the administrator isn't a Person in the CO, so it can't start a
+   CO Administrator flow. Start it as Ruth.
 
-**An email link ends on "The requested address … was not found".** The link
-was opened in a browser logged in as someone else; it's really a permission
-error. The invitation may now be tied to the wrong login: as the
-administrator, open the petition under **People > Petitions**, terminate it,
-and have Ruth invite again. Open each link in the right person's browser.
+.. dropdown:: Casey sees "An Internal Error Has Occurred" after adding pronouns
 
-**The invitation has expired.** Invitation Validity is in seconds in 5.2.0.
-Set it to ``0`` on the Accept invitation step's plugin form.
+   A member of the approver group (Ruth) has no verified email. Force-verify
+   Ruth's email, then have Ruth open the petition under **People >
+   Petitions** and resume it to approve.
 
-**No approval request arrives.** Check that the approval step has a Handoff
-Message Template, that its Approver Group is ``CO:admins``, and that Ruth is
-in ``CO:admins`` with a verified email.
+.. dropdown:: An email link ends on "The requested address … was not found"
 
-**Casey can log in but sees no COs.** Casey has no username flagged for
-login. Check the Identifier Assignment from :ref:`gs-module-4` is Active and
-its Identifier Type has **Login** ticked.
+   The link was opened in a browser logged in as someone else; it's really a
+   permission error. The invitation may now be tied to the wrong login: as
+   the administrator, open the petition under **People > Petitions**,
+   terminate it, and have Ruth invite again. Open each link in the right
+   person's browser.
 
-**Reopening a used invitation link gives an error.** That's expected: the
-petition is complete.
+.. dropdown:: The invitation has expired
+
+   Invitation Validity is in seconds in 5.2.0. Set it to ``0`` on the Accept
+   invitation step's plugin form.
+
+.. dropdown:: No approval request arrives
+
+   Check that the approval step has a Handoff Message Template, that its
+   Approver Group is ``CO:admins``, and that Ruth is in ``CO:admins`` with a
+   verified email.
+
+.. dropdown:: Casey can log in but sees no COs
+
+   Casey has no username flagged for login. Check the Identifier Assignment
+   from :ref:`gs-module-4` is Active and its Identifier Type has **Login**
+   ticked.
+
+.. dropdown:: Reopening a used invitation link gives an error
+
+   That's expected: the petition is complete.
 
 What you learned
 ----------------

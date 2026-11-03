@@ -47,14 +47,52 @@ Ingredients
 Steps at a glance
 -----------------
 
-#. Prepare: open the COmanage CO
-#. Configure: create Redcurrant University (and, optionally, Guests and MESS)
-#. Enable: switch into your new CO
-#. Use: take a tour of the v5 interface
-#. Check your work
+Select a card to jump to that step.
+
+.. grid:: 1 2 2 2
+   :gutter: 3
+
+   .. grid-item-card:: 1. Open the COmanage CO
+      :link: gs-first-co-step-open
+      :link-type: ref
+      :img-top: /comanage-files/registry_v5.2/orgStructure/Available_Collaborations.png
+      :img-alt: The Available Collaborations page
+
+      Start where platform-wide administration happens.
+
+   .. grid-item-card:: 2. Create Redcurrant University
+      :link: gs-first-co-step-create
+      :link-type: ref
+      :img-top: /comanage-files/registry_v5.2/configuration/Platform_Configuration_Menu.png
+      :img-alt: The Configuration panel in the COmanage CO
+
+      Create the CO (and, optionally, Guests and MESS).
+
+   .. grid-item-card:: 3. Switch into your CO
+      :link: gs-first-co-step-switch
+      :link-type: ref
+      :img-top: /comanage-files/registry_v5.2/people/My_Identity_Menu.png
+      :img-alt: The My Identity menu
+
+      Go into your new CO, and note its ID.
+
+   .. grid-item-card:: 4. Tour the interface
+      :link: gs-first-co-step-tour
+      :link-type: ref
+      :img-top: /comanage-files/registry_v5.2/people/People_Menu.png
+      :img-alt: The People panel
+
+      Find your way around the v5 menus.
+
+Then :ref:`check your work <getting-started/structure/first-co:Check your work>`.
 
 Step details
 ------------
+
+Each step shows what to do. Select a heading marked ▸ to see why, or what to
+do if something looks different.
+
+.. _gs-first-co-step-open:
 
 1. Open the COmanage CO
 ~~~~~~~~~~~~~~~~~~~~~~~
@@ -64,17 +102,22 @@ Sign in as a Platform Administrator. On a new installation you land in the
 the **Available Collaborations** page. A banner tells you that this is the
 CO used for platform-wide configuration.
 
-COs are created from here because creating a CO is a platform-level action,
-not something an administrator of an individual CO can do.
-
 .. figure:: /comanage-files/registry_v5.2/orgStructure/Available_Collaborations.png
    :alt: The Available Collaborations page
    :width: 100%
+
+.. dropdown:: Why the COmanage CO?
+   :icon: info
+
+   COs are created from here because creating a CO is a platform-level
+   action, not something an administrator of an individual CO can do.
 
 .. admonition:: Learn more
    :class: seealso
 
    User guide: :ref:`struct-co`
+
+.. _gs-first-co-step-create:
 
 2. Create Redcurrant University
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -125,68 +168,62 @@ To create a CO:
 
       .. list-table::
          :header-rows: 1
-         :widths: 20 30 50
+         :widths: 40 60
 
          * - Field
            - Value
-           - Why
          * - Name
            - ``Redcurrant University``
-           - Shown in lists and at the top of every page. Keep it short and
-             recognizable.
          * - Description
            - ``Redcurrant University Person Registry``
-           - Helps people who don't know the CO's name tell what it's for.
          * - Status
            - Active
-           - The CO is usable as soon as it's saved.
 
    .. tab-item:: Guests (optional, Guest path)
 
       .. list-table::
          :header-rows: 1
-         :widths: 20 30 50
+         :widths: 40 60
 
          * - Field
            - Value
-           - Why
          * - Name
            - ``Guests``
-           - Shown in lists and at the top of every page. Keep it short and
-             recognizable.
          * - Description
            - ``Guest Registry``
-           - Helps people who don't know the CO's name tell what it's for.
          * - Status
            - Active
-           - The CO is usable as soon as it's saved.
 
    .. tab-item:: MESS (optional, Research path)
 
       .. list-table::
          :header-rows: 1
-         :widths: 20 30 50
+         :widths: 40 60
 
          * - Field
            - Value
-           - Why
          * - Name
            - ``MESS``
-           - Shown in lists and at the top of every page. Keep it short and
-             recognizable.
          * - Description
            - ``Medium Energy Synchrotron Source``
-           - Helps people who don't know the CO's name tell what it's for.
          * - Status
            - Active
-           - The CO is usable as soon as it's saved.
 
-**About Status.** A CO can be **Active**, **Suspended**, or **Template**.
-Suspending a CO immediately shuts off access to it, including the web
-interface, the API, and scheduled jobs. Template is for a CO you intend to
-use as a starting point for others. For these lessons, always choose Active.
+.. dropdown:: Why these settings?
+   :icon: info
 
-.. tip::
+   - **Name** is shown in lists and at the top of every page. Keep it short
+     and recognizable.
+   - **Description** helps people who don't know the CO's name tell what
+     it's for.
+   - **Status: Active** makes the CO usable as soon as it's saved. A CO can
+     be **Active**, **Suspended**, or **Template**. Suspending a CO
+     immediately shuts off access to it, including the web interface, the
+     API, and scheduled jobs. Template is for a CO you intend to use as a
+     starting point for others. For these lessons, always choose Active.
+
+.. dropdown:: Sharing a Registry with other people?
+   :icon: question
 
    CO names must be unique, and as of v5.2.0 that check ignores case: you
    can't have both ``MESS`` and ``mess``. If someone else is working in the
@@ -198,6 +235,8 @@ use as a starting point for others. For these lessons, always choose Active.
 
    User guide: :ref:`struct-co`
 
+.. _gs-first-co-step-switch:
+
 3. Switch into your new CO
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -208,16 +247,14 @@ Once your COs exist, you need to be *in* one to work on it.
 #. Select **Redcurrant University**.
 
 .. figure:: /comanage-files/registry_v5.2/people/My_Identity_Menu.png
-   :alt: The My Identity menu open at the upper right, with Switch CO, the link to your own record, display settings and Log Out
+   :alt: The My Identity menu open at the upper right: the signed-in person (Registry Admin), a My canvas link to your own record, Settings, Logout and Switch CO
    :width: 100%
 
    The My Identity menu. You'll come back to it to switch COs, open your own
    record, change display settings, or log out.
 
-.. SCREENSHOT: My_Identity_Menu.png isn't in the local comanage-files
-   checkout yet (update the submodule). Check the alt text against it.
-
-.. note::
+.. dropdown:: Clicked the CO's name and got a form?
+   :icon: question
 
    After you save a new CO, the COs list shows it with a link. Clicking the
    CO's name there opens its **edit page** in the COmanage CO; it doesn't
@@ -247,10 +284,8 @@ appears in your browser's address bar while you're working in the CO, as
 
    Where to find the CO's ID: ``co_id=`` in the address bar.
 
-.. SCREENSHOT: co_id.png isn't in the local comanage-files checkout yet
-   (update the submodule). Check the alt text against it.
-
-.. note::
+.. dropdown:: Why does my new CO say "(Not a Member)"?
+   :icon: info
 
    On the Available Collaborations page, your new CO is marked **(Not a
    Member)**. That means your account doesn't have a Person record in that
@@ -261,6 +296,8 @@ appears in your browser's address bar while you're working in the CO, as
 .. REVIEW: the Features page (using/structure/collaborative-organizations.rst,
    section 2) says the creating Platform Administrator becomes the first CO
    Administrator. Workshop testing on 5.2.0 suggests otherwise; reconcile.
+
+.. _gs-first-co-step-tour:
 
 4. Take a tour of the v5 interface
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -358,24 +395,31 @@ Check your work
 Troubleshoot
 ------------
 
-**You can't find COs under Configuration.** Platform-Wide Configuration
-appears only in the COmanage CO. Check the banner: if it shows another CO's
-name, switch to COmanage first.
+.. dropdown:: You can't find COs under Configuration
 
-**Saving the CO fails with a message about the name.** Another CO already
-uses that name, possibly with different capitalization. Choose a different
-name, for example by adding your initials.
+   Platform-Wide Configuration appears only in the COmanage CO. Check the
+   banner: if it shows another CO's name, switch to COmanage first.
 
-**Clicking your new CO's name opens a form instead of the CO.** That's the
-CO's edit page in the COmanage CO. Use **Switch CO** in the My Identity menu to go
-into the CO.
+.. dropdown:: Saving the CO fails with a message about the name
 
-**Your new CO doesn't appear in the list, or you can't open it.** Check that
-its Status is Active. A Suspended CO can't be used, and a Template CO is
-meant as a pattern rather than a working CO.
+   Another CO already uses that name, possibly with different
+   capitalization. Choose a different name, for example by adding your
+   initials.
 
-**Changes seem to land in the wrong place.** You may be working in a
-different CO than you think. Check the banner at the top of the page.
+.. dropdown:: Clicking your new CO's name opens a form instead of the CO
+
+   That's the CO's edit page in the COmanage CO. Use **Switch CO** in the My
+   Identity menu to go into the CO.
+
+.. dropdown:: Your new CO doesn't appear in the list, or you can't open it
+
+   Check that its Status is Active. A Suspended CO can't be used, and a
+   Template CO is meant as a pattern rather than a working CO.
+
+.. dropdown:: Changes seem to land in the wrong place
+
+   You may be working in a different CO than you think. Check the banner at
+   the top of the page.
 
 What you learned
 ----------------

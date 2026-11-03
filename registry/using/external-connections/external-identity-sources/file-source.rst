@@ -86,17 +86,7 @@ administrator sets up a source or a provisioning target.
 3. How Data Flows
 -----------------
 
-.. code-block:: text
-
-   System of record ──export──▶ CSV file on the Registry server
-                                        │
-                              Sync Job or manual sync
-                                        ▼
-                     External Identity Source (File Source)
-                                        │
-                                     Pipeline
-                                        ▼
-                         Person record and Person Roles
+.. include:: /_snippets/file-source-data-flow.rst
 
 - **Getting the file onto the server is up to you.** Registry reads a path on
   its own filesystem; it doesn't fetch files from elsewhere. Most deployments

@@ -51,15 +51,50 @@ Ingredients
 Steps at a glance
 -----------------
 
-#. Configure: create the target, Disabled
-#. Configure: set the file
-#. Enable: switch the target to Immediate
-#. Use: change Ruth, and watch the file
-#. Use: send people who were already there
-#. Check your work
+Select a card to jump to that step.
+
+.. grid:: 1 2 3 3
+   :gutter: 3
+
+   .. grid-item-card:: 1. Create the target
+      :link: gs-pfile-step-create
+      :link-type: ref
+
+      Create the provisioning target, Disabled.
+
+   .. grid-item-card:: 2. Set the file
+      :link: gs-pfile-step-file
+      :link-type: ref
+
+      Tell it which file to write to.
+
+   .. grid-item-card:: 3. Switch it on
+      :link: gs-pfile-step-on
+      :link-type: ref
+
+      Set the target to Immediate.
+
+   .. grid-item-card:: 4. Change Ruth
+      :link: gs-pfile-step-ruth
+      :link-type: ref
+
+      Make a change, and watch the file.
+
+   .. grid-item-card:: 5. Send everyone
+      :link: gs-pfile-step-all
+      :link-type: ref
+
+      Send people who were already there.
+
+Then :ref:`check your work <getting-started/connections/provision-file:Check your work>`.
 
 Step details
 ------------
+
+Each step shows what to do. Select a heading marked ▸ to see why, or what to
+do if something looks different.
+
+.. _gs-pfile-step-create:
 
 1. Create the target, Disabled
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -69,21 +104,24 @@ Provisioning Target**.
 
 .. list-table::
    :header-rows: 1
-   :widths: 28 30 42
+   :widths: 40 60
 
    * - Field
      - Value
-     - Why
    * - Description
      - ``File Export``
-     - Names the target.
    * - Provisioning Mode
      - **Disabled**
-     - Start disabled and switch on once it's configured (see the warning
-       below).
    * - Plugin
      - ``FileConnector.FileProvisioners``
-     - Writes changes to a file.
+
+.. dropdown:: Why these settings?
+   :icon: info
+
+   - **Description**: Names the target.
+   - **Provisioning Mode**: Start disabled and switch on once it's
+     configured (see the warning below).
+   - **Plugin**: Writes changes to a file.
 
 Leave the rest as it is and save.
 
@@ -98,12 +136,16 @@ Leave the rest as it is and save.
 .. SCREENSHOT: the Add a New Provisioning Target form (not yet in
    comanage-files).
 
+.. _gs-pfile-step-file:
+
 2. Set the file
 ~~~~~~~~~~~~~~~
 
 Saving opens the File Provisioner's form. It has one field, **File Name**:
 enter the full path of the file on the Registry server, for example
 ``/srv/provisioned/output.jsonl``, and save.
+
+.. _gs-pfile-step-on:
 
 3. Switch the target to Immediate
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -116,6 +158,8 @@ Switching it on doesn't write anything by itself.
    :class: seealso
 
    User guide: :ref:`ec-provisioning` (Provisioning Modes)
+
+.. _gs-pfile-step-ruth:
 
 4. Change Ruth, and watch the file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -133,6 +177,8 @@ adds another line.
 Try one more: if Ruth has only one role, set it to **Expired**. She's no
 longer eligible to be provisioned, and the new line holds just her ID, such
 as ``{"id":45}``, which tells the receiving system to remove her.
+
+.. _gs-pfile-step-all:
 
 5. Send people who were already there
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -154,9 +200,13 @@ something about them changes. Two ways to send them now:
 
      ./bin/cake job -r -c <CO ID>
 
-  The People job writes one line per person. (The Groups job reports 0
-  entities: a known 5.2.0 issue. Groups are still sent when they or their
-  members change.)
+  The People job writes one line per person.
+
+  .. dropdown:: The Groups job reports 0 entities?
+     :icon: question
+
+     That's a known 5.2.0 issue. Groups are still sent when they or their
+     members change.
 
 .. admonition:: Learn more
    :class: seealso
@@ -174,20 +224,26 @@ Check your work
 Troubleshoot
 ------------
 
-**Every save of a person fails with an error page.** A provisioning target
-was switched on before its plugin form was saved. Open the target, fill in
-and save the plugin form, or set it to Disabled. To remove it, open it and
-use **Delete** on its Properties tab.
+.. dropdown:: Every save of a person fails with an error page
 
-**Saving the File Provisioner says the file is "not writable".** The file
-must already exist, and the web server's user must be able to write to it.
+   A provisioning target was switched on before its plugin form was saved.
+   Open the target, fill in and save the plugin form, or set it to Disabled.
+   To remove it, open it and use **Delete** on its Properties tab.
 
-**Nothing is written when you switch the target on.** That's expected:
-switching it on sends nothing. Make a change to a person, or use Provision
-Now.
+.. dropdown:: Saving the File Provisioner says the file is "not writable"
 
-**Reprovision All didn't write anything.** It only queues jobs. Run the
-queue (step 5), then check **Operations > Jobs**.
+   The file must already exist, and the web server's user must be able to
+   write to it.
+
+.. dropdown:: Nothing is written when you switch the target on
+
+   That's expected: switching it on sends nothing. Make a change to a
+   person, or use Provision Now.
+
+.. dropdown:: Reprovision All didn't write anything
+
+   It only queues jobs. Run the queue (step 5), then check **Operations >
+   Jobs**.
 
 What you learned
 ----------------

@@ -38,7 +38,8 @@ UNVERIFIED = [
     # 'getting-started/connections/source-hr-api.rst',
 ]
 
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store'] + UNVERIFIED
+# _snippets holds shared fragments pulled in with .. include::; they aren't pages.
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '_snippets'] + UNVERIFIED
 
 # Warn on broken cross-references
 nitpicky = False

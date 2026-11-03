@@ -35,14 +35,44 @@ Ingredients
 Steps at a glance
 -----------------
 
-#. Prepare: understand contexts and substitutions
-#. Configure: add the templates
-#. Enable: attach each template where it's used
-#. Use: send a test, and read it
-#. Troubleshoot
+Select a card to jump to that step.
+
+.. grid:: 1 2 4 4
+   :gutter: 3
+
+   .. grid-item-card:: 1. Prepare
+      :link: gs-cm-step-contexts
+      :link-type: ref
+
+      Understand contexts and substitutions.
+
+   .. grid-item-card:: 2. Add the templates
+      :link: gs-cm-step-add
+      :link-type: ref
+
+      Write the four templates.
+
+   .. grid-item-card:: 3. Attach them
+      :link: gs-cm-step-attach
+      :link-type: ref
+
+      Attach each template where it's used.
+
+   .. grid-item-card:: 4. Test
+      :link: gs-cm-step-test
+      :link-type: ref
+
+      Send a test, and read it.
+
+If something goes wrong, see :ref:`Troubleshoot <recipes/communicating-message-templates:Troubleshoot>`.
 
 Step details
 ------------
+
+Each step shows what to do. Select a heading marked ▸ to see why, or what to
+do if something looks different.
+
+.. _gs-cm-step-contexts:
 
 1. Contexts and substitutions
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -80,6 +110,8 @@ message. They're written ``(@NAME)``. The ones these templates use:
    User guide: :ref:`personalization-message-templates` · Technical Manual:
    `Registry Message Templates (full list of substitutions)
    <https://spaces.at.internet2.edu/spaces/COmanage/pages/297862258/Registry+Message+Templates>`_
+
+.. _gs-cm-step-add:
 
 2. Add the templates
 ~~~~~~~~~~~~~~~~~~~~
@@ -129,6 +161,8 @@ select **Add**. For each template below, set **Status** to Active and
 
    User guide: :ref:`personalization-message-templates` (Defining a Template)
 
+.. _gs-cm-step-attach:
+
 3. Attach each template where it's used
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -156,6 +190,8 @@ The Getting Started lesson :ref:`gs-enroll-invite-member` attaches the first
 three as it builds its flow; :ref:`gs-enroll-self-signup` uses the
 verification template.
 
+.. _gs-cm-step-test:
+
 4. Send a test, and read it
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -168,23 +204,29 @@ open the messages in your test inbox. Check that:
 Troubleshoot
 ------------
 
-**No email arrives.** Check that an outgoing mail server is configured and
-selected in CO Settings, and that the template is Active and attached. For
-the welcome message, check that the flow has **Collect Enrollee Email**
-ticked.
+.. dropdown:: No email arrives
 
-**A substitution arrives unreplaced.** Not every substitution is available
-in every context. In 5.2.0, ``(@EF_LAST_STEP_DESC)`` and
-``(@EF_NEXT_STEP_DESC)`` aren't filled in for handoff messages, although the
-Technical Manual lists them. Leave them out of handoff templates for now.
+   Check that an outgoing mail server is configured and selected in CO
+   Settings, and that the template is Active and attached. For the welcome
+   message, check that the flow has **Collect Enrollee Email** ticked.
 
-**The template doesn't appear where you expect it.** Check its Context and
-Status. A template is offered where its Context fits, for example an
-Enrollment Handoff template for a step's Handoff Message Template, and only
-when it's Active.
+.. dropdown:: A substitution arrives unreplaced
+
+   Not every substitution is available in every context. In 5.2.0,
+   ``(@EF_LAST_STEP_DESC)`` and ``(@EF_NEXT_STEP_DESC)`` aren't filled in for
+   handoff messages, although the Technical Manual lists them. Leave them
+   out of handoff templates for now.
+
+.. dropdown:: The template doesn't appear where you expect it
+
+   Check its Context and Status. A template is offered where its Context
+   fits, for example an Enrollment Handoff template for a step's Handoff
+   Message Template, and only when it's Active.
 
 .. VERIFY: that template lists are filtered by Context and Status.
 
-**An enrollee sees "An Internal Error Has Occurred" before approval.** In
-5.2.0, if a member of the approver group has no verified email address, the
-approval request fails. Make sure every approver has a verified email.
+.. dropdown:: An enrollee sees "An Internal Error Has Occurred" before approval
+
+   In 5.2.0, if a member of the approver group has no verified email
+   address, the approval request fails. Make sure every approver has a
+   verified email.

@@ -49,13 +49,44 @@ Ingredients
 Steps at a glance
 -----------------
 
-#. Prepare: how identifier assignment works
-#. Configure: add the Identifier Assignment
-#. Configure: set the format
-#. Check your work: see a username appear
+Select a card to jump to that step.
+
+.. grid:: 1 2 4 4
+   :gutter: 3
+
+   .. grid-item-card:: 1. Prepare
+      :link: gs-ia-step-how
+      :link-type: ref
+
+      How identifier assignment works.
+
+   .. grid-item-card:: 2. Add the assignment
+      :link: gs-ia-step-add
+      :link-type: ref
+
+      Create the Identifier Assignment.
+
+   .. grid-item-card:: 3. Set the format
+      :link: gs-ia-step-format
+      :link-type: ref
+
+      Tell it how to build each username.
+
+   .. grid-item-card:: 4. See it work
+      :link: gs-ia-step-see
+      :link-type: ref
+
+      Watch a username appear.
+
+Then :ref:`check your work <getting-started/connections/identifier-assignment:Check your work>`.
 
 Step details
 ------------
+
+Each step shows what to do. Select a heading marked ▸ to see why, or what to
+do if something looks different.
+
+.. _gs-ia-step-how:
 
 1. How identifier assignment works
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -74,6 +105,8 @@ creates or updates someone.
 
    User guide: :ref:`ec-identifier-assignment`
 
+.. _gs-ia-step-add:
+
 2. Add the Identifier Assignment
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -82,31 +115,42 @@ then **Add**. Fill in the properties and save.
 
 .. list-table::
    :header-rows: 1
-   :widths: 25 30 45
+   :widths: 40 60
 
    * - Field
      - Value
-     - Why
    * - Description
      - ``Username``
-     - Names the assignment.
    * - Status
      - Active
-     - The assignment runs.
    * - Plugin
      - ``CoreAssigner.FormatAssigners``
-     - Builds the identifier from a pattern.
    * - Context
      - Person
-     - Assign the identifier to People (rather than, for example, Groups).
    * - Identifier Type
      - Network, with **Login** ticked
-     - The kind of identifier to create. **Login** means people can sign in
-       with it; without it, the username exists but can't be used to log
-       in.
+
+.. important::
+
+   **Tick Login.** Without it, the username exists but can't be used to log
+   in.
+
+.. dropdown:: Why these settings?
+   :icon: info
+
+   - **Description** names the assignment.
+   - **Status: Active** means the assignment runs.
+   - **Plugin:** ``CoreAssigner.FormatAssigners`` builds the identifier from
+     a pattern.
+   - **Context: Person** assigns the identifier to People (rather than, for
+     example, Groups).
+   - **Identifier Type** is the kind of identifier to create. **Login**
+     means people can sign in with it.
 
 .. SCREENSHOT: the Add a New Identifier Assignment form (not yet in
    comanage-files).
+
+.. _gs-ia-step-format:
 
 3. Set the format
 ~~~~~~~~~~~~~~~~~
@@ -115,28 +159,30 @@ Saving opens the Format Assigner's own form. Fill it in and save.
 
 .. list-table::
    :header-rows: 1
-   :widths: 25 30 45
+   :widths: 40 60
 
    * - Field
      - Value
-     - Why
    * - Format
      - ``(g).(f)``
-     - The given name, a dot, and the family name. Lowercase ``(g)`` and
-       ``(f)`` give a lowercase username, such as ``casey.invitee``;
-       ``(G)`` and ``(F)`` keep the capitals.
    * - Collision Mode
-     - Sequential
-     - Required. If the username is already taken, Registry adds a number,
-       so a second Casey Invitee gets a different username.
+     - Sequential (required)
    * - Permitted Characters
      - Alphanumeric, dot, dash, underscore
-     - Characters outside this set are left out of the username.
 
-.. tip::
+.. dropdown:: Why these settings?
+   :icon: info
 
-   Usernames are case-sensitive. Lowercase is the safest choice for
-   something people type to log in.
+   - **Format** ``(g).(f)`` is the given name, a dot, and the family name.
+     Lowercase ``(g)`` and ``(f)`` give a lowercase username, such as
+     ``casey.invitee``; ``(G)`` and ``(F)`` keep the capitals. Usernames are
+     case-sensitive, so lowercase is the safest choice for something people
+     type to log in.
+   - **Collision Mode: Sequential**: if the username is already taken,
+     Registry adds a number, so a second Casey Invitee gets a different
+     username.
+   - **Permitted Characters**: characters outside this set are left out of
+     the username.
 
 .. SCREENSHOT: the Format Assigner form (not yet in comanage-files).
 
@@ -144,6 +190,8 @@ Saving opens the Format Assigner's own form. Fill it in and save.
    :class: seealso
 
    User guide: :ref:`ec-identifier-assignment` (Constraints and Uniqueness)
+
+.. _gs-ia-step-see:
 
 4. See a username appear
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -173,21 +221,26 @@ Check your work
 Troubleshoot
 ------------
 
-**Saving the Format Assigner fails.** Collision Mode is required; choose
-Sequential.
+.. dropdown:: Saving the Format Assigner fails
 
-**Nobody gets a username.** The assignment only runs when something happens
-to a person (an enrollment finishing, or a pipeline sync), and only for
-people who don't already have that type of identifier. Check its Status is
-Active, then sync someone again.
+   Collision Mode is required; choose Sequential.
 
-**The username has capitals, or odd characters missing.** Check the Format:
-lowercase ``(g)`` and ``(f)`` give lowercase. Characters not in Permitted
-Characters are dropped.
+.. dropdown:: Nobody gets a username
 
-**Someone has the username but can't log in with it.** The identifier
-wasn't flagged for login. Check that **Login** is ticked on the assignment's
-Identifier Type.
+   The assignment only runs when something happens to a person (an
+   enrollment finishing, or a pipeline sync), and only for people who don't
+   already have that type of identifier. Check its Status is Active, then
+   sync someone again.
+
+.. dropdown:: The username has capitals, or odd characters missing
+
+   Check the Format: lowercase ``(g)`` and ``(f)`` give lowercase.
+   Characters not in Permitted Characters are dropped.
+
+.. dropdown:: Someone has the username but can't log in with it
+
+   The identifier wasn't flagged for login. Check that **Login** is ticked
+   on the assignment's Identifier Type.
 
 What you learned
 ----------------
