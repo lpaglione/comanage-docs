@@ -1,7 +1,6 @@
 .. DRAFT (Oct 2026): Lesson 2. Published on the Module 2 page (Oct 23).
    Procedure follows the workshop deck's Section 2 and the kit's instructor
-   guide, both tested on 5.2.0. Screenshots of the source's Search tab are
-   still TODO.
+   guide, both tested on 5.2.0.
 
 .. _gs-source-hr-file:
 
@@ -327,8 +326,18 @@ Test the connection with one person before bringing in everyone.
 #. Select **Sync Record to CO** at the upper right. Registry runs Ruth's
    record through the pipeline and confirms that the sync is complete.
 
-.. TODO screenshot: the Search Source tab with a result for ruth, and Ruth's
-   source record with Sync Record to CO at the upper right.
+.. figure:: /comanage-files/registry_v5.2/connections/External_Identity_Source_Search.png
+   :alt: The HR File source's Search Source tab, with a search for ruth returning Ruth Spence's Source Key
+   :width: 100%
+
+   Searching the source for ruth.
+
+.. figure:: /comanage-files/registry_v5.2/connections/View_External_Identity_Source.png
+   :alt: View External Identity Source Record for Ruth Spence: her name, uid ruth.spence and sorid, with an arrow pointing to Sync Record to CO at the upper right
+   :width: 100%
+
+   Ruth's record as the file has it. **Sync Record to CO** is at the upper
+   right.
 
 Now check that Ruth can log in. In a browser window that isn't logged in
 yet (see :ref:`gs-before-you-begin`), sign in as ``ruth.spence``. She should
