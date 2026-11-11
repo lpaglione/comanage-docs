@@ -17,9 +17,14 @@ are not listed here.
 .. note::
 
    Status data is sourced from the `COmanage Project's feature equivalency
-   tracker <https://docs.google.com/spreadsheets/d/1ZptfWonz7tvcg9y3pGWHUid-TFJlMKFvl32Et1dpubM/edit?gid=1518583801#gid=1518583801&fvid=1089383874>`_, last updated May 2026. Items marked with a ✓ in the v5.2.0
-   column were completed in that release. Planned release targets are
-   subject to change based on community priorities and funding.
+   tracker <https://docs.google.com/spreadsheets/d/1ZptfWonz7tvcg9y3pGWHUid-TFJlMKFvl32Et1dpubM/edit?gid=1518583801#gid=1518583801&fvid=1089383874>`_, last updated November 2026. Items marked with a ✓ in the
+   Completed in column reached feature equivalency in that release. Planned
+   release targets are subject to change based on community priorities and
+   funding.
+
+.. REVIEW: rows below were updated from the 2026-11 tracker export. Rows
+   still marked REVIEW have a v5.3.0 target in the tracker but a maturity
+   below Feature Equivalent; confirm how to show them.
 
 1. Maturity Scale
 ------------------
@@ -68,7 +73,7 @@ are not listed here.
    * - Person Roles
      - 3 — Functional
      -
-     - v5.5.0
+     - v5.6.0
    * - External Identity Records
      - 3 — Functional
      -
@@ -76,7 +81,7 @@ are not listed here.
    * - External Identity Sources
      - 3 — Functional
      -
-     - v5.5.0
+     - v5.6.0
    * - Pipelines
      - 3 — Functional
      -
@@ -101,7 +106,14 @@ are not listed here.
      - 0 — Not Started
      -
      - v5.6.0
+   * - SQL Source Plugin
+     - 3 — Functional
+     -
+     - v5.6.0
    * - ORCID Source Plugin
+
+       .. REVIEW: tracker: 0 Not Started, target v5.3.0; but the ORCID Source plugin shipped in v5.2.0
+
      - 0 — Not Started
      -
      - v5.3.0
@@ -113,7 +125,14 @@ are not listed here.
      - 0 — Not Started
      -
      -
+   * - Identity Documents
+     - 1 — Design Review
+     -
+     - v5.6.0
    * - Person Expunge
+
+       .. REVIEW: tracker: 3 Functional, target v5.3.0; release announcement lists Person Deletion as FE in 5.3.0
+
      - 3 — Functional
      -
      - v5.3.0
@@ -146,13 +165,13 @@ are not listed here.
      -
      - v5.4.0
    * - Departments
-     - 0 — Not Started
+     - 4 — Feature Equivalent
+     - v5.3.0 ✓
      -
-     - v5.6.0
    * - Organizations
-     - 0 — Not Started
+     - 3 — Functional
      -
-     - v5.6.0
+     - v5.7.0
 
 4. Lifecycle Management
 ------------------------
@@ -170,6 +189,9 @@ are not listed here.
      -
      - v5.7.0
    * - Terms and Conditions
+
+       .. REVIEW: tracker: 3 Functional, target v5.3.0; announcement lists T&C as FE, but Nov 4 dev notes carry T&C loose ends into v5.4.0
+
      - 3 — Functional
      -
      - v5.3.0
@@ -182,7 +204,10 @@ are not listed here.
      -
      -
    * - Expiration Policies
-     - 0 — Not Started
+
+       .. REVIEW: tracker: 2 In Progress, target v5.3.0; Nov 4 dev notes put CFM-61 in v5.4.0 scope and it is being renamed Lifecycle Policies
+
+     - 2 — In Progress
      -
      - v5.3.0
    * - Attribute Election
@@ -210,23 +235,26 @@ are not listed here.
      - v5.2.0 ✓
      -
    * - Provisioning Plugins (general)
-     - 2 — In Progress
+
+       .. REVIEW: tracker: 3 Functional, scheduled work in v5.3.0, no FE target release marked
+
+     - 3 — Functional
      -
-     - v5.6.0
+     -
    * - SQL Provisioner Plugin
      - 3 — Functional
      -
      - v5.7.0
    * - LDAP Provisioner Plugin
-     - 1 — Design Review
+     - 4 — Feature Equivalent
+     - v5.3.0 ✓
      -
-     - v5.5.0
    * - Kerberos Provisioner Plugin
      - 5 — Complete
      -
      -
    * - Clusters
-     - 1 — Design Review
+     - 2 — In Progress
      -
      - v5.6.0
    * - Email List
@@ -266,6 +294,9 @@ are not listed here.
      -
      - v5.4.0
    * - Themes
+
+       .. REVIEW: tracker: 2 In Progress, target v5.3.0; announcement lists Themes as FE in 5.3.0
+
      - 2 — In Progress
      -
      - v5.3.0
@@ -294,7 +325,7 @@ are not listed here.
      -
      - v5.6.0
    * - REST API (Core)
-     - 0 — Not Started
+     - 2 — In Progress
      -
      - v5.6.0
 
@@ -310,9 +341,9 @@ are not listed here.
      - Completed in
      - FE Target
    * - Multi-Value Entity Attributes
-     - 3 — Functional
+     - 5 — Complete
+     - v5.3.0 ✓
      -
-     - v5.3.0
    * - History Records
      - 3 — Functional
      -
@@ -338,9 +369,9 @@ are not listed here.
      - v5.2.0 ✓
      -
    * - Normalization Behavior
-     - 0 — Not Started
+     - 5 — Complete
+     - v5.3.0 ✓
      -
-     - v5.3.0
    * - Localization
      - 0 — Not Started
      -
@@ -356,7 +387,7 @@ are not listed here.
    * - Standardize Logging
      - 2 — In Progress
      -
-     - v5.3.0
+     - v5.4.0
 
 9. Tools and Commands
 ----------------------
@@ -428,9 +459,13 @@ and follow the community mailing list.
 
 .. seealso::
 
-   :ref:`transitioning-whats-new-5.2.0`
+   :ref:`transitioning-whats-new-5.3.0`
       New capabilities, restored v4 features, and improvements in the
       most recent release.
+
+   :ref:`transitioning-whats-new-5.2.0`
+      New capabilities, restored v4 features, and improvements in
+      Registry v5.2.0.
 
    :ref:`transitioning-whats-new-5.1.0`
       New capabilities introduced in Registry v5.1.0.

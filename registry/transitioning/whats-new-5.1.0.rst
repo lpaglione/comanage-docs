@@ -151,3 +151,13 @@ you can ask questions, share feedback, and hear how other organizations are
 using Registry. Subscribe to the
 `COmanage Project calendar <https://www.addevent.com/calendar/Nr648428>`_
 for dates and connection links.
+
+5. Acknowledgments
+-------------------
+
+Funding for Registry v5.1.0 has been provided by:
+
+- The CILogon Project and the University of Illinois
+- SCG Collaboration Group
+- Southern Methodist University
+- And an additional funder

@@ -78,7 +78,7 @@ agreed to before a person gains access to CO resources. Agreement can be
 required as a step in an Enrollment Flow, or applied directly to existing
 CO Persons. Registry tracks agreement history, and administrators can agree
 to a Terms and Conditions document on behalf of a person when needed.
-See :ref:`lm-terms-and-conditions`.
+See :ref:`lifecycle-terms-and-conditions`.
 
 **Authenticators: Password and SSH Key**
 
@@ -218,3 +218,14 @@ you can ask questions, share feedback, and hear how other organizations are
 using Registry. Subscribe to the
 `COmanage Project calendar <https://www.addevent.com/calendar/Nr648428>`_
 for dates and connection links.
+
+5. Acknowledgments
+-------------------
+
+Funding for Registry v5.2.0 has been provided by:
+
+- The CILogon Project and the University of Illinois
+- Internet2
+- SCG Collaboration Group
+- Southern Methodist University
+- And an additional funder
