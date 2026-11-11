@@ -9,6 +9,7 @@ Transitioning from v4 to v5
    :caption: Features
 
    feature-status
+   whats-new-5.3.0
    whats-new-5.2.0
    whats-new-5.1.0
 
@@ -37,6 +38,14 @@ Features
 
       Where v5 currently stands relative to v4 feature parity, and the
       planned schedule for reaching full feature equivalency.
+
+   .. grid-item-card:: What's New in v5.3.0
+      :link: transitioning-whats-new-5.3.0
+      :link-type: ref
+
+      Departments and Organizations, LDAP provisioning, Person deletion,
+      Themes, and other restored and new capabilities in Registry v5.3.0
+      (30 October 2026).
 
    .. grid-item-card:: What's New in v5.2.0
       :link: transitioning-whats-new-5.2.0
