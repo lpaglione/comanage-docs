@@ -21,11 +21,6 @@ available in the
 
 .. important::
 
-   **This release includes a security advisory.** The COmanage Project
-   expects its impact to be very low, but encourages deployers to review it
-   and act according to their own risk profile. See the
-   `security advisory <https://spaces.at.internet2.edu/x/I4AsGg>`_.
-
    **Mostly Static Page URLs have changed.** Pages are now served at
    ``$REGISTRY/<coid>/pages/<slug>`` instead of ``$REGISTRY/<coid>/<slug>``.
    Update any links to these pages from outside Registry. See
